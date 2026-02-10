@@ -17,7 +17,7 @@ interface TabsProps {
   children?: React.ReactNode;
 }
 
-const Tab: React.FC<TabProps> = ({ label, className, children }) => {
+const Tab: React.FC<TabProps> = ({ className, children }) => {
   return <div className={`${styles.tabContent} ${className || ''}`}>{children}</div>;
 };
 
@@ -41,6 +41,7 @@ const Tabs: React.FC<TabsProps> = ({ activeKey, defaultActiveKey, onChange, clas
           const label = React.isValidElement<TabProps>(tab) ? tab.props.label : `Tab ${index + 1}`;
           return (
             <button
+              type="button"
               key={key}
               className={`
                 ${styles.tab}

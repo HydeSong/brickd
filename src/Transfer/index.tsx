@@ -287,6 +287,7 @@ export const Transfer: React.FC<TransferProps> = ({
 
       <div className={styles.transferOperations}>
         <button
+          type="button"
           className={`${styles.transferOperationButton} ${
             canMoveRight ? styles.transferOperationButtonPrimary : styles.transferOperationButtonDisabled
           }`}
@@ -296,6 +297,7 @@ export const Transfer: React.FC<TransferProps> = ({
           →
         </button>
         <button
+          type="button"
           className={`${styles.transferOperationButton} ${
             canMoveLeft ? styles.transferOperationButtonPrimary : styles.transferOperationButtonDisabled
           }`}
@@ -305,6 +307,7 @@ export const Transfer: React.FC<TransferProps> = ({
           ←
         </button>
         <button
+          type="button"
           className={styles.transferOperationButton}
           onClick={handleMoveRightAll}
           disabled={disabled || getFilteredSourceList().filter(item => !item.disabled).length === 0}
@@ -312,6 +315,7 @@ export const Transfer: React.FC<TransferProps> = ({
           ⇒
         </button>
         <button
+          type="button"
           className={styles.transferOperationButton}
           onClick={handleMoveLeftAll}
           disabled={disabled || getFilteredTargetList().filter(item => !item.disabled).length === 0}

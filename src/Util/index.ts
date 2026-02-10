@@ -23,7 +23,7 @@ export const isArray = (val: any): val is any[] => {
   return Array.isArray(val);
 };
 
-export const isFunction = (val: any): val is Function => {
+export const isFunction = (val: any): val is (...args: any[]) => any => {
   return typeof val === 'function';
 };
 

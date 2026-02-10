@@ -53,18 +53,6 @@ export const Select: React.FC<SelectProps> = ({
   const menuRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // 当外部 value 变化时，更新内部状态
-  useEffect(() => {
-    if (value !== undefined) {
-      setInternalValue(value);
-    }
-  }, [value]);
-
-  // 当选项变化时，更新过滤选项
-  useEffect(() => {
-    filterOptionsBySearch(searchValue);
-  }, [options, filterOption]);
-
   // 根据搜索值过滤选项
   const filterOptionsBySearch = (inputValue: string) => {
     if (!showSearch || !inputValue) {
@@ -82,6 +70,18 @@ export const Select: React.FC<SelectProps> = ({
       setFilterOptions(options);
     }
   };
+
+  // 当外部 value 变化时，更新内部状态
+  useEffect(() => {
+    if (value !== undefined) {
+      setInternalValue(value);
+    }
+  }, [value]);
+
+  // 当选项变化时，更新过滤选项
+  useEffect(() => {
+    filterOptionsBySearch(searchValue);
+  }, [options, filterOption]);
 
   // 处理搜索输入变化
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {

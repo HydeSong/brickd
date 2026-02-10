@@ -59,7 +59,6 @@ export const TimePicker: React.FC<TimePickerProps> = ({
   onChange,
   onOpenChange,
   placeholder = '请选择时间',
-  format = 'HH:mm',
   use12Hours = false,
   className = '',
   style = {},
@@ -295,18 +294,21 @@ export const TimePicker: React.FC<TimePickerProps> = ({
 
         <div className={styles.timePickerFooter}>
           <button
+            type="button"
             className={styles.timePickerFooterButton}
             onClick={handleNow}
           >
             现在
           </button>
           <button
+            type="button"
             className={styles.timePickerFooterButton}
             onClick={handleCancel}
           >
             取消
           </button>
           <button
+            type="button"
             className={`${styles.timePickerFooterButton} ${styles.timePickerFooterButtonPrimary}`}
             onClick={handleConfirm}
           >

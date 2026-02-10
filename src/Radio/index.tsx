@@ -96,6 +96,7 @@ export const Radio: React.FC<RadioProps> = ({
 const RadioGroup: React.FC<RadioGroupProps> = ({ 
   size = 'default',
   disabled = false,
+  direction = 'horizontal',
   options = [],
   value,
   defaultValue,
@@ -120,15 +121,6 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
     }
   };
 
-  const getGroupClass = () => {
-    const classes = [styles.radioGroup];
-    
-    // Add direction class
-    classes.push(styles[`radioGroup${direction.charAt(0).toUpperCase() + direction.slice(1)}`]);
-    
-    return classes.join(' ');
-  };
-
   // 渲染选项
   const renderOptions = () => {
     return options.map((option, index) => (
@@ -145,11 +137,15 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
     ));
   };
 
+  const groupClass = `${styles.radioGroup} ${styles[`radioGroup${direction.charAt(0).toUpperCase() + direction.slice(1)}`]} ${className}`;
+
   return (
-    <div className={`${getGroupClass()} ${className}`} style={style}>
+    <div className={groupClass} style={style}>
       {options.length > 0 ? renderOptions() : children}
     </div>
   );
 };
+
+Radio.Group = RadioGroup;
 
 export default Radio;

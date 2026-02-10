@@ -37,8 +37,6 @@ export const Slider: React.FC<SliderProps> = ({
   max = 100,
   step = 1,
   marks = [],
-  dots = false,
-  range = false,
   vertical = false,
   tooltip = true,
   tooltipVisible,
@@ -49,6 +47,39 @@ export const Slider: React.FC<SliderProps> = ({
   const [isDragging, setIsDragging] = useState(false);
   const [tooltipOpen, setTooltipOpen] = useState(false);
   const sliderRef = useRef<HTMLDivElement>(null);
+
+  // 更新滑块值
+  const updateValue = (e: React.MouseEvent | MouseEvent) => {
+    if (!sliderRef.current) return;
+
+    const rect = sliderRef.current.getBoundingClientRect();
+    let percentage: number;
+
+    if (vertical) {
+      const clientY = 'clientY' in e ? e.clientY : (e as MouseEvent).clientY;
+      percentage = 1 - (clientY - rect.top) / rect.height;
+    } else {
+      const clientX = 'clientX' in e ? e.clientX : (e as MouseEvent).clientX;
+      percentage = (clientX - rect.left) / rect.width;
+    }
+
+    // 限制百分比在 0-1 之间
+    percentage = Math.max(0, Math.min(1, percentage));
+
+    // 计算实际值
+    let newValue = min + percentage * (max - min);
+
+    // 按步长取整
+    newValue = Math.round(newValue / step) * step;
+
+    // 限制在 min-max 之间
+    newValue = Math.max(min, Math.min(max, newValue));
+
+    setInternalValue(newValue);
+    if (onChange) {
+      onChange(newValue);
+    }
+  };
 
   // 当外部 value 变化时，更新内部状态
   useEffect(() => {
@@ -93,39 +124,6 @@ export const Slider: React.FC<SliderProps> = ({
   const handleMouseEnter = () => {
     if (!isDragging) {
       setTooltipOpen(true);
-    }
-  };
-
-  // 更新滑块值
-  const updateValue = (e: React.MouseEvent | MouseEvent) => {
-    if (!sliderRef.current) return;
-
-    const rect = sliderRef.current.getBoundingClientRect();
-    let percentage: number;
-
-    if (vertical) {
-      const clientY = 'clientY' in e ? e.clientY : (e as MouseEvent).clientY;
-      percentage = 1 - (clientY - rect.top) / rect.height;
-    } else {
-      const clientX = 'clientX' in e ? e.clientX : (e as MouseEvent).clientX;
-      percentage = (clientX - rect.left) / rect.width;
-    }
-
-    // 限制百分比在 0-1 之间
-    percentage = Math.max(0, Math.min(1, percentage));
-
-    // 计算实际值
-    let newValue = min + percentage * (max - min);
-
-    // 按步长取整
-    newValue = Math.round(newValue / step) * step;
-
-    // 限制在 min-max 之间
-    newValue = Math.max(min, Math.min(max, newValue));
-
-    setInternalValue(newValue);
-    if (onChange) {
-      onChange(newValue);
     }
   };
 
