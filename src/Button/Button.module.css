@@ -1,0 +1,132 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+/* Button sizes */
+.small {
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.default {
+  padding: 8px 16px;
+}
+
+.large {
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+/* Button types */
+.primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  color: #ffffff;
+}
+
+.primary:hover:not(.disabled) {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+.default {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  color: #333333;
+}
+
+.default:hover:not(.disabled) {
+  border-color: #1890ff;
+  color: #ffffff;
+  background-color: #1890ff;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3);
+}
+
+.dashed {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  border-style: dashed;
+  color: #333333;
+}
+
+.dashed:hover:not(.disabled) {
+  border-color: #1890ff;
+  color: #ffffff;
+  background-color: #1890ff;
+  border-style: solid;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3);
+}
+
+.text {
+  background-color: transparent;
+  border-color: transparent;
+  color: #333333;
+}
+
+.text:hover:not(.disabled) {
+  color: #ffffff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.link {
+  background-color: transparent;
+  border-color: transparent;
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.link:hover:not(.disabled) {
+  color: #ffffff;
+  background-color: #1890ff;
+  text-decoration: none;
+  border-color: #1890ff;
+}
+
+/* Disabled state */
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.primary.disabled {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  color: #ffffff;
+}
+
+.default.disabled {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  color: #333333;
+}
+
+.dashed.disabled {
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+  border-style: dashed;
+  color: #333333;
+}
+
+.text.disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #333333;
+}
+
+.link.disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #1890ff;
+}

@@ -1,0 +1,168 @@
+.colorPicker {
+  position: relative;
+  display: inline-block;
+}
+
+.colorPickerTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+
+.colorPickerTrigger:hover {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.colorPickerTrigger:focus {
+  outline: none;
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.colorPickerTriggerDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  border-color: #d9d9d9;
+  box-shadow: none;
+}
+
+.colorPickerTriggerDisabled:hover {
+  border-color: #d9d9d9;
+  box-shadow: none;
+}
+
+.colorPickerSizeSmall {
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.colorPickerSizeLarge {
+  font-size: 16px;
+  padding: 6px 16px;
+}
+
+.colorPreview {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  margin-right: 8px;
+  border: 1px solid #d9d9d9;
+}
+
+.colorPickerMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  z-index: 1000;
+  padding: 12px;
+}
+
+.colorPickerPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colorPickerGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 8px;
+}
+
+.colorPickerItem {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid #d9d9d9;
+}
+
+.colorPickerItem:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.colorPickerItemActive {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #40a9ff;
+}
+
+.colorPickerInput {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.colorPickerInputRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.colorPickerInputLabel {
+  width: 40px;
+  font-size: 12px;
+  color: #666;
+}
+
+.colorPickerInputField {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.colorPickerInputField:focus {
+  outline: none;
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.colorPickerActions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.colorPickerButton {
+  padding: 4px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s;
+}
+
+.colorPickerButton:hover {
+  border-color: #40a9ff;
+  color: #40a9ff;
+}
+
+.colorPickerButtonPrimary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+}
+
+.colorPickerButtonPrimary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+  color: #fff;
+}

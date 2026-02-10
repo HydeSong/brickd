@@ -1,0 +1,12 @@
+.affix {
+  position: relative;
+}
+
+.affixFixed {
+  position: fixed;
+  z-index: 10;
+}
+
+.affixAbsolute {
+  position: absolute;
+}

@@ -1,0 +1,152 @@
+.steps {
+  display: flex;
+}
+
+/* 水平步骤条 */
+.horizontal {
+  flex-direction: row;
+  width: 100%;
+}
+
+.horizontal .stepItem {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.horizontal .stepHead {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.horizontal .stepIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.horizontal .stepLine {
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  right: 0;
+  height: 2px;
+  background-color: #e8e8e8;
+}
+
+/* 垂直步骤条 */
+.vertical {
+  flex-direction: column;
+  width: 200px;
+}
+
+.vertical .stepItem {
+  position: relative;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.vertical .stepHead {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.vertical .stepIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.vertical .stepLine {
+  position: absolute;
+  top: 24px;
+  left: 11px;
+  bottom: -24px;
+  width: 2px;
+  background-color: #e8e8e8;
+}
+
+.vertical .stepContent {
+  flex: 1;
+}
+
+/* 步骤状态 */
+.stepItem.completed .stepIcon {
+  background-color: #52c41a;
+  color: #fff;
+}
+
+.stepItem.active .stepIcon {
+  background-color: #1890ff;
+  color: #fff;
+}
+
+.stepItem.wait .stepIcon {
+  background-color: #fff;
+  color: #999;
+  border: 1px solid #d9d9d9;
+}
+
+.stepItem.completed .stepLine {
+  background-color: #52c41a;
+}
+
+.stepItem.active .stepLine {
+  background-color: #1890ff;
+}
+
+.stepItem.wait .stepLine {
+  background-color: #e8e8e8;
+}
+
+/* 步骤内容 */
+.stepContent {
+  text-align: center;
+}
+
+.vertical .stepContent {
+  text-align: left;
+}
+
+.stepTitle {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.stepDescription {
+  font-size: 12px;
+  color: #666;
+}
+
+.stepItem.completed .stepTitle {
+  color: #52c41a;
+}
+
+.stepItem.active .stepTitle {
+  color: #1890ff;
+}
+
+.stepItem.wait .stepTitle {
+  color: #999;
+}

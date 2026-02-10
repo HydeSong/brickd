@@ -1,0 +1,118 @@
+.menu {
+  display: inline-block;
+}
+
+.menuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 水平菜单 */
+.horizontal {
+  background-color: #001529;
+  color: #fff;
+}
+
+.horizontal .menuList {
+  display: flex;
+}
+
+.horizontal .menuItem {
+  padding: 0 24px;
+  height: 64px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.horizontal .menuItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.horizontal .menuItem.disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.horizontal .subMenu {
+  position: relative;
+}
+
+.horizontal .subMenuTitle {
+  padding: 0 24px;
+  height: 64px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.horizontal .subMenuTitle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.horizontal .subMenuList {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  width: 160px;
+  background-color: #001529;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal .subMenuList .menuItem {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 16px;
+}
+
+/* 垂直菜单 */
+.vertical {
+  background-color: #001529;
+  color: #fff;
+  width: 200px;
+}
+
+.vertical .menuItem {
+  padding: 0 24px;
+  height: 48px;
+  line-height: 48px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vertical .menuItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.vertical .menuItem.disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.vertical .subMenuTitle {
+  padding: 0 24px;
+  height: 48px;
+  line-height: 48px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vertical .subMenuTitle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.vertical .subMenuList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.vertical .subMenuList .menuItem {
+  padding-left: 32px;
+}

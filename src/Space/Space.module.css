@@ -1,0 +1,15 @@
+.space {
+  display: flex;
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}

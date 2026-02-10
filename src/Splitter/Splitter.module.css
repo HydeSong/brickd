@@ -1,0 +1,85 @@
+.splitter {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* Horizontal layout */
+.splitter {
+  flex-direction: row;
+}
+
+/* Vertical layout */
+.splitter.vertical {
+  flex-direction: column;
+}
+
+.panel {
+  overflow: auto;
+  transition: all 0.2s ease;
+}
+
+/* Resizer styles */
+.resizer {
+  position: relative;
+  background-color: #e8e8e8;
+  transition: all 0.2s ease;
+}
+
+/* Horizontal resizer */
+.splitter .resizer {
+  width: 4px;
+  cursor: col-resize;
+}
+
+.splitter .resizer:hover {
+  background-color: #1890ff;
+}
+
+.splitter .resizer.dragging {
+  background-color: #1890ff;
+  box-shadow: 0 0 0 1px #1890ff;
+}
+
+/* Vertical resizer */
+.splitter.vertical .resizer {
+  height: 4px;
+  width: 100%;
+  cursor: row-resize;
+}
+
+.splitter.vertical .resizer:hover {
+  background-color: #1890ff;
+}
+
+.splitter.vertical .resizer.dragging {
+  background-color: #1890ff;
+  box-shadow: 0 0 0 1px #1890ff;
+}
+
+/* Resizer handle styles */
+.resizer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.splitter .resizer::before {
+  width: 100%;
+  height: 20px;
+}
+
+.splitter.vertical .resizer::before {
+  width: 20px;
+  height: 100%;
+}
+
+.resizer:hover::before {
+  opacity: 1;
+}

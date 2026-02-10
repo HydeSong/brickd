@@ -1,0 +1,140 @@
+.inputNumber {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.inputNumberWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.inputNumberWrapper:hover {
+  border-color: #1890ff;
+}
+
+.inputNumberWrapper:focus-within {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.inputNumberWrapper:has(input:disabled) {
+  color: #999;
+  background-color: #f5f5f5;
+  border-color: #d9d9d9;
+  cursor: not-allowed;
+}
+
+.inputNumberWrapper:has(input:read-only) {
+  background-color: #f5f5f5;
+  cursor: default;
+}
+
+.inputNumberInput {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: transparent;
+}
+
+.inputNumberInput:disabled {
+  cursor: not-allowed;
+}
+
+.inputNumberInput:read-only {
+  cursor: default;
+}
+
+.inputNumberControls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-left: 1px solid #d9d9d9;
+}
+
+.inputNumberButton {
+  width: 32px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.inputNumberButton:hover {
+  color: #1890ff;
+  background-color: #e6f7ff;
+}
+
+.inputNumberButton:disabled {
+  color: #999;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.inputNumberButton:disabled:hover {
+  color: #999;
+}
+
+.inputNumberButton:first-child {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.inputNumberSizeSmall {
+  font-size: 12px;
+}
+
+.inputNumberSizeSmall .inputNumberInput {
+  padding: 4px 12px;
+}
+
+.inputNumberSizeSmall .inputNumberButton {
+  width: 28px;
+  height: 14px;
+}
+
+.inputNumberSizeLarge {
+  font-size: 16px;
+}
+
+.inputNumberSizeLarge .inputNumberInput {
+  padding: 12px 12px;
+}
+
+.inputNumberSizeLarge .inputNumberButton {
+  width: 36px;
+  height: 18px;
+}
+
+.inputNumberError {
+  border-color: #ff4d4f;
+}
+
+.inputNumberError:hover {
+  border-color: #ff4d4f;
+}
+
+.inputNumberError:focus-within {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+
+.inputNumberFullWidth {
+  width: 100%;
+}

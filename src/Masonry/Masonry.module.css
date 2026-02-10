@@ -1,0 +1,24 @@
+.masonry {
+  column-count: 3;
+  column-gap: 16px;
+  width: 100%;
+}
+
+.item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry {
+    column-count: 1;
+  }
+}

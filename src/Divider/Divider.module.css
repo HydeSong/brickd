@@ -1,0 +1,66 @@
+.divider {
+  background-color: #e8e8e8;
+  position: relative;
+}
+
+/* Horizontal divider */
+.horizontal {
+  height: 1px;
+  width: 100%;
+  margin: 24px 0;
+}
+
+/* Vertical divider */
+.vertical {
+  width: 1px;
+  height: 100%;
+  margin: 0 24px;
+  display: inline-block;
+}
+
+/* Dashed style */
+.dashed {
+  background: none;
+  border-top: 1px dashed #e8e8e8;
+}
+
+.vertical.dashed {
+  border-top: none;
+  border-left: 1px dashed #e8e8e8;
+}
+
+/* Text divider */
+.innerText {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 0 16px;
+  color: #333333;
+  font-size: 14px;
+  white-space: nowrap;
+  transform: translateY(-50%);
+}
+
+/* Text orientation */
+.left .innerText {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.center .innerText {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.right .innerText {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+/* Vertical divider text (not commonly used, but added for completeness) */
+.vertical .innerText {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}

@@ -1,0 +1,116 @@
+.radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.radioInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioInner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s;
+  margin-right: 8px;
+  position: relative;
+}
+
+.radioInput:checked + .radioInner {
+  border-color: #1890ff;
+}
+
+.radioInput:checked + .radioInner::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1890ff;
+  transition: all 0.3s;
+}
+
+.radioInput:disabled + .radioInner {
+  background-color: #f5f5f5;
+  border-color: #d9d9d9;
+  cursor: not-allowed;
+}
+
+.radioInput:disabled:checked + .radioInner {
+  border-color: #91d5ff;
+}
+
+.radioInput:disabled:checked + .radioInner::after {
+  background-color: #91d5ff;
+}
+
+.radioLabel {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.radioInput:disabled + .radioInner + .radioLabel {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.radioGroup {
+  display: inline-block;
+}
+
+.radioGroupVertical {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radioGroupHorizontal {
+  display: flex;
+  gap: 16px;
+}
+
+.radioGroupItem {
+  display: inline-block;
+}
+
+.radioSizeSmall {
+  font-size: 12px;
+}
+
+.radioSizeSmall .radioInner {
+  width: 14px;
+  height: 14px;
+}
+
+.radioSizeSmall .radioInput:checked + .radioInner::after {
+  left: 3px;
+  top: 3px;
+  width: 8px;
+  height: 8px;
+}
+
+.radioSizeLarge {
+  font-size: 16px;
+}
+
+.radioSizeLarge .radioInner {
+  width: 18px;
+  height: 18px;
+}
+
+.radioSizeLarge .radioInput:checked + .radioInner::after {
+  left: 5px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+}

@@ -1,0 +1,96 @@
+.form {
+  width: 100%;
+}
+
+.formItem {
+  margin-bottom: 16px;
+}
+
+.formItemLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.formItemContent {
+  position: relative;
+}
+
+.formItemError {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #ff4d4f;
+}
+
+.formItemHelp {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #999;
+}
+
+.formItemRequired {
+  color: #ff4d4f;
+  margin-right: 4px;
+}
+
+.formLayoutHorizontal {
+  display: flex;
+  align-items: flex-start;
+}
+
+.formLayoutHorizontal .formItemLabel {
+  flex: 0 0 120px;
+  margin-bottom: 0;
+  padding-top: 4px;
+}
+
+.formLayoutHorizontal .formItemContent {
+  flex: 1;
+  margin-left: 16px;
+}
+
+.formLayoutInline {
+  display: inline-flex;
+  align-items: center;
+}
+
+.formLayoutInline .formItem {
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+
+.formLayoutInline .formItemLabel {
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
+.formDisabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.formItemWithFeedback {
+  position: relative;
+}
+
+.formItemFeedback {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.formItemSuccess {
+  color: #52c41a;
+}
+
+.formItemWarning {
+  color: #faad14;
+}
+
+.formItemErrorIcon {
+  color: #ff4d4f;
+}
