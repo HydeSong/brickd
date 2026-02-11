@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { render, screen } from '@testing-library/react';
 import Skeleton, { SkeletonText, SkeletonButton, SkeletonImage, SkeletonCard, SkeletonList } from '../index';
 

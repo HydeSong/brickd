@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styles from './QRCode.module.css';
 
 interface QRCodeProps {

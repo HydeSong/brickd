@@ -19,7 +19,7 @@ import { Message } from 'brickd';
 ### 基础用法
 
 ```tsx
-import React from 'react';
+
 import { Message, Button, Space } from 'brickd';
 
 const App = () => {
@@ -47,7 +47,7 @@ export default App;
 ### 自定义配置
 
 ```tsx
-import React from 'react';
+
 import { Message, Button } from 'brickd';
 
 const App = () => {

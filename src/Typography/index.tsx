@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styles from './Typography.module.css';
 
 // 基础文本接口

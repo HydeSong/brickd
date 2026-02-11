@@ -19,7 +19,7 @@ import { Notification } from 'brickd';
 ### 基础用法
 
 ```tsx
-import React from 'react';
+
 import { Notification, Button, Space } from 'brickd';
 
 const App = () => {
@@ -47,7 +47,7 @@ export default App;
 ### 带标题和描述
 
 ```tsx
-import React from 'react';
+
 import { Notification, Button } from 'brickd';
 
 const App = () => {
@@ -68,7 +68,7 @@ export default App;
 ### 自定义配置
 
 ```tsx
-import React from 'react';
+
 import { Notification, Button } from 'brickd';
 
 const App = () => {
@@ -96,7 +96,7 @@ export default App;
 ### 不同位置
 
 ```tsx
-import React from 'react';
+
 import { Notification, Button, Space } from 'brickd';
 
 const App = () => {

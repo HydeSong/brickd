@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styles from './Segmented.module.css';
 
 function Segmented(props) {

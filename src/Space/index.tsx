@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styles from './Space.module.css';
 
 interface SpaceProps {

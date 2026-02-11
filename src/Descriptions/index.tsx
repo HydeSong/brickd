@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styles from './Descriptions.module.css';
 
 interface DescriptionsProps {
