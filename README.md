@@ -1,8 +1,5 @@
 # brickd
 
-[![NPM version](https://img.shields.io/npm/v/brickd.svg?style=flat)](https://npmjs.org/package/brickd)
-[![NPM downloads](http://img.shields.io/npm/dm/brickd.svg?style=flat)](https://npmjs.org/package/brickd)
-
 A react library developed with dumi
 
 ## Usage
