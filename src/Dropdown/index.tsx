@@ -43,14 +43,21 @@ const DropdownMenuSeparator: React.FC<DropdownMenuSeparatorProps> = ({ className
   return <li className={`${styles.separator} ${className || ''}`} />;
 };
 
-const Dropdown: React.FC<DropdownProps> = ({ trigger = 'click', className, style, children }) => {
+interface DropdownComponent extends React.FC<DropdownProps> {
+  Menu: React.FC<DropdownMenuProps>;
+  MenuItem: React.FC<DropdownMenuItemProps>;
+  MenuSeparator: React.FC<DropdownMenuSeparatorProps>;
+}
+
+const Dropdown: DropdownComponent = ({ trigger = 'click', className, style, children }) => {
   const [visible, setVisible] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
   // 分离触发元素和菜单元素
   const childrenArray = React.Children.toArray(children);
-  const triggerElement = childrenArray.find(child => !React.isValidElement<DropdownMenuProps>(child));
-  const menuElement = childrenArray.find(child => React.isValidElement<DropdownMenuProps>(child));
+  // 简单处理：第一个元素作为触发元素，其余作为菜单元素
+  const triggerElement = childrenArray[0];
+  const menuElement = childrenArray.slice(1).find(child => React.isValidElement(child));
 
   // 点击外部关闭菜单
   useEffect(() => {

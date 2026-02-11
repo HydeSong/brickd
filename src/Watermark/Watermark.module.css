@@ -1,0 +1,58 @@
+.watermarkContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.watermark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: var(--watermark-z-index, 9999);
+  opacity: var(--watermark-opacity, 1);
+}
+
+.watermarkRow {
+  display: flex;
+  transform: translateY(calc(var(--watermark-gap-y, 100px) * -1));
+}
+
+.watermarkItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--watermark-width, 120px);
+  height: var(--watermark-height, 64px);
+  margin-right: var(--watermark-gap-x, 100px);
+  margin-bottom: var(--watermark-gap-y, 100px);
+  transform: rotate(var(--watermark-rotate, -22deg));
+  font-size: var(--watermark-font-size, 14px);
+  font-weight: var(--watermark-font-weight, 400);
+  color: var(--watermark-color, rgba(0, 0, 0, 0.15));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .watermarkItem {
+    width: calc(var(--watermark-width, 120px) * 0.8);
+    height: calc(var(--watermark-height, 64px) * 0.8);
+    font-size: calc(var(--watermark-font-size, 14px) * 0.8);
+    margin-right: calc(var(--watermark-gap-x, 100px) * 0.6);
+    margin-bottom: calc(var(--watermark-gap-y, 100px) * 0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .watermarkItem {
+    width: calc(var(--watermark-width, 120px) * 0.6);
+    height: calc(var(--watermark-height, 64px) * 0.6);
+    font-size: calc(var(--watermark-font-size, 14px) * 0.6);
+    margin-right: calc(var(--watermark-gap-x, 100px) * 0.4);
+    margin-bottom: calc(var(--watermark-gap-y, 100px) * 0.4);
+  }
+}

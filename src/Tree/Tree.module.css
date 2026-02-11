@@ -1,0 +1,98 @@
+.tree {
+  width: 100%;
+}
+
+.treeNode {
+  position: relative;
+}
+
+.treeNodeContent {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+  cursor: pointer;
+  user-select: none;
+  height: 32px;
+  line-height: 32px;
+}
+
+.treeNodeContent:hover {
+  background-color: #f5f5f5;
+}
+
+.treeNodeSelected {
+  background-color: #e6f7ff;
+}
+
+.treeNodeDisabled {
+  color: #bfbfbf;
+  cursor: not-allowed;
+}
+
+.treeNodeSwitcher {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+.treeNodeSwitcher:hover {
+  color: #1890ff;
+}
+
+.treeNodeSwitcherExpanded {
+  transform: rotate(0deg);
+}
+
+.treeNodeSwitcherPlaceholder {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.treeNodeCheckbox {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.treeNodeCheckbox input {
+  margin: 0;
+}
+
+.treeNodeTitle {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.treeNodeDisabled .treeNodeTitle {
+  color: #bfbfbf;
+}
+
+.treeNodeChildren {
+  position: relative;
+}
+
+.treeShowLine .treeNodeChildren {
+  border-left: 1px solid #e8e8e8;
+  margin-left: 8px;
+}
+
+.treeShowLine .treeNode {
+  position: relative;
+}
+
+.treeShowLine .treeNode::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 16px;
+  width: 12px;
+  height: 1px;
+  background-color: #e8e8e8;
+}

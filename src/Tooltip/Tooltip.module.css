@@ -1,0 +1,131 @@
+.tooltipWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipTrigger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 1060;
+  max-width: 250px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.tooltipVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tooltipHidden {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+.tooltipTop {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+}
+
+.tooltipTop.tooltipVisible {
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltipBottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+}
+
+.tooltipBottom.tooltipVisible {
+  transform: translateX(-50%) translateY(0);
+}
+
+.tooltipLeft {
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%) translateX(-8px);
+}
+
+.tooltipLeft.tooltipVisible {
+  transform: translateY(-50%) translateX(0);
+}
+
+.tooltipRight {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%) translateX(8px);
+}
+
+.tooltipRight.tooltipVisible {
+  transform: translateY(-50%) translateX(0);
+}
+
+.tooltipArrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.tooltipTop .tooltipArrow {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0;
+  border-top-color: rgba(0, 0, 0, 0.75);
+}
+
+.tooltipBottom .tooltipArrow {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 6px 6px;
+  border-bottom-color: rgba(0, 0, 0, 0.75);
+}
+
+.tooltipLeft .tooltipArrow {
+  top: 50%;
+  right: -6px;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-left-color: rgba(0, 0, 0, 0.75);
+}
+
+.tooltipRight .tooltipArrow {
+  top: 50%;
+  left: -6px;
+  transform: translateY(-50%);
+  border-width: 6px 6px 6px 0;
+  border-right-color: rgba(0, 0, 0, 0.75);
+}
+
+.tooltipInner {
+  position: relative;
+  padding: 4px 8px;
+  border-radius: 2px;
+}

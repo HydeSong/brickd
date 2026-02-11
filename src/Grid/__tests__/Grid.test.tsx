@@ -16,43 +16,135 @@ describe('Row Component', () => {
     expect(col2Element).toBeInTheDocument();
   });
 
-  test('renders correctly with different gutter values', () => {
-    const gutterValues = [0, 8, 16, [16, 8]];
-    gutterValues.forEach((gutter) => {
-      render(
-        <Row gutter={gutter as any}>
-          <Col span={12}>Col 1</Col>
-        </Row>
-      );
-      const col1Element = screen.getByText('Col 1');
-      expect(col1Element).toBeInTheDocument();
-    });
+  test('renders correctly with gutter 0', () => {
+    render(
+      <Row gutter={0}>
+        <Col span={12}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
   });
 
-  test('renders correctly with different justify values', () => {
-    const justifyValues = ['start', 'end', 'center', 'space-around', 'space-between', 'space-evenly'];
-    justifyValues.forEach((justify) => {
-      render(
-        <Row justify={justify as any}>
-          <Col span={8}>Col 1</Col>
-        </Row>
-      );
-      const col1Element = screen.getByText('Col 1');
-      expect(col1Element).toBeInTheDocument();
-    });
+  test('renders correctly with gutter 8', () => {
+    render(
+      <Row gutter={8}>
+        <Col span={12}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
   });
 
-  test('renders correctly with different align values', () => {
-    const alignValues = ['top', 'middle', 'bottom'];
-    alignValues.forEach((align) => {
-      render(
-        <Row align={align as any}>
-          <Col span={8}>Col 1</Col>
-        </Row>
-      );
-      const col1Element = screen.getByText('Col 1');
-      expect(col1Element).toBeInTheDocument();
-    });
+  test('renders correctly with gutter 16', () => {
+    render(
+      <Row gutter={16}>
+        <Col span={12}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with gutter [16, 8]', () => {
+    render(
+      <Row gutter={[16, 8]}>
+        <Col span={12}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with start justify', () => {
+    render(
+      <Row justify="start">
+        <Col span={8}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with end justify', () => {
+    render(
+      <Row justify="end">
+        <Col span={8}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with center justify', () => {
+    render(
+      <Row justify="center">
+        <Col span={8}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with space-around justify', () => {
+    render(
+      <Row justify="space-around">
+        <Col span={8}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with space-between justify', () => {
+    render(
+      <Row justify="space-between">
+        <Col span={8}>Col 1</Col>
+        <Col span={8}>Col 2</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with space-evenly justify', () => {
+    render(
+      <Row justify="space-evenly">
+        <Col span={8}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with top align', () => {
+    render(
+      <Row align="top">
+        <Col span={8}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with middle align', () => {
+    render(
+      <Row align="middle">
+        <Col span={8}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with bottom align', () => {
+    render(
+      <Row align="bottom">
+        <Col span={8}>Col 1</Col>
+      </Row>
+    );
+    const col1Element = screen.getByText('Col 1');
+    expect(col1Element).toBeInTheDocument();
   });
 
   test('renders correctly with custom className', () => {
@@ -61,7 +153,7 @@ describe('Row Component', () => {
         <Col span={8}>Col 1</Col>
       </Row>
     );
-    const rowElement = screen.getByText('Col 1').closest('div');
+    const rowElement = document.querySelector('.row');
     expect(rowElement).toHaveClass('custom-class');
   });
 

@@ -9,6 +9,8 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   style?: React.CSSProperties;
+  htmlType?: 'button' | 'submit' | 'reset';
+  [key: string]: any;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -19,6 +21,8 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   className = '',
   style = {},
+  htmlType = 'button',
+  ...rest
 }) => {
   const getButtonClass = () => {
     const classes = [styles.button];
@@ -50,11 +54,12 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      type="button"
+      type={htmlType}
       className={getButtonClass()}
       style={style}
       disabled={disabled}
       onClick={handleClick}
+      {...rest}
     >
       {children}
     </button>

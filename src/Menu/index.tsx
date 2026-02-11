@@ -53,7 +53,12 @@ const SubMenu: React.FC<SubMenuProps> = ({ title, className, children }) => {
   );
 };
 
-const Menu: React.FC<MenuProps> = ({ mode = 'vertical', className, style, children }) => {
+interface MenuComponent extends React.FC<MenuProps> {
+  Item: React.FC<MenuItemProps>;
+  SubMenu: React.FC<SubMenuProps>;
+}
+
+const Menu: MenuComponent = ({ mode = 'vertical', className, style, children }) => {
   return (
     <nav className={`${styles.menu} ${styles[mode]} ${className || ''}`} style={style}>
       <ul className={styles.menuList}>

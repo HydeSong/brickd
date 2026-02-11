@@ -1,0 +1,26 @@
+.qrcode {
+  display: inline-block;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.qrcode:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.qrcodeImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .qrcode {
+    border-radius: 2px;
+  }
+}

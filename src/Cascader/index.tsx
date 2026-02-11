@@ -216,7 +216,6 @@ export const Cascader: React.FC<CascaderProps> = ({
         ref={triggerRef}
         className={getTriggerClass()}
         onClick={handleTriggerClick}
-        disabled={disabled}
       >
         {getDisplayValue()}
         <span>{isOpen ? '▼' : '▶'}</span>

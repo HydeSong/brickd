@@ -1,0 +1,83 @@
+.statistic {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.statistic:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statisticTitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.statisticValueWrapper {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.statisticValue {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+
+.statisticPrefix {
+  font-size: 16px;
+  color: #666;
+  margin-right: 4px;
+}
+
+.statisticSuffix {
+  font-size: 16px;
+  color: #666;
+  margin-left: 4px;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .statistic {
+    padding: 12px;
+  }
+
+  .statisticTitle {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .statisticValue {
+    font-size: 20px;
+  }
+
+  .statisticPrefix,
+  .statisticSuffix {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistic {
+    padding: 8px;
+  }
+
+  .statisticValue {
+    font-size: 18px;
+  }
+
+  .statisticPrefix,
+  .statisticSuffix {
+    font-size: 12px;
+  }
+}

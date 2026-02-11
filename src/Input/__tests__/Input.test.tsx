@@ -9,13 +9,22 @@ describe('Input Component', () => {
     expect(inputElement).toBeInTheDocument();
   });
 
-  test('renders correctly with different sizes', () => {
-    const sizes = ['small', 'default', 'large'];
-    sizes.forEach((size) => {
-      render(<Input placeholder="Input" size={size as any} />);
-      const inputElement = screen.getByPlaceholderText('Input');
-      expect(inputElement).toBeInTheDocument();
-    });
+  test('renders correctly with small size', () => {
+    render(<Input placeholder="Input" size="small" />);
+    const inputElement = screen.getByPlaceholderText('Input');
+    expect(inputElement).toBeInTheDocument();
+  });
+
+  test('renders correctly with default size', () => {
+    render(<Input placeholder="Input" size="default" />);
+    const inputElement = screen.getByPlaceholderText('Input');
+    expect(inputElement).toBeInTheDocument();
+  });
+
+  test('renders correctly with large size', () => {
+    render(<Input placeholder="Input" size="large" />);
+    const inputElement = screen.getByPlaceholderText('Input');
+    expect(inputElement).toBeInTheDocument();
   });
 
   test('renders correctly when disabled', () => {
@@ -29,7 +38,7 @@ describe('Input Component', () => {
     render(<Input placeholder="Input" readOnly />);
     const inputElement = screen.getByPlaceholderText('Input');
     expect(inputElement).toBeInTheDocument();
-    expect(inputElement).toBeReadOnly();
+    expect(inputElement).toHaveAttribute('readonly');
   });
 
   test('renders correctly when error', () => {
@@ -64,19 +73,19 @@ describe('Input Component', () => {
 
   test('renders correctly with custom className', () => {
     render(<Input placeholder="Input" className="custom-class" />);
-    const inputContainer = screen.getByPlaceholderText('Input').closest('div');
+    const inputContainer = document.querySelector('.input');
     expect(inputContainer).toHaveClass('custom-class');
   });
 
   test('renders correctly with custom style', () => {
     const customStyle = { width: '200px', borderColor: 'red' };
     render(<Input placeholder="Input" style={customStyle} />);
-    const inputContainer = screen.getByPlaceholderText('Input').closest('div');
+    const inputContainer = document.querySelector('.input');
     expect(inputContainer).toHaveStyle('width: 200px');
   });
 
   test('renders correctly with value prop', () => {
-    render(<Input placeholder="Input" value="test" />);
+    render(<Input placeholder="Input" value="test" readOnly />);
     const inputElement = screen.getByDisplayValue('test');
     expect(inputElement).toBeInTheDocument();
   });

@@ -296,7 +296,6 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         ref={triggerRef}
         className={getTriggerClass()}
         onClick={handleTriggerClick}
-        disabled={disabled}
       >
         <span>
           {internalValue || placeholder}

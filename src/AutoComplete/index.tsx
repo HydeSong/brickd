@@ -241,7 +241,6 @@ export const AutoComplete: React.FC<AutoCompleteProps> = ({
         ref={inputRef}
         type="text"
         className={getInputClass()}
-        size={size}
         disabled={disabled}
         readOnly={readOnly}
         placeholder={placeholder}

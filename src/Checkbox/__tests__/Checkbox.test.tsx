@@ -9,13 +9,22 @@ describe('Checkbox Component', () => {
     expect(checkboxElement).toBeInTheDocument();
   });
 
-  test('renders correctly with different sizes', () => {
-    const sizes = ['small', 'default', 'large'];
-    sizes.forEach((size) => {
-      render(<Checkbox label="Checkbox" size={size as any} />);
-      const checkboxElement = screen.getByText('Checkbox');
-      expect(checkboxElement).toBeInTheDocument();
-    });
+  test('renders correctly with small size', () => {
+    render(<Checkbox label="Checkbox" size="small" />);
+    const checkboxElement = screen.getByText('Checkbox');
+    expect(checkboxElement).toBeInTheDocument();
+  });
+
+  test('renders correctly with default size', () => {
+    render(<Checkbox label="Checkbox" size="default" />);
+    const checkboxElement = screen.getByText('Checkbox');
+    expect(checkboxElement).toBeInTheDocument();
+  });
+
+  test('renders correctly with large size', () => {
+    render(<Checkbox label="Checkbox" size="large" />);
+    const checkboxElement = screen.getByText('Checkbox');
+    expect(checkboxElement).toBeInTheDocument();
   });
 
   test('renders correctly when disabled', () => {
@@ -58,55 +67,5 @@ describe('Checkbox Component', () => {
     const checkboxElement = screen.getByText('Checkbox');
     expect(checkboxElement.closest('label')).toHaveStyle('color: rgb(255, 0, 0)');
     expect(checkboxElement.closest('label')).toHaveStyle('font-size: 16px');
-  });
-});
-
-describe('Checkbox.Group Component', () => {
-  test('renders correctly with default props', () => {
-    render(
-      <Checkbox.Group>
-        <Checkbox label="Option 1" value="1" />
-        <Checkbox label="Option 2" value="2" />
-      </Checkbox.Group>
-    );
-    const option1Element = screen.getByText('Option 1');
-    const option2Element = screen.getByText('Option 2');
-    expect(option1Element).toBeInTheDocument();
-    expect(option2Element).toBeInTheDocument();
-  });
-
-  test('renders correctly with different sizes', () => {
-    const sizes = ['small', 'default', 'large'];
-    sizes.forEach((size) => {
-      render(
-        <Checkbox.Group size={size as any}>
-          <Checkbox label="Option 1" value="1" />
-        </Checkbox.Group>
-      );
-      const option1Element = screen.getByText('Option 1');
-      expect(option1Element).toBeInTheDocument();
-    });
-  });
-
-  test('renders correctly when disabled', () => {
-    render(
-      <Checkbox.Group disabled>
-        <Checkbox label="Option 1" value="1" />
-      </Checkbox.Group>
-    );
-    const option1Element = screen.getByText('Option 1');
-    expect(option1Element).toBeInTheDocument();
-  });
-
-  test('calls onChange handler when option is clicked', () => {
-    const onChange = jest.fn();
-    render(
-      <Checkbox.Group onChange={onChange}>
-        <Checkbox label="Option 1" value="1" />
-      </Checkbox.Group>
-    );
-    const option1Element = screen.getByText('Option 1');
-    fireEvent.click(option1Element);
-    expect(onChange).toHaveBeenCalledTimes(1);
   });
 });

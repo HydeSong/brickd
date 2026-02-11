@@ -21,17 +21,34 @@ describe('Divider Component', () => {
     expect(dividerElement).toBeInTheDocument();
   });
 
-  test('renders correctly with different orientations', () => {
-    const orientations = ['left', 'center', 'right'];
-    orientations.forEach((orientation) => {
-      render(
-        <Divider orientation={orientation as any}>
-          Divider
-        </Divider>
-      );
-      const dividerElement = screen.getByText('Divider');
-      expect(dividerElement).toBeInTheDocument();
-    });
+  test('renders correctly with left orientation', () => {
+    render(
+      <Divider orientation="left">
+        Divider
+      </Divider>
+    );
+    const dividerElement = screen.getByText('Divider');
+    expect(dividerElement).toBeInTheDocument();
+  });
+
+  test('renders correctly with center orientation', () => {
+    render(
+      <Divider orientation="center">
+        Divider
+      </Divider>
+    );
+    const dividerElement = screen.getByText('Divider');
+    expect(dividerElement).toBeInTheDocument();
+  });
+
+  test('renders correctly with right orientation', () => {
+    render(
+      <Divider orientation="right">
+        Divider
+      </Divider>
+    );
+    const dividerElement = screen.getByText('Divider');
+    expect(dividerElement).toBeInTheDocument();
   });
 
   test('renders correctly with dashed style', () => {

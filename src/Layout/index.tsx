@@ -36,8 +36,16 @@ interface FooterProps extends BaseLayoutProps {
   height?: string | number;
 }
 
+// Layout组件接口
+interface LayoutComponent extends React.FC<LayoutProps> {
+  Header: React.FC<HeaderProps>;
+  Sider: React.FC<SiderProps>;
+  Content: React.FC<ContentProps>;
+  Footer: React.FC<FooterProps>;
+}
+
 // Layout组件
-const Layout: React.FC<LayoutProps> = ({ hasSider = false, className, style, children }) => {
+const Layout: LayoutComponent = ({ hasSider = false, className, style, children }) => {
   return (
     <div
       className={`
@@ -80,13 +88,12 @@ const Sider: React.FC<SiderProps> = ({
     <aside
       className={`
         ${styles.sider}
-        ${collapsed ? styles.collapsed : ''}
+        ${collapsed ? styles.siderCollapsed : ''}
         ${className || ''}
       `}
       style={{
         ...style,
         width: collapsed ? collapsedWidth : width,
-        flex: `0 0 ${collapsed ? collapsedWidth : width}`,
       }}
     >
       {children}

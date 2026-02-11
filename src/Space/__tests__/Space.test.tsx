@@ -43,20 +43,56 @@ describe('Space Component', () => {
     expect(button2Element).toBeInTheDocument();
   });
 
-  test('renders correctly with different sizes', () => {
-    const sizes = ['small', 'middle', 'large', 20];
-    sizes.forEach((size) => {
-      render(
-        <Space size={size as any}>
-          <Button>Button 1</Button>
-          <Button>Button 2</Button>
-        </Space>
-      );
-      const button1Element = screen.getByText('Button 1');
-      const button2Element = screen.getByText('Button 2');
-      expect(button1Element).toBeInTheDocument();
-      expect(button2Element).toBeInTheDocument();
-    });
+  test('renders correctly with small size', () => {
+    render(
+      <Space size="small">
+        <Button>Button 1</Button>
+        <Button>Button 2</Button>
+      </Space>
+    );
+    const button1Element = screen.getByText('Button 1');
+    const button2Element = screen.getByText('Button 2');
+    expect(button1Element).toBeInTheDocument();
+    expect(button2Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with middle size', () => {
+    render(
+      <Space size="middle">
+        <Button>Button 1</Button>
+        <Button>Button 2</Button>
+      </Space>
+    );
+    const button1Element = screen.getByText('Button 1');
+    const button2Element = screen.getByText('Button 2');
+    expect(button1Element).toBeInTheDocument();
+    expect(button2Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with large size', () => {
+    render(
+      <Space size="large">
+        <Button>Button 1</Button>
+        <Button>Button 2</Button>
+      </Space>
+    );
+    const button1Element = screen.getByText('Button 1');
+    const button2Element = screen.getByText('Button 2');
+    expect(button1Element).toBeInTheDocument();
+    expect(button2Element).toBeInTheDocument();
+  });
+
+  test('renders correctly with number size', () => {
+    render(
+      <Space size={20}>
+        <Button>Button 1</Button>
+        <Button>Button 2</Button>
+      </Space>
+    );
+    const button1Element = screen.getByText('Button 1');
+    const button2Element = screen.getByText('Button 2');
+    expect(button1Element).toBeInTheDocument();
+    expect(button2Element).toBeInTheDocument();
   });
 
   test('renders correctly with wrap', () => {

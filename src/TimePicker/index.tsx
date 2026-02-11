@@ -325,7 +325,6 @@ export const TimePicker: React.FC<TimePickerProps> = ({
         ref={triggerRef}
         className={getTriggerClass()}
         onClick={handleTriggerClick}
-        disabled={disabled}
       >
         <span className={internalValue ? styles.timePickerValue : styles.timePickerPlaceholder}>
           {internalValue || placeholder}

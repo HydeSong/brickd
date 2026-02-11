@@ -1,0 +1,258 @@
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+.drawerTop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  animation-name: drawerSlideDown;
+}
+
+.drawerRight {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  animation-name: drawerSlideLeft;
+}
+
+.drawerBottom {
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-name: drawerSlideUp;
+}
+
+.drawerLeft {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: auto;
+  animation-name: drawerSlideRight;
+}
+
+@keyframes drawerSlideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes drawerSlideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes drawerSlideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes drawerSlideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.drawerMask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  animation: drawerMaskFadeIn 0.3s ease;
+}
+
+@keyframes drawerMaskFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.drawerHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f0f0f0;
+  min-height: 56px;
+}
+
+.drawerTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.drawerClose {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  color: #999;
+  transition: color 0.3s;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drawerClose:hover {
+  color: #333;
+}
+
+.drawerBody {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.drawerFooter {
+  padding: 16px 24px;
+  border-top: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  background-color: #fafafa;
+}
+
+.drawerHidden {
+  display: none;
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .drawer {
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .drawerHeader {
+    border-bottom-color: #333;
+  }
+
+  .drawerTitle {
+    color: #fff;
+  }
+
+  .drawerClose {
+    color: #999;
+  }
+
+  .drawerClose:hover {
+    color: #fff;
+  }
+
+  .drawerBody {
+    color: #ccc;
+  }
+
+  .drawerFooter {
+    border-top-color: #333;
+    background-color: #292929;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .drawer {
+    width: 100% !important;
+    height: 80% !important;
+  }
+
+  .drawerHeader {
+    padding: 12px 16px;
+  }
+
+  .drawerBody {
+    padding: 16px;
+  }
+
+  .drawerFooter {
+    padding: 12px 16px;
+  }
+}
+
+/* Large screen styles */
+@media (min-width: 1200px) {
+  .drawer {
+    max-width: 480px;
+  }
+
+  .drawerTop,
+  .drawerBottom {
+    max-height: 50%;
+  }
+}
+
+/* Custom scrollbar */
+.drawerBody::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.drawerBody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.drawerBody::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.drawerBody::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Dark mode scrollbar */
+@media (prefers-color-scheme: dark) {
+  .drawerBody::-webkit-scrollbar-track {
+    background: #333;
+  }
+
+  .drawerBody::-webkit-scrollbar-thumb {
+    background: #666;
+  }
+
+  .drawerBody::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+}

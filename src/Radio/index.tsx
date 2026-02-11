@@ -6,7 +6,7 @@ interface RadioProps {
   disabled?: boolean;
   checked?: boolean;
   defaultChecked?: boolean;
-  value?: string | number | boolean;
+  value?: string | number;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onCheck?: (checked: boolean) => void;
   label?: React.ReactNode;
@@ -16,7 +16,7 @@ interface RadioProps {
 
 interface RadioOption {
   label: React.ReactNode;
-  value: string | number | boolean;
+  value: string | number;
   disabled?: boolean;
 }
 
@@ -25,15 +25,19 @@ interface RadioGroupProps {
   disabled?: boolean;
   direction?: 'horizontal' | 'vertical';
   options?: RadioOption[];
-  value?: string | number | boolean;
-  defaultValue?: string | number | boolean;
-  onChange?: (value: string | number | boolean) => void;
+  value?: string | number;
+  defaultValue?: string | number;
+  onChange?: (value: string | number) => void;
   className?: string;
   style?: React.CSSProperties;
   children?: React.ReactNode;
 }
 
-export const Radio: React.FC<RadioProps> = ({
+type RadioComponent = React.FC<RadioProps> & {
+  Group: React.FC<RadioGroupProps>;
+};
+
+export const Radio: RadioComponent = ({
   size = 'default',
   disabled = false,
   checked,
@@ -99,13 +103,13 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
   direction = 'horizontal',
   options = [],
   value,
-  defaultValue,
+  defaultValue = '',
   onChange,
   className = '',
   style = {},
   children,
 }) => {
-  const [internalValue, setInternalValue] = useState<string | number | boolean>(defaultValue);
+  const [internalValue, setInternalValue] = useState<string | number>(defaultValue);
   
   // 当外部 value 变化时，更新内部状态
   useEffect(() => {
@@ -114,7 +118,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
     }
   }, [value]);
 
-  const handleOptionChange = (optionValue: string | number | boolean) => {
+  const handleOptionChange = (optionValue: string | number) => {
     setInternalValue(optionValue);
     if (onChange) {
       onChange(optionValue);

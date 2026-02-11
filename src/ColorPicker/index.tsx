@@ -197,7 +197,6 @@ export const ColorPicker: React.FC<ColorPickerProps> = ({
         ref={triggerRef}
         className={getTriggerClass()}
         onClick={handleTriggerClick}
-        disabled={disabled}
       >
         <div
           className={styles.colorPreview}

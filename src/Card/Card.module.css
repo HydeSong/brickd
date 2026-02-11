@@ -1,0 +1,53 @@
+.card {
+  border-radius: 4px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.cardBordered {
+  border: 1px solid #e8e8e8;
+}
+
+.cardHoverable {
+  cursor: pointer;
+}
+
+.cardHoverable:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.cardExtra {
+  font-size: 14px;
+  color: #666;
+}
+
+.cardBody {
+  padding: 16px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px;
+  border-top: 1px solid #e8e8e8;
+  gap: 8px;
+}

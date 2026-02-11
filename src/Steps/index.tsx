@@ -28,7 +28,11 @@ const Step: React.FC<StepProps> = ({ title, description, className, children }) 
   );
 };
 
-const Steps: React.FC<StepsProps> = ({ current = 0, direction = 'horizontal', className, style, children }) => {
+interface StepsComponent extends React.FC<StepsProps> {
+  Step: React.FC<StepProps>;
+}
+
+const Steps: StepsComponent = ({ current = 0, direction = 'horizontal', className, style, children }) => {
   const steps = React.Children.toArray(children);
 
   return (

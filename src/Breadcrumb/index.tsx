@@ -29,7 +29,11 @@ const BreadcrumbItem: React.FC<BreadcrumbItemProps> = ({ href, className, childr
   );
 };
 
-const Breadcrumb: React.FC<BreadcrumbProps> = ({ className, style, separator = '/', children }) => {
+interface BreadcrumbComponent extends React.FC<BreadcrumbProps> {
+  Item: React.FC<BreadcrumbItemProps>;
+}
+
+const Breadcrumb: BreadcrumbComponent = ({ className, style, separator = '/', children }) => {
   const items = React.Children.toArray(children);
 
   return (

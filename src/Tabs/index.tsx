@@ -21,8 +21,12 @@ const Tab: React.FC<TabProps> = ({ className, children }) => {
   return <div className={`${styles.tabContent} ${className || ''}`}>{children}</div>;
 };
 
-const Tabs: React.FC<TabsProps> = ({ activeKey, defaultActiveKey, onChange, className, style, children }) => {
-  const [currentActiveKey, setCurrentActiveKey] = useState(activeKey || defaultActiveKey || '0');
+interface TabsComponent extends React.FC<TabsProps> {
+  Tab: React.FC<TabProps>;
+}
+
+const Tabs: TabsComponent = ({ activeKey, defaultActiveKey, onChange, className, style, children }) => {
+  const [currentActiveKey, setCurrentActiveKey] = useState(activeKey || defaultActiveKey || '1');
 
   const tabs = React.Children.toArray(children);
 
@@ -37,8 +41,9 @@ const Tabs: React.FC<TabsProps> = ({ activeKey, defaultActiveKey, onChange, clas
     <div className={`${styles.tabs} ${className || ''}`} style={style}>
       <div className={styles.tabList}>
         {tabs.map((tab, index) => {
-          const key = React.isValidElement<TabProps>(tab) ? tab.key || index.toString() : index.toString();
-          const label = React.isValidElement<TabProps>(tab) ? tab.props.label : `Tab ${index + 1}`;
+          const tabElement = tab as React.ReactElement<TabProps>;
+          const key = tabElement.key || (index + 1).toString();
+          const label = tabElement.props.label || `Tab ${index + 1}`;
           return (
             <button
               type="button"
@@ -56,7 +61,8 @@ const Tabs: React.FC<TabsProps> = ({ activeKey, defaultActiveKey, onChange, clas
       </div>
       <div className={styles.tabContentWrapper}>
         {tabs.map((tab, index) => {
-          const key = React.isValidElement<TabProps>(tab) ? tab.key || index.toString() : index.toString();
+          const tabElement = tab as React.ReactElement<TabProps>;
+          const key = tabElement.key || (index + 1).toString();
           if (key === currentActiveKey) {
             return tab;
           }

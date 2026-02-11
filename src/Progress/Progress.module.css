@@ -1,0 +1,130 @@
+.progressLine {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.progressTrail {
+  flex: 1;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #1890ff;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progressInfo {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #666;
+  min-width: 40px;
+  text-align: right;
+}
+
+.progressCircle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progressCircleContainer {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.progressCircleSvg {
+  transform: rotate(-90deg);
+}
+
+.progressCircleTrail {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 8;
+}
+
+.progressCircleBar {
+  fill: none;
+  stroke: #1890ff;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.progressCircleInfo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+/* Status styles */
+.progressSuccess .progressBar,
+.progressSuccess .progressCircleBar {
+  background-color: #52c41a;
+  stroke: #52c41a;
+}
+
+.progressException .progressBar,
+.progressException .progressCircleBar {
+  background-color: #ff4d4f;
+  stroke: #ff4d4f;
+}
+
+.progressActive .progressBar,
+.progressActive .progressCircleBar {
+  background-color: #1890ff;
+  stroke: #1890ff;
+  animation: progressActive 1.5s ease-in-out infinite;
+}
+
+@keyframes progressActive {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Small size */
+.progressSmall .progressInfo {
+  font-size: 12px;
+  min-width: 30px;
+}
+
+.progressSmall .progressCircleContainer {
+  width: 80px;
+  height: 80px;
+}
+
+.progressSmall .progressCircleInfo {
+  font-size: 12px;
+}
+
+/* Large size */
+.progressLarge .progressInfo {
+  font-size: 16px;
+  min-width: 50px;
+}
+
+.progressLarge .progressCircleContainer {
+  width: 120px;
+  height: 120px;
+}
+
+.progressLarge .progressCircleInfo {
+  font-size: 16px;
+}

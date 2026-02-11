@@ -1,0 +1,168 @@
+.notificationContainer {
+  position: fixed;
+  z-index: 1060;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none;
+  max-width: 320px;
+}
+
+.notificationContainer.topRight {
+  top: 24px;
+  right: 24px;
+  align-items: flex-end;
+}
+
+.notificationContainer.topLeft {
+  top: 24px;
+  left: 24px;
+  align-items: flex-start;
+}
+
+.notificationContainer.bottomRight {
+  bottom: 24px;
+  right: 24px;
+  align-items: flex-end;
+}
+
+.notificationContainer.bottomLeft {
+  bottom: 24px;
+  left: 24px;
+  align-items: flex-start;
+}
+
+.notification {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 4px;
+  min-width: 300px;
+  max-width: 320px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: auto;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+}
+
+.notification.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.notificationSuccess {
+  border-left: 4px solid #52c41a;
+}
+
+.notificationError {
+  border-left: 4px solid #ff4d4f;
+}
+
+.notificationInfo {
+  border-left: 4px solid #1890ff;
+}
+
+.notificationWarning {
+  border-left: 4px solid #faad14;
+}
+
+.notificationClose {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.notificationClose:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.notificationMessage {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.notificationDescription {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .notificationContainer {
+    top: 12px;
+    right: 12px;
+    left: 12px;
+    max-width: none;
+    align-items: center;
+  }
+
+  .notificationContainer.topLeft,
+  .notificationContainer.bottomRight,
+  .notificationContainer.bottomLeft {
+    top: 12px;
+    right: 12px;
+    left: 12px;
+    bottom: auto;
+    align-items: center;
+  }
+
+  .notification {
+    min-width: auto;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.notification.visible {
+  animation: slideIn 0.3s ease;
+}
+
+.notification {
+  animation: slideOut 0.3s ease;
+}

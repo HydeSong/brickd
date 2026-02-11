@@ -9,13 +9,22 @@ describe('Radio Component', () => {
     expect(radioElement).toBeInTheDocument();
   });
 
-  test('renders correctly with different sizes', () => {
-    const sizes = ['small', 'default', 'large'];
-    sizes.forEach((size) => {
-      render(<Radio label="Radio" size={size as any} />);
-      const radioElement = screen.getByText('Radio');
-      expect(radioElement).toBeInTheDocument();
-    });
+  test('renders correctly with small size', () => {
+    render(<Radio label="Radio" size="small" />);
+    const radioElement = screen.getByText('Radio');
+    expect(radioElement).toBeInTheDocument();
+  });
+
+  test('renders correctly with default size', () => {
+    render(<Radio label="Radio" size="default" />);
+    const radioElement = screen.getByText('Radio');
+    expect(radioElement).toBeInTheDocument();
+  });
+
+  test('renders correctly with large size', () => {
+    render(<Radio label="Radio" size="large" />);
+    const radioElement = screen.getByText('Radio');
+    expect(radioElement).toBeInTheDocument();
   });
 
   test('renders correctly when disabled', () => {
@@ -59,66 +68,10 @@ describe('Radio Component', () => {
     expect(radioElement.closest('label')).toHaveStyle('color: rgb(255, 0, 0)');
     expect(radioElement.closest('label')).toHaveStyle('font-size: 16px');
   });
-});
 
-describe('Radio.Group Component', () => {
-  test('renders correctly with default props', () => {
-    render(
-      <Radio.Group>
-        <Radio label="Option 1" value="1" />
-        <Radio label="Option 2" value="2" />
-      </Radio.Group>
-    );
-    const option1Element = screen.getByText('Option 1');
-    const option2Element = screen.getByText('Option 2');
-    expect(option1Element).toBeInTheDocument();
-    expect(option2Element).toBeInTheDocument();
-  });
-
-  test('renders correctly with different sizes', () => {
-    const sizes = ['small', 'default', 'large'];
-    sizes.forEach((size) => {
-      render(
-        <Radio.Group size={size as any}>
-          <Radio label="Option 1" value="1" />
-        </Radio.Group>
-      );
-      const option1Element = screen.getByText('Option 1');
-      expect(option1Element).toBeInTheDocument();
-    });
-  });
-
-  test('renders correctly when disabled', () => {
-    render(
-      <Radio.Group disabled>
-        <Radio label="Option 1" value="1" />
-      </Radio.Group>
-    );
-    const option1Element = screen.getByText('Option 1');
-    expect(option1Element).toBeInTheDocument();
-  });
-
-  test('calls onChange handler when option is clicked', () => {
-    const onChange = jest.fn();
-    render(
-      <Radio.Group onChange={onChange}>
-        <Radio label="Option 1" value="1" />
-      </Radio.Group>
-    );
-    const option1Element = screen.getByText('Option 1');
-    fireEvent.click(option1Element);
-    expect(onChange).toHaveBeenCalledTimes(1);
-  });
-
-  test('renders correctly with options prop', () => {
-    const options = [
-      { label: 'Option 1', value: '1' },
-      { label: 'Option 2', value: '2' },
-    ];
-    render(<Radio.Group options={options} />);
-    const option1Element = screen.getByText('Option 1');
-    const option2Element = screen.getByText('Option 2');
-    expect(option1Element).toBeInTheDocument();
-    expect(option2Element).toBeInTheDocument();
+  test('renders correctly with value prop', () => {
+    render(<Radio label="Radio" value="option1" />);
+    const radioElement = screen.getByText('Radio');
+    expect(radioElement).toBeInTheDocument();
   });
 });

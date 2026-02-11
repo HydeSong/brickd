@@ -36,7 +36,13 @@ interface FormProps {
   children: ReactNode;
 }
 
-export const Form: React.FC<FormProps> = ({
+interface FormComponent extends React.FC<FormProps> {
+  Item: React.FC<FormItemProps>;
+  Control: React.FC<FormControlProps>;
+  useForm: typeof useForm;
+}
+
+export const Form: FormComponent = ({
   layout = 'vertical',
   disabled = false,
   onFinish,
@@ -351,7 +357,7 @@ export const FormControl: React.FC<FormControlProps> = ({ name, children }) => {
     return <>{children}</>;
   }
 
-  return React.cloneElement(children, {
+  return React.cloneElement(children as React.ReactElement<any>, {
     value,
     onChange: handleChange,
     disabled: context?.disabled,

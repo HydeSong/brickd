@@ -1,0 +1,138 @@
+.popoverWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.popoverTrigger {
+  cursor: pointer;
+}
+
+.popover {
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  min-width: 120px;
+}
+
+.popoverContent {
+  font-size: 14px;
+  color: #333;
+}
+
+.popoverArrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+}
+
+/* Placement styles */
+.popoverTop {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+}
+
+.popoverBottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+}
+
+.popoverLeft {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 8px;
+}
+
+.popoverRight {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 8px;
+}
+
+/* Arrow styles */
+.arrowTop {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: #fff;
+  border-bottom: none;
+}
+
+.arrowBottom {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: #fff;
+  border-top: none;
+}
+
+.arrowLeft {
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left-color: #fff;
+  border-right: none;
+}
+
+.arrowRight {
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right-color: #fff;
+  border-left: none;
+}
+
+/* Arrow border fix */
+.arrowTop::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  border: 6px solid transparent;
+  border-top-color: #e8e8e8;
+  border-bottom: none;
+  z-index: -1;
+}
+
+.arrowBottom::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: -6px;
+  border: 6px solid transparent;
+  border-bottom-color: #e8e8e8;
+  border-top: none;
+  z-index: -1;
+}
+
+.arrowLeft::before {
+  content: '';
+  position: absolute;
+  right: -7px;
+  top: -6px;
+  border: 6px solid transparent;
+  border-left-color: #e8e8e8;
+  border-right: none;
+  z-index: -1;
+}
+
+.arrowRight::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: -6px;
+  border: 6px solid transparent;
+  border-right-color: #e8e8e8;
+  border-left: none;
+  z-index: -1;
+}

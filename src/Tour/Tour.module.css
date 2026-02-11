@@ -1,0 +1,142 @@
+.tour {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1070;
+  pointer-events: none;
+}
+
+.tourMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: auto;
+}
+
+.tourMaskHole {
+  position: absolute;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px #1890ff, 0 0 10px rgba(24, 144, 255, 0.5);
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.tourPopup {
+  position: fixed;
+  width: 300px;
+  max-width: 80vw;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  pointer-events: auto;
+  z-index: 1071;
+}
+
+.tourPopupContent {
+  padding: 16px;
+}
+
+.tourPopupTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.tourPopupDescription {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: #666;
+}
+
+.tourPopupFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+.tourPopupControls {
+  display: flex;
+  gap: 8px;
+}
+
+.tourPopupButton {
+  padding: 6px 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tourPopupButton:hover {
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+.tourPopupButtonPrimary {
+  color: #fff;
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.tourPopupButtonPrimary:hover {
+  color: #fff;
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.tourPopupArrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  background-color: #fff;
+}
+
+.tourPopupArrow-top {
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px 8px 0;
+  border-top-color: #fff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tourPopupArrow-bottom {
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 8px 8px;
+  border-bottom-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tourPopupArrow-left {
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px 0 8px 8px;
+  border-left-color: #fff;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.tourPopupArrow-right {
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px 8px 8px 0;
+  border-right-color: #fff;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+}

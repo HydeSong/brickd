@@ -1,7 +1,7 @@
 import React, { InputHTMLAttributes } from 'react';
 import styles from './Input.module.css';
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+interface InputProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'size' | 'prefix' | 'suffix'> {
   size?: 'small' | 'default' | 'large';
   disabled?: boolean;
   readOnly?: boolean;

@@ -1,0 +1,96 @@
+.segmented {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.segmented:hover {
+  border-color: #40a9ff;
+}
+
+.segmented.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.segmented.disabled:hover {
+  border-color: #d9d9d9;
+}
+
+.segmentedItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-right: 1px solid #d9d9d9;
+  flex: 1;
+  min-width: 60px;
+}
+
+.segmentedItem:last-child {
+  border-right: none;
+}
+
+.segmentedItem:hover:not(.itemDisabled) {
+  color: #1890ff;
+}
+
+.segmentedItem.active {
+  background: #1890ff;
+  color: #fff;
+  border-color: #1890ff;
+}
+
+.segmentedItem.active:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+  color: #fff;
+}
+
+.segmentedItem.itemDisabled {
+  cursor: not-allowed;
+  color: #bfbfbf;
+}
+
+.segmentedItem.itemDisabled:hover {
+  color: #bfbfbf;
+  background: #fff;
+}
+
+.segmentedItemLabel {
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .segmentedItem {
+    padding: 4px 12px;
+    min-width: 50px;
+  }
+
+  .segmentedItemLabel {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .segmentedItem {
+    padding: 3px 8px;
+    min-width: 40px;
+  }
+
+  .segmentedItemLabel {
+    font-size: 11px;
+  }
+}

@@ -26,7 +26,11 @@ const AnchorLink: React.FC<AnchorLinkProps> = ({ href, title, className, childre
   );
 };
 
-const Anchor: React.FC<AnchorProps> = ({ className, style, offset = 0, children }) => {
+interface AnchorComponent extends React.FC<AnchorProps> {
+  Link: React.FC<AnchorLinkProps>;
+}
+
+const Anchor: AnchorComponent = ({ className, style, offset = 0, children }) => {
   const [activeLink, setActiveLink] = useState<string>('');
   const containerRef = useRef<HTMLDivElement>(null);
 

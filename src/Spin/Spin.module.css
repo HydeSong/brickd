@@ -1,0 +1,125 @@
+.spin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spinContent {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinDot {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.spinDotItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0.3;
+  animation: spinDotMove 1.2s infinite ease-in-out both;
+}
+
+.spinDotItem:nth-child(1) {
+  animation-delay: -0.4s;
+}
+
+.spinDotItem:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.spinDotItem:nth-child(3) {
+  animation-delay: 0s;
+}
+
+.spinDotItem:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
+@keyframes spinDotMove {
+  0%, 100% {
+    transform: scale(0.2);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.spinTip {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+.spinWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.spinWrapper > .spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.spinChildren {
+  position: relative;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+/* Different sizes */
+.spinSmall {
+  font-size: 12px;
+}
+
+.spinDefault {
+  font-size: 14px;
+}
+
+.spinLarge {
+  font-size: 16px;
+}
+
+/* Full screen spin */
+.spinFullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1050;
+}
+
+/* Inline spin */
+.spinInline {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+/* Block spin */
+.spinBlock {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}

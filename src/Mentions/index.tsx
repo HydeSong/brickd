@@ -213,9 +213,11 @@ export const Mentions: React.FC<MentionsProps> = ({
         suppressContentEditableWarning={true}
         onInput={handleInput}
         onKeyDown={handleKeyDown}
-        placeholder={placeholder}
         dangerouslySetInnerHTML={{ __html: internalValue || '' }}
       />
+      {!internalValue && placeholder && (
+        <div className={styles.placeholder}>{placeholder}</div>
+      )}
       {renderMenu()}
     </div>
   );

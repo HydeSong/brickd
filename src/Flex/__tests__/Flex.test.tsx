@@ -216,7 +216,7 @@ describe('Flex Component', () => {
         <div>Item 1</div>
       </Flex>
     );
-    const flexElement = screen.getByText('Item 1').closest('div');
+    const flexElement = document.querySelector('.flex');
     expect(flexElement).toHaveClass('custom-class');
   });
 
@@ -335,7 +335,7 @@ describe('FlexItem Component', () => {
         <FlexItem className="custom-class">Item 1</FlexItem>
       </Flex>
     );
-    const flexItemElement = screen.getByText('Item 1').parentElement;
+    const flexItemElement = document.querySelector('.flexItem');
     expect(flexItemElement).toHaveClass('custom-class');
   });
 

@@ -1,0 +1,21 @@
+.image {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.imagePlaceholder {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+}
+
+.imageFallback {
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+}

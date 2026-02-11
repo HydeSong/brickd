@@ -32,7 +32,11 @@ interface CheckboxGroupProps {
   children?: React.ReactNode;
 }
 
-export const Checkbox: React.FC<CheckboxProps> = ({
+type CheckboxComponent = React.FC<CheckboxProps> & {
+  Group: React.FC<CheckboxGroupProps>;
+};
+
+export const Checkbox: CheckboxComponent = ({
   size = 'default',
   disabled = false,
   checked,

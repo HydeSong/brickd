@@ -1,0 +1,165 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.resultIcon {
+  font-size: 48px;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+/* Icon colors */
+.resultIconSuccess {
+  color: #52c41a;
+}
+
+.resultIconError {
+  color: #ff4d4f;
+}
+
+.resultIconInfo {
+  color: #1890ff;
+}
+
+.resultIconWarning {
+  color: #faad14;
+}
+
+.resultTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.resultDescription {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.resultExtra {
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.resultActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 0;
+}
+
+/* Different sizes */
+.resultSmall {
+  padding: 24px 16px;
+}
+
+.resultSmall .resultIcon {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.resultSmall .resultTitle {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.resultSmall .resultDescription {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.resultLarge {
+  padding: 64px 48px;
+}
+
+.resultLarge .resultIcon {
+  font-size: 64px;
+  margin-bottom: 32px;
+}
+
+.resultLarge .resultTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.resultLarge .resultDescription {
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+/* Bordered result */
+.resultBordered {
+  border: 1px solid #e8e8e8;
+  box-shadow: none;
+}
+
+/* Custom styles for actions */
+.resultActions button {
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .result {
+    padding: 32px 24px;
+  }
+
+  .resultIcon {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .resultTitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .resultDescription {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .resultActions {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .resultActions button {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .result {
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .resultTitle {
+    color: #fff;
+  }
+
+  .resultDescription {
+    color: #ccc;
+  }
+
+  .resultBordered {
+    border-color: #333;
+  }
+}

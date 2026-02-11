@@ -1,0 +1,184 @@
+.skeleton {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.skeletonItem {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.skeletonAnimated {
+  overflow: hidden;
+}
+
+.skeletonAnimated::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: skeletonShimmer 1.5s infinite linear;
+  transform: translateX(-100%);
+}
+
+@keyframes skeletonShimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Text skeleton */
+.skeletonText {
+  height: 16px;
+  border-radius: 4px;
+}
+
+.skeletonContent {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Button skeleton */
+.skeletonButton {
+  border-radius: 4px;
+}
+
+/* Image skeleton */
+.skeletonImage {
+  border-radius: 4px;
+}
+
+/* Card skeleton */
+.skeletonCard {
+  width: 300px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+.skeletonCardHeader {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.skeletonCardTitle {
+  margin-left: 12px;
+  flex: 1;
+}
+
+.skeletonCardContent {
+  margin-bottom: 16px;
+}
+
+.skeletonCardFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* List skeleton */
+.skeletonList {
+  width: 100%;
+}
+
+.skeletonListItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.skeletonListContent {
+  margin-left: 12px;
+  flex: 1;
+}
+
+/* Different sizes */
+.skeletonSmall {
+  font-size: 12px;
+}
+
+.skeletonDefault {
+  font-size: 14px;
+}
+
+.skeletonLarge {
+  font-size: 16px;
+}
+
+/* Inline skeleton */
+.skeletonInline {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Block skeleton */
+.skeletonBlock {
+  display: block;
+  width: 100%;
+}
+
+/* Round skeleton */
+.skeletonRound {
+  border-radius: 50%;
+}
+
+/* Square skeleton */
+.skeletonSquare {
+  border-radius: 0;
+}
+
+/* Custom width classes */
+.skeletonWidth10 {
+  width: 10%;
+}
+
+.skeletonWidth20 {
+  width: 20%;
+}
+
+.skeletonWidth30 {
+  width: 30%;
+}
+
+.skeletonWidth40 {
+  width: 40%;
+}
+
+.skeletonWidth50 {
+  width: 50%;
+}
+
+.skeletonWidth60 {
+  width: 60%;
+}
+
+.skeletonWidth70 {
+  width: 70%;
+}
+
+.skeletonWidth80 {
+  width: 80%;
+}
+
+.skeletonWidth90 {
+  width: 90%;
+}
+
+.skeletonWidth100 {
+  width: 100%;
+}
