@@ -1,9 +1,28 @@
+import React, { useEffect } from 'react';
 import styles from './Modal.module.css';
+
+interface ModalProps {
+  visible: boolean;
+  onCancel: () => void;
+  onOk?: () => void;
+  title: React.ReactNode;
+  children: React.ReactNode;
+  footer?: React.ReactNode;
+  mask?: boolean;
+  maskClosable?: boolean;
+  confirmLoading?: boolean;
+  width?: number;
+  zIndex?: number;
+  className?: string;
+  style?: React.CSSProperties;
+  wrapClassName?: string;
+  keyboard?: boolean;
+}
 
 const Modal = ({
   visible,
   onCancel,
-  onOk,
+  onOk = () => {},
   title,
   children,
   footer,
@@ -12,19 +31,36 @@ const Modal = ({
   confirmLoading = false,
   width = 520,
   zIndex = 1000,
-  className,
-  style,
-  wrapClassName,
-}) => {
-  if (!visible) {
-    return null;
-  }
-
-  const handleMaskClick = (e) => {
+  className = '',
+  style = {},
+  wrapClassName = '',
+  keyboard = true,
+}: ModalProps) => {
+  const handleMaskClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (maskClosable && e.target === e.currentTarget) {
       onCancel();
     }
   };
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (keyboard && e.key === 'Escape') {
+        onCancel();
+      }
+    };
+
+    if (visible && keyboard) {
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [visible, keyboard, onCancel]);
+
+  if (!visible) {
+    return null;
+  }
 
   return (
     <>

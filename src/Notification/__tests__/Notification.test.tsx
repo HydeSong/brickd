@@ -1,5 +1,5 @@
 import { fireEvent, screen, waitFor } from '@testing-library/react';
-import { Notification } from '../index';
+import Notification from '../index';
 
 describe('Notification Component', () => {
   beforeEach(() => {

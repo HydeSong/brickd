@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import Calendar from '../index';
 
 describe('Calendar Component', () => {

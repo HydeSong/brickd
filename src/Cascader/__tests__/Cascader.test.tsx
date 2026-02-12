@@ -60,17 +60,23 @@ describe('Cascader Component', () => {
     const option1 = screen.getByText('Option 1');
     fireEvent.click(option1);
 
-    // Wait for menu items to update (just wait a bit for any potential changes)
-    await new Promise<void>((resolve) => {
-      setTimeout(resolve, 500);
+    // Wait for Option 1-1 to appear
+    await waitFor(() => {
+      expect(screen.getByText('Option 1-1')).toBeInTheDocument();
     });
 
-    // Check that menu is still open
-    expect(screen.getByText('Option 1')).toBeInTheDocument();
-
-    // Try to find and click Option 1-1
+    // Click Option 1-1 to expand its children
     const option11 = screen.getByText('Option 1-1');
     fireEvent.click(option11);
+
+    // Wait for Option 1-1-1 to appear
+    await waitFor(() => {
+      expect(screen.getByText('Option 1-1-1')).toBeInTheDocument();
+    });
+
+    // Click Option 1-1-1 (it has no children, so this should trigger onChange)
+    const option111 = screen.getByText('Option 1-1-1');
+    fireEvent.click(option111);
 
     await waitFor(() => {
       expect(onChange).toHaveBeenCalled();

@@ -1,5 +1,5 @@
 import { fireEvent, screen, waitFor } from '@testing-library/react';
-import { Message } from '../index';
+import Message from '../index';
 
 describe('Message Component', () => {
   beforeEach(() => {

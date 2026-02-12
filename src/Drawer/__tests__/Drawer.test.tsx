@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import Button from 'brickd';
-import React, { useState } from 'react';
+import { fireEvent, render, screen } from '@testing-library/react';
+import { useState } from 'react';
+import Button from '../../Button';
 import Drawer from '../index';
 
 const TestDrawer = () => {

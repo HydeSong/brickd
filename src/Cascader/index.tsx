@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Cascader.module.css';
 
 interface CascaderOption {
@@ -33,11 +33,12 @@ export const Cascader: React.FC<CascaderProps> = ({
   className = '',
   style = {},
 }) => {
-  const [internalValue, setInternalValue] = useState<(string | number)[]>(defaultValue);
+  const [internalValue, setInternalValue] =
+    useState<(string | number)[]>(defaultValue);
   const [isOpen, setIsOpen] = useState(false);
   const [activePath, setActivePath] = useState<(string | number)[]>([]);
   const [menuItems, setMenuItems] = useState<CascaderOption[][]>([]);
-  
+
   const triggerRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -45,17 +46,24 @@ export const Cascader: React.FC<CascaderProps> = ({
   const updateMenuItems = (path: (string | number)[]) => {
     const newMenuItems: CascaderOption[][] = [];
     let currentOptions = options;
-    
+
     for (const value of path) {
-      newMenuItems.push(currentOptions);
-      const nextOption = currentOptions.find(option => option.value === value);
+      const nextOption = currentOptions.find(
+        (option) => option.value === value,
+      );
       if (nextOption && nextOption.children) {
+        newMenuItems.push(currentOptions);
         currentOptions = nextOption.children;
       } else {
         break;
       }
     }
-    
+
+    // Always add the current options (even if path is empty)
+    if (currentOptions.length > 0) {
+      newMenuItems.push(currentOptions);
+    }
+
     setMenuItems(newMenuItems);
   };
 
@@ -78,9 +86,9 @@ export const Cascader: React.FC<CascaderProps> = ({
   // 处理选项点击
   const handleMenuItemClick = (option: CascaderOption, level: number) => {
     if (option.disabled) return;
-    
+
     const newPath = [...activePath.slice(0, level), option.value];
-    
+
     if (option.children && option.children.length > 0) {
       // 有子选项，展开下一级
       setActivePath(newPath);
@@ -89,7 +97,7 @@ export const Cascader: React.FC<CascaderProps> = ({
       // 没有子选项，选择完成
       setInternalValue(newPath);
       setIsOpen(false);
-      
+
       if (onChange) {
         onChange(newPath);
       }
@@ -102,8 +110,12 @@ export const Cascader: React.FC<CascaderProps> = ({
   // 处理点击外部关闭菜单
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (triggerRef.current && !triggerRef.current.contains(event.target as Node) && 
-          menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      if (
+        triggerRef.current &&
+        !triggerRef.current.contains(event.target as Node) &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };
@@ -130,12 +142,12 @@ export const Cascader: React.FC<CascaderProps> = ({
     if (internalValue.length === 0) {
       return <span className={styles.cascaderPlaceholder}>{placeholder}</span>;
     }
-    
+
     const labels: React.ReactNode[] = [];
     let currentOptions = options;
-    
+
     for (const value of internalValue) {
-      const option = currentOptions.find(opt => opt.value === value);
+      const option = currentOptions.find((opt) => opt.value === value);
       if (option) {
         labels.push(option.label);
         if (option.children) {
@@ -145,12 +157,8 @@ export const Cascader: React.FC<CascaderProps> = ({
         }
       }
     }
-    
-    return (
-      <div className={styles.cascaderValue}>
-        {labels.join(' / ')}
-      </div>
-    );
+
+    return <div className={styles.cascaderValue}>{labels.join(' / ')}</div>;
   };
 
   // 渲染菜单项
@@ -158,7 +166,7 @@ export const Cascader: React.FC<CascaderProps> = ({
     const isActive = activePath[level] === option.value;
     const isDisabled = option.disabled;
     const hasChildren = option.children && option.children.length > 0;
-    
+
     const getMenuItemClass = () => {
       const classes = [styles.cascaderMenuItem];
       if (isActive) {
@@ -192,7 +200,7 @@ export const Cascader: React.FC<CascaderProps> = ({
       <div ref={menuRef} className={styles.cascaderMenu}>
         {menuItems.map((items, level) => (
           <ul key={level} className={styles.cascaderMenuList}>
-            {items.map(option => renderMenuItem(option, level))}
+            {items.map((option) => renderMenuItem(option, level))}
           </ul>
         ))}
       </div>
@@ -201,12 +209,14 @@ export const Cascader: React.FC<CascaderProps> = ({
 
   const getTriggerClass = () => {
     const classes = [styles.cascaderTrigger];
-    
+
     // Add size class
     if (size !== 'default') {
-      classes.push(styles[`cascaderSize${size.charAt(0).toUpperCase() + size.slice(1)}`]);
+      classes.push(
+        styles[`cascaderSize${size.charAt(0).toUpperCase() + size.slice(1)}`],
+      );
     }
-    
+
     return classes.join(' ');
   };
 
