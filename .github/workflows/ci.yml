@@ -21,10 +21,14 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: latest
 
     - name: Install dependencies
-      run: npm install
+      run: pnpm install
 
     - name: Lint check
       run: npm run lint
