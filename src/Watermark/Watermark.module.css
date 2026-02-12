@@ -16,7 +16,6 @@
 
 .watermarkRow {
   display: flex;
-  transform: translateY(calc(var(--watermark-gap-y, 100px) * -1));
 }
 
 .watermarkItem {

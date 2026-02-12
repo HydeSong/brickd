@@ -1,165 +1,307 @@
-.tableContainer {
-  width: 100%;
-  background: #fff;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-}
-
-.tableContainer:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* Table 组件样式 */
 .table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
   font-size: 14px;
   line-height: 1.5;
-}
-
-.table.small {
-  font-size: 12px;
-  line-height: 1.4;
-}
-
-.table.large {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.table.bordered {
-  border: 1px solid #e8e8e8;
-}
-
-.tableHead {
-  background: #fafafa;
-  border-bottom: 1px solid #e8e8e8;
-}
-
-.tableHead th {
-  padding: 12px 16px;
-  text-align: left;
-  font-weight: 600;
-  color: #333;
-  border-bottom: 1px solid #e8e8e8;
-  white-space: nowrap;
-}
-
-.table.bordered .tableHead th {
-  border-right: 1px solid #e8e8e8;
-}
-
-.table.bordered .tableHead th:last-child {
-  border-right: none;
-}
-
-.tableBody tr {
+  color: #333333;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
-.tableBody td {
-  padding: 12px 16px;
+.table:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* 表头样式 */
+.table thead {
+  background-color: #fafafa;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.table th {
+  padding: 16px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333333;
   border-bottom: 1px solid #f0f0f0;
-  color: #666;
+  position: relative;
   white-space: nowrap;
 }
 
-.table.bordered .tableBody td {
-  border-right: 1px solid #e8e8e8;
+.table th:first-child {
+  border-top-left-radius: 12px;
 }
 
-.table.bordered .tableBody td:last-child {
-  border-right: none;
+.table th:last-child {
+  border-top-right-radius: 12px;
 }
 
-.table.striped .tableBody tr:nth-child(even) {
-  background: #fafafa;
+/* 表格主体样式 */
+.table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.table.hoverable .tableBody tr:hover {
-  background: #f5f5f5;
+.table tbody tr:hover {
+  background-color: #f5f9ff;
 }
 
-.tableBody .loadingCell {
-  padding: 40px;
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+.table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  white-space: nowrap;
+}
+
+/* 边框样式 */
+.tableBordered {
+  border: 1px solid #e8e8e8;
+  box-shadow: none;
+}
+
+.tableBordered th,
+.tableBordered td {
+  border: 1px solid #e8e8e8;
+}
+
+.tableBordered th {
+  border-bottom: 2px solid #e8e8e8;
+}
+
+/* 条纹样式 */
+.tableStriped tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.tableStriped tbody tr:nth-child(even):hover {
+  background-color: #f5f9ff;
+}
+
+/* 悬停样式 */
+.tableHoverable tbody tr:hover {
+  background-color: #f5f9ff;
+}
+
+/* 不同尺寸 */
+.tableSmall {
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.tableSmall th {
+  padding: 12px 8px;
+}
+
+.tableSmall td {
+  padding: 10px 8px;
+}
+
+.tableDefault {
+  font-size: 14px;
+  border-radius: 12px;
+}
+
+.tableLarge {
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+.tableLarge th {
+  padding: 20px 16px;
+}
+
+.tableLarge td {
+  padding: 18px 16px;
+}
+
+/* 加载状态 */
+.tableLoading {
+  position: relative;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* 空状态 */
+.tableEmpty {
   text-align: center;
-  color: #999;
+  padding: 40px 20px;
+  color: #999999;
+  font-size: 14px;
 }
 
-.tableBody .emptyCell {
-  padding: 40px;
-  text-align: center;
-  color: #999;
-}
-
-.pagination {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 16px;
-  border-top: 1px solid #f0f0f0;
-  gap: 12px;
-}
-
-.pagination button {
-  padding: 4px 12px;
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
-  background: #fff;
-  color: #333;
+/* 排序样式 */
+.tableSortable th {
   cursor: pointer;
+  user-select: none;
   transition: all 0.2s ease;
 }
 
-.pagination button:hover {
+.tableSortable th:hover {
+  background-color: #f0f5ff;
+}
+
+.tableSortable th.sortAsc,
+.tableSortable th.sortDesc {
+  background-color: #e6f7ff;
   color: #1890ff;
-  border-color: #1890ff;
 }
 
-/* 响应式调整 */
+/* 选择样式 */
+.tableSelectable tbody tr {
+  cursor: pointer;
+}
+
+.tableSelectable tbody tr.selected {
+  background-color: #e6f7ff;
+}
+
+/* 可展开行 */
+.tableExpandable .expandIcon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tableExpandable .expandIcon.expanded {
+  transform: rotate(90deg);
+}
+
+.tableExpandable .expandContent {
+  padding: 16px;
+  background-color: #fafafa;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 固定列 */
+.tableFixedLeft th:first-child,
+.tableFixedLeft td:first-child {
+  position: sticky;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.tableFixedRight th:last-child,
+.tableFixedRight td:last-child {
+  position: sticky;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+/* 紧凑模式 */
+.tableCompact th {
+  padding: 10px 12px;
+}
+
+.tableCompact td {
+  padding: 8px 12px;
+}
+
+/* 宽松模式 */
+.tableLoose th {
+  padding: 18px 12px;
+}
+
+.tableLoose td {
+  padding: 16px 12px;
+}
+
+/* 响应式表格 */
 @media (max-width: 768px) {
-  .tableHead th {
-    padding: 8px 12px;
-  }
-
-  .tableBody td {
-    padding: 8px 12px;
-  }
-
-  .table.small .tableHead th,
-  .table.small .tableBody td {
-    padding: 6px 8px;
-  }
-
-  .table.large .tableHead th,
-  .table.large .tableBody td {
-    padding: 10px 14px;
-  }
-
-  .pagination {
-    padding: 12px;
+  .table {
     font-size: 12px;
+    border-radius: 8px;
   }
-
-  .pagination button {
-    padding: 2px 8px;
+  
+  .table th {
+    padding: 12px 8px;
+  }
+  
+  .table td {
+    padding: 10px 8px;
+  }
+  
+  .table thead {
+    display: none;
+  }
+  
+  .table tbody tr {
+    display: block;
+    margin-bottom: 16px;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+  }
+  
+  .table tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .table tbody tr td:last-child {
+    border-bottom: none;
+  }
+  
+  .table tbody tr td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #666666;
+    margin-right: 8px;
   }
 }
 
-@media (max-width: 480px) {
-  .tableContainer {
-    font-size: 12px;
-  }
+/* 表格阴影层级 */
+.tableShadow1 {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
 
-  .tableHead th {
-    padding: 6px 8px;
-    font-size: 12px;
-  }
+.tableShadow2 {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
 
-  .tableBody td {
-    padding: 6px 8px;
-    font-size: 12px;
-  }
+.tableShadow3 {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 表格背景变体 */
+.tableBackgroundLight {
+  background-color: #fafafa;
+}
+
+.tableBackgroundDark {
+  background-color: #f0f0f0;
+}
+
+/* 表格文本对齐 */
+.tableTextLeft th,
+.tableTextLeft td {
+  text-align: left;
+}
+
+.tableTextCenter th,
+.tableTextCenter td {
+  text-align: center;
+}
+
+.tableTextRight th,
+.tableTextRight td {
+  text-align: right;
 }

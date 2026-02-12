@@ -1,53 +1,244 @@
+/* Card 组件样式 */
 .card {
-  border-radius: 4px;
+  border-radius: 12px;
   background-color: #fff;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
 .cardBordered {
   border: 1px solid #e8e8e8;
+  box-shadow: none;
 }
 
 .cardHoverable {
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .cardHoverable:hover {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
 .cardHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
-  border-bottom: 1px solid #e8e8e8;
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fafafa;
 }
 
 .cardTitle {
   margin: 0;
   font-size: 16px;
-  font-weight: 500;
-  color: #333;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.4;
 }
 
 .cardExtra {
   font-size: 14px;
-  color: #666;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .cardBody {
-  padding: 16px;
+  padding: 20px;
   font-size: 14px;
-  color: #333;
-  line-height: 1.5;
+  color: #333333;
+  line-height: 1.6;
+  background-color: #ffffff;
 }
 
 .cardFooter {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 16px 20px;
+  border-top: 1px solid #f0f0f0;
+  background-color: #fafafa;
+  gap: 12px;
+}
+
+/* Card 类型变体 */
+.cardSimple {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.cardSimple .cardHeader {
+  border-bottom: none;
+  background-color: transparent;
+  padding: 0 0 16px 0;
+}
+
+.cardSimple .cardBody {
+  padding: 0;
+}
+
+.cardSimple .cardFooter {
+  border-top: none;
+  background-color: transparent;
+  padding: 16px 0 0 0;
+}
+
+.cardOutlined {
+  border: 1px solid #e8e8e8;
+  box-shadow: none;
+}
+
+.cardElevated {
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cardElevated:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card 尺寸变体 */
+.cardSmall {
+  border-radius: 8px;
+}
+
+.cardSmall .cardHeader {
+  padding: 12px 16px;
+}
+
+.cardSmall .cardBody {
   padding: 16px;
-  border-top: 1px solid #e8e8e8;
-  gap: 8px;
+}
+
+.cardSmall .cardFooter {
+  padding: 12px 16px;
+}
+
+.cardMedium {
+  border-radius: 12px;
+}
+
+.cardMedium .cardHeader {
+  padding: 16px 20px;
+}
+
+.cardMedium .cardBody {
+  padding: 20px;
+}
+
+.cardMedium .cardFooter {
+  padding: 16px 20px;
+}
+
+.cardLarge {
+  border-radius: 16px;
+}
+
+.cardLarge .cardHeader {
+  padding: 20px 24px;
+}
+
+.cardLarge .cardBody {
+  padding: 24px;
+}
+
+.cardLarge .cardFooter {
+  padding: 20px 24px;
+}
+
+/* Card 网格布局 */
+.cardGrid {
+  display: grid;
+  gap: 16px;
+}
+
+.cardGrid.small {
+  gap: 12px;
+}
+
+.cardGrid.medium {
+  gap: 16px;
+}
+
+.cardGrid.large {
+  gap: 20px;
+}
+
+/* 响应式卡片 */
+@media (max-width: 768px) {
+  .card {
+    border-radius: 8px;
+  }
+  
+  .cardHeader {
+    padding: 16px;
+  }
+  
+  .cardBody {
+    padding: 16px;
+  }
+  
+  .cardFooter {
+    padding: 12px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .cardTitle {
+    font-size: 14px;
+  }
+}
+
+/* 卡片阴影层级 */
+.cardShadow1 {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cardShadow2 {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.cardShadow3 {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.cardShadow4 {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* 卡片背景变体 */
+.cardBackgroundDefault {
+  background-color: #ffffff;
+}
+
+.cardBackgroundLight {
+  background-color: #fafafa;
+}
+
+.cardBackgroundDark {
+  background-color: #f0f0f0;
+}
+
+/* 卡片标题变体 */
+.cardTitleLarge {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.cardTitleMedium {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.cardTitleSmall {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
 }
