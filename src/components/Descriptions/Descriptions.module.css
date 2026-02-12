@@ -1,0 +1,97 @@
+.descriptions {
+  width: 100%;
+}
+
+.descriptionsTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.descriptionsContent {
+  display: grid;
+  gap: 16px;
+}
+
+.descriptionsBordered {
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.descriptionsBordered .descriptionsContent {
+  gap: 0;
+}
+
+.descriptionsItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionsBordered .descriptionsItem {
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 12px;
+}
+
+.descriptionsBordered .descriptionsItem:nth-last-child(-n + 3) {
+  border-bottom: none;
+}
+
+.descriptionsBordered .descriptionsItem:nth-child(3n) {
+  border-right: none;
+}
+
+.descriptionsItemLabel {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.descriptionsBordered .descriptionsItemLabel {
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.descriptionsItemContent {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Size variations */
+.descriptionsSmall .descriptionsContent {
+  gap: 8px;
+}
+
+.descriptionsSmall .descriptionsItemLabel {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.descriptionsSmall .descriptionsItemContent {
+  font-size: 12px;
+}
+
+.descriptionsSmall .descriptionsBordered .descriptionsItem {
+  padding: 8px;
+}
+
+.descriptionsLarge .descriptionsContent {
+  gap: 24px;
+}
+
+.descriptionsLarge .descriptionsItemLabel {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.descriptionsLarge .descriptionsItemContent {
+  font-size: 16px;
+}
+
+.descriptionsLarge .descriptionsBordered .descriptionsItem {
+  padding: 16px;
+}

@@ -1,69 +1,87 @@
-
-export { default as Button } from './Button';
-export { default as Splitter } from './Splitter';
-export { default as FloatButton } from './FloatButton';
-export { default as Divider } from './Divider';
-export { default as Flex, FlexItem } from './Flex';
-export { default as Grid, Row, Col } from './Grid';
-export { default as Space } from './Space';
-export { default as Icon } from './Icon';
-export { default as Typography, Title, Paragraph, Text } from './Typography';
-export { default as Layout, Header, Sider, Content, Footer } from './Layout';
-export { default as Masonry } from './Masonry';
-export { default as Anchor } from './Anchor';
-export { default as Breadcrumb } from './Breadcrumb';
-export { default as Dropdown } from './Dropdown';
-export { default as Menu } from './Menu';
-export { default as Pagination } from './Pagination';
-export { default as Steps } from './Steps';
-export { default as Tabs } from './Tabs';
-export { default as Affix } from './Affix';
-export { default as App } from './App';
-export { default as ConfigProvider, useConfig } from './ConfigProvider';
-export * as Util from './Util';
-export { default as Input } from './Input';
-export { default as InputNumber } from './InputNumber';
-export { default as AutoComplete } from './AutoComplete';
-export { default as Checkbox } from './Checkbox';
-export { default as Radio } from './Radio';
-export { default as Switch } from './Switch';
-export { default as Cascader } from './Cascader';
-export { default as ColorPicker } from './ColorPicker';
-export { default as DatePicker } from './DatePicker';
-export { default as Form, FormItem, FormControl, useForm } from './Form';
-export { default as Mentions } from './Mentions';
-export { default as Rate } from './Rate';
-export { default as Select } from './Select';
-export { default as Slider } from './Slider';
-export { default as TimePicker } from './TimePicker';
-export { default as Transfer } from './Transfer';
-export { default as TreeSelect } from './TreeSelect';
-export { default as Upload } from './Upload';
-export { default as Avatar } from './Avatar';
-export { default as Badge } from './Badge';
-export { default as Calendar } from './Calendar';
-export { default as Card } from './Card';
-export { default as Carousel } from './Carousel';
-export { default as Collapse } from './Collapse';
-export { default as Descriptions } from './Descriptions';
-export { default as Empty } from './Empty';
-export { default as Image } from './Image';
-export { default as Popover } from './Popover';
-export { default as QRCode } from './QRCode';
-export { default as Segmented } from './Segmented';
-export { default as Statistic } from './Statistic';
-export { default as Table } from './Table';
-export { default as Tag } from './Tag';
-export { default as Timeline } from './Timeline';
-export { default as Tooltip } from './Tooltip';
-export { default as Tour } from './Tour';
-export { default as Tree } from './Tree';
-export { default as Alert } from './Alert';
-export { default as Drawer } from './Drawer';
-export { default as Modal } from './Modal';
-export { default as Popconfirm } from './Popconfirm';
-export { default as Progress } from './Progress';
-export { default as Result } from './Result';
-export { default as Skeleton } from './Skeleton';
-export { default as Spin } from './Spin';
-export { default as Watermark } from './Watermark';
+export { default as Affix } from './components/Affix';
+export { default as Alert } from './components/Alert';
+export { default as Anchor } from './components/Anchor';
+export { default as App } from './components/App';
+export { default as AutoComplete } from './components/AutoComplete';
+export { default as Avatar } from './components/Avatar';
+export { default as Badge } from './components/Badge';
+export { default as Breadcrumb } from './components/Breadcrumb';
+export { default as Button } from './components/Button';
+export { default as Calendar } from './components/Calendar';
+export { default as Card } from './components/Card';
+export { default as Carousel } from './components/Carousel';
+export { default as Cascader } from './components/Cascader';
+export { default as Checkbox } from './components/Checkbox';
+export { default as Collapse } from './components/Collapse';
+export { default as ColorPicker } from './components/ColorPicker';
+export {
+  default as ConfigProvider,
+  useConfig,
+} from './components/ConfigProvider';
+export { default as DatePicker } from './components/DatePicker';
+export { default as Descriptions } from './components/Descriptions';
+export { default as Divider } from './components/Divider';
+export { default as Drawer } from './components/Drawer';
+export { default as Dropdown } from './components/Dropdown';
+export { default as Empty } from './components/Empty';
+export { default as Flex, FlexItem } from './components/Flex';
+export { default as FloatButton } from './components/FloatButton';
+export {
+  default as Form,
+  FormControl,
+  FormItem,
+  useForm,
+} from './components/Form';
+export { Col, default as Grid, Row } from './components/Grid';
+export { default as Icon } from './components/Icon';
+export { default as Image } from './components/Image';
+export { default as Input } from './components/Input';
+export { default as InputNumber } from './components/InputNumber';
+export {
+  Content,
+  Footer,
+  Header,
+  default as Layout,
+  Sider,
+} from './components/Layout';
+export { default as Masonry } from './components/Masonry';
+export { default as Mentions } from './components/Mentions';
+export { default as Menu } from './components/Menu';
+export { default as Modal } from './components/Modal';
+export { default as Pagination } from './components/Pagination';
+export { default as Popconfirm } from './components/Popconfirm';
+export { default as Popover } from './components/Popover';
+export { default as Progress } from './components/Progress';
+export { default as QRCode } from './components/QRCode';
+export { default as Radio } from './components/Radio';
+export { default as Rate } from './components/Rate';
+export { default as Result } from './components/Result';
+export { default as Segmented } from './components/Segmented';
+export { default as Select } from './components/Select';
+export { default as Skeleton } from './components/Skeleton';
+export { default as Slider } from './components/Slider';
+export { default as Space } from './components/Space';
+export { default as Spin } from './components/Spin';
+export { default as Splitter } from './components/Splitter';
+export { default as Statistic } from './components/Statistic';
+export { default as Steps } from './components/Steps';
+export { default as Switch } from './components/Switch';
+export { default as Table } from './components/Table';
+export { default as Tabs } from './components/Tabs';
+export { default as Tag } from './components/Tag';
+export { default as Timeline } from './components/Timeline';
+export { default as TimePicker } from './components/TimePicker';
+export { default as Tooltip } from './components/Tooltip';
+export { default as Tour } from './components/Tour';
+export { default as Transfer } from './components/Transfer';
+export { default as Tree } from './components/Tree';
+export { default as TreeSelect } from './components/TreeSelect';
+export {
+  Paragraph,
+  Text,
+  Title,
+  default as Typography,
+} from './components/Typography';
+export { default as Upload } from './components/Upload';
+export { default as Watermark } from './components/Watermark';
+export * as Util from './utils';
