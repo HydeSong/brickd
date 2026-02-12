@@ -37,7 +37,7 @@
 
 .tag-light {
   color: #1890ff;
-  background-color: rgba(24, 144, 255, 0.1);
+  background-color: rgba(24, 144, 255, 0.1%);
   border: 1px solid transparent;
 }
 
@@ -75,15 +75,15 @@
 }
 
 .tagClose:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2%);
 }
 
 .tag-outlined .tagClose:hover {
-  background-color: rgba(24, 144, 255, 0.1);
+  background-color: rgba(24, 144, 255, 0.1%);
 }
 
 .tag-light .tagClose:hover {
-  background-color: rgba(24, 144, 255, 0.2);
+  background-color: rgba(24, 144, 255, 0.2%);
 }
 
 /* Color variations */
@@ -100,7 +100,7 @@
 
 .tag-light.tag-red {
   color: #ff4d4f;
-  background-color: rgba(255, 77, 79, 0.1);
+  background-color: rgba(255, 77, 79, 0.1%);
 }
 
 .tag-orange {
@@ -116,7 +116,7 @@
 
 .tag-light.tag-orange {
   color: #fa8c16;
-  background-color: rgba(250, 140, 22, 0.1);
+  background-color: rgba(250, 140, 22, 0.1%);
 }
 
 .tag-green {
@@ -132,7 +132,7 @@
 
 .tag-light.tag-green {
   color: #52c41a;
-  background-color: rgba(82, 196, 26, 0.1);
+  background-color: rgba(82, 196, 26, 0.1%);
 }
 
 .tag-blue {
@@ -148,7 +148,7 @@
 
 .tag-light.tag-blue {
   color: #1890ff;
-  background-color: rgba(24, 144, 255, 0.1);
+  background-color: rgba(24, 144, 255, 0.1%);
 }
 
 .tag-purple {
@@ -164,5 +164,5 @@
 
 .tag-light.tag-purple {
   color: #722ed1;
-  background-color: rgba(114, 46, 209, 0.1);
+  background-color: rgba(114, 46, 209, 0.1%);
 }

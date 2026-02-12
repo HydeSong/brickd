@@ -13,7 +13,7 @@
   background: #fff;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15%);
   z-index: 1060;
   min-width: 160px;
   max-width: 300px;
@@ -152,11 +152,12 @@
   z-index: -1;
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   from {
     opacity: 0;
     transform: translateY(-8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -164,48 +165,51 @@
 }
 
 .popover.top {
-  animation: fadeIn 0.3s ease;
+  animation: fade-in 0.3s ease;
 }
 
 .popover.bottom {
-  animation: fadeInUp 0.3s ease;
+  animation: fade-in-up 0.3s ease;
 }
 
 .popover.left {
-  animation: fadeInRight 0.3s ease;
+  animation: fade-in-right 0.3s ease;
 }
 
 .popover.right {
-  animation: fadeInLeft 0.3s ease;
+  animation: fade-in-left 0.3s ease;
 }
 
-@keyframes fadeInUp {
+@keyframes fade-in-up {
   from {
     opacity: 0;
     transform: translateY(8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@keyframes fadeInRight {
+@keyframes fade-in-right {
   from {
     opacity: 0;
     transform: translateX(-8px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes fadeInLeft {
+@keyframes fade-in-left {
   from {
     opacity: 0;
     transform: translateX(8px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);

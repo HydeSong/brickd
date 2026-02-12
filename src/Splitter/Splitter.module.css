@@ -4,10 +4,6 @@
   overflow: hidden;
   height: 100%;
   width: 100%;
-}
-
-/* Horizontal layout */
-.splitter {
   flex-direction: row;
 }
 

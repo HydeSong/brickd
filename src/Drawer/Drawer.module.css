@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15%);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   bottom: auto;
-  animation-name: drawerSlideDown;
+  animation-name: drawer-slide-down;
 }
 
 .drawerRight {
@@ -26,7 +26,7 @@
   right: 0;
   bottom: 0;
   left: auto;
-  animation-name: drawerSlideLeft;
+  animation-name: drawer-slide-left;
 }
 
 .drawerBottom {
@@ -34,7 +34,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  animation-name: drawerSlideUp;
+  animation-name: drawer-slide-up;
 }
 
 .drawerLeft {
@@ -42,40 +42,44 @@
   left: 0;
   bottom: 0;
   right: auto;
-  animation-name: drawerSlideRight;
+  animation-name: drawer-slide-right;
 }
 
-@keyframes drawerSlideDown {
+@keyframes drawer-slide-down {
   from {
     transform: translateY(-100%);
   }
+
   to {
     transform: translateY(0);
   }
 }
 
-@keyframes drawerSlideLeft {
+@keyframes drawer-slide-left {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0);
   }
 }
 
-@keyframes drawerSlideUp {
+@keyframes drawer-slide-up {
   from {
     transform: translateY(100%);
   }
+
   to {
     transform: translateY(0);
   }
 }
 
-@keyframes drawerSlideRight {
+@keyframes drawer-slide-right {
   from {
     transform: translateX(-100%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -87,14 +91,15 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.45);
-  animation: drawerMaskFadeIn 0.3s ease;
+  background-color: rgba(0, 0, 0, 45%);
+  animation: drawer-mask-fade-in 0.3s ease;
 }
 
-@keyframes drawerMaskFadeIn {
+@keyframes drawer-mask-fade-in {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -162,7 +167,7 @@
 @media (prefers-color-scheme: dark) {
   .drawer {
     background-color: #1f1f1f;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3%);
   }
 
   .drawerHeader {

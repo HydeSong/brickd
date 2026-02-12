@@ -26,9 +26,9 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: currentColor;
+  background-color: currentcolor;
   opacity: 0.3;
-  animation: spinDotMove 1.2s infinite ease-in-out both;
+  animation: spin-dot-move 1.2s infinite ease-in-out both;
 }
 
 .spinDotItem:nth-child(1) {
@@ -47,11 +47,13 @@
   animation-delay: 0.2s;
 }
 
-@keyframes spinDotMove {
-  0%, 100% {
+@keyframes spin-dot-move {
+  0%,
+  100% {
     transform: scale(0.2);
     opacity: 0.3;
   }
+
   50% {
     transform: scale(1);
     opacity: 1;
@@ -107,7 +109,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9%);
   z-index: 1050;
 }
 

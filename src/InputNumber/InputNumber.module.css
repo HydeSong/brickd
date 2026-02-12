@@ -20,7 +20,7 @@
 
 .inputNumberWrapper:focus-within {
   border-color: #1890ff;
-  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2%);
 }
 
 .inputNumberWrapper:has(input:disabled) {
@@ -114,7 +114,7 @@
 }
 
 .inputNumberSizeLarge .inputNumberInput {
-  padding: 12px 12px;
+  padding: 12px;
 }
 
 .inputNumberSizeLarge .inputNumberButton {
@@ -132,7 +132,7 @@
 
 .inputNumberError:focus-within {
   border-color: #ff4d4f;
-  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2%);
 }
 
 .inputNumberFullWidth {

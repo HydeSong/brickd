@@ -7,7 +7,7 @@
 
 .timelineItem {
   position: relative;
-  padding: 0 0 20px 0;
+  padding: 0 0 20px;
   margin: 0;
   list-style: none;
 }
@@ -128,10 +128,12 @@
     transform: scale(0.8);
     opacity: 1;
   }
+
   50% {
     transform: scale(1.2);
     opacity: 0.7;
   }
+
   100% {
     transform: scale(0.8);
     opacity: 1;

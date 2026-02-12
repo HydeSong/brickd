@@ -88,6 +88,7 @@
 
 .vertical .stepContent {
   flex: 1;
+  text-align: left;
 }
 
 /* 步骤状态 */
@@ -122,10 +123,6 @@
 /* 步骤内容 */
 .stepContent {
   text-align: center;
-}
-
-.vertical .stepContent {
-  text-align: left;
 }
 
 .stepTitle {

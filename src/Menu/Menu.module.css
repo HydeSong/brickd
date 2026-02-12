@@ -27,7 +27,7 @@
 }
 
 .horizontal .menuItem:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1%);
 }
 
 .horizontal .menuItem.disabled {
@@ -48,7 +48,7 @@
 }
 
 .horizontal .subMenuTitle:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1%);
 }
 
 .horizontal .subMenuList {
@@ -58,7 +58,7 @@
   z-index: 1000;
   width: 160px;
   background-color: #001529;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15%);
   list-style: none;
   margin: 0;
   padding: 0;
@@ -86,7 +86,7 @@
 }
 
 .vertical .menuItem:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1%);
 }
 
 .vertical .menuItem.disabled {
@@ -103,14 +103,14 @@
 }
 
 .vertical .subMenuTitle:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1%);
 }
 
 .vertical .subMenuList {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.05%);
 }
 
 .vertical .subMenuList .menuItem {

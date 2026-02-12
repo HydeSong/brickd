@@ -19,7 +19,7 @@
   border-radius: 4px;
   min-width: 300px;
   max-width: 500px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 15%);
   transition: all 0.3s ease;
   opacity: 0;
   transform: translateX(100%);
@@ -58,7 +58,7 @@
 
 .messageClose:hover {
   opacity: 1;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 10%);
 }
 
 .messageSuccess {
@@ -100,32 +100,26 @@
   }
 }
 
-@keyframes slideIn {
+@keyframes slide-in {
   from {
     opacity: 0;
     transform: translateX(100%);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes slideOut {
+@keyframes slide-out {
   from {
     opacity: 1;
     transform: translateX(0);
   }
+
   to {
     opacity: 0;
     transform: translateX(100%);
   }
-}
-
-.message.visible {
-  animation: slideIn 0.3s ease;
-}
-
-.message {
-  animation: slideOut 0.3s ease;
 }

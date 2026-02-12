@@ -29,7 +29,7 @@
   transform: rotate(var(--watermark-rotate, -22deg));
   font-size: var(--watermark-font-size, 14px);
   font-weight: var(--watermark-font-weight, 400);
-  color: var(--watermark-color, rgba(0, 0, 0, 0.15));
+  color: var(--watermark-color, rgba(0, 0, 0, 0.15%));
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -26,9 +26,9 @@
   white-space: normal;
   line-break: auto;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75%);
   border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15%);
   opacity: 0;
   transition: all 0.2s ease;
   pointer-events: none;
@@ -97,7 +97,7 @@
   left: 50%;
   transform: translateX(-50%);
   border-width: 6px 6px 0;
-  border-top-color: rgba(0, 0, 0, 0.75);
+  border-top-color: rgba(0, 0, 0, 0.75%);
 }
 
 .tooltipBottom .tooltipArrow {
@@ -105,7 +105,7 @@
   left: 50%;
   transform: translateX(-50%);
   border-width: 0 6px 6px;
-  border-bottom-color: rgba(0, 0, 0, 0.75);
+  border-bottom-color: rgba(0, 0, 0, 0.75%);
 }
 
 .tooltipLeft .tooltipArrow {
@@ -113,7 +113,7 @@
   right: -6px;
   transform: translateY(-50%);
   border-width: 6px 0 6px 6px;
-  border-left-color: rgba(0, 0, 0, 0.75);
+  border-left-color: rgba(0, 0, 0, 0.75%);
 }
 
 .tooltipRight .tooltipArrow {
@@ -121,7 +121,7 @@
   left: -6px;
   transform: translateY(-50%);
   border-width: 6px 6px 6px 0;
-  border-right-color: rgba(0, 0, 0, 0.75);
+  border-right-color: rgba(0, 0, 0, 0.75%);
 }
 
 .tooltipInner {

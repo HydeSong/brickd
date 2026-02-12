@@ -14,14 +14,14 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5%);
   pointer-events: auto;
 }
 
 .tourMaskHole {
   position: absolute;
   border-radius: 4px;
-  box-shadow: 0 0 0 2px #1890ff, 0 0 10px rgba(24, 144, 255, 0.5);
+  box-shadow: 0 0 0 2px #1890ff, 0 0 10px rgba(24, 144, 255, 0.5%);
   background-color: transparent;
   pointer-events: none;
 }
@@ -32,7 +32,7 @@
   max-width: 80vw;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15%);
   pointer-events: auto;
   z-index: 1071;
 }
@@ -105,38 +105,38 @@
   background-color: #fff;
 }
 
-.tourPopupArrow-top {
+.tour-popup-arrow-top {
   bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
   border-width: 8px 8px 0;
   border-top-color: #fff;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 5%);
 }
 
-.tourPopupArrow-bottom {
+.tour-popup-arrow-bottom {
   top: -8px;
   left: 50%;
   transform: translateX(-50%);
   border-width: 0 8px 8px;
   border-bottom-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 5%);
 }
 
-.tourPopupArrow-left {
+.tour-popup-arrow-left {
   right: -8px;
   top: 50%;
   transform: translateY(-50%);
   border-width: 8px 0 8px 8px;
   border-left-color: #fff;
-  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 5%);
 }
 
-.tourPopupArrow-right {
+.tour-popup-arrow-right {
   left: -8px;
   top: 50%;
   transform: translateY(-50%);
   border-width: 8px 8px 8px 0;
   border-right-color: #fff;
-  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 5%);
 }

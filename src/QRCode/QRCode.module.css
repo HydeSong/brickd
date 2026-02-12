@@ -3,12 +3,12 @@
   border-radius: 4px;
   overflow: hidden;
   background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05%);
   transition: all 0.3s ease;
 }
 
 .qrcode:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1%);
 }
 
 .qrcodeImage {

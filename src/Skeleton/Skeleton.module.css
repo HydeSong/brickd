@@ -23,18 +23,19 @@
   bottom: 0;
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 255, 255, 0%) 0%,
+    rgba(255, 255, 255, 20%) 50%,
+    rgba(255, 255, 255, 0%) 100%
   );
-  animation: skeletonShimmer 1.5s infinite linear;
+  animation: skeleton-shimmer 1.5s infinite linear;
   transform: translateX(-100%);
 }
 
-@keyframes skeletonShimmer {
+@keyframes skeleton-shimmer {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -67,7 +68,7 @@
   padding: 16px;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09%);
 }
 
 .skeletonCardHeader {

@@ -84,16 +84,18 @@
 .progressActive .progressCircleBar {
   background-color: #1890ff;
   stroke: #1890ff;
-  animation: progressActive 1.5s ease-in-out infinite;
+  animation: progress-active 1.5s ease-in-out infinite;
 }
 
-@keyframes progressActive {
+@keyframes progress-active {
   0% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.6;
   }
+
   100% {
     opacity: 1;
   }

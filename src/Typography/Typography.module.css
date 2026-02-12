@@ -95,19 +95,20 @@
 .ellipsis {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
 }
 
 .ellipsis-1 {
-  -webkit-line-clamp: 1;
+  white-space: nowrap;
 }
 
-.ellipsis-2 {
-  -webkit-line-clamp: 2;
+.ellipsis-2,
+.ellipsis-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  line-clamp: 2;
 }
 
 .ellipsis-3 {
-  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
