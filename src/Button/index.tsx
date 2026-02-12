@@ -1,4 +1,4 @@
-
+import React from 'react';
 import styles from './Button.module.css';
 
 interface ButtonProps {
@@ -13,7 +13,7 @@ interface ButtonProps {
   [key: string]: any;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   type = 'default',
   size = 'default',
   disabled = false,
@@ -26,23 +26,23 @@ export const Button: React.FC<ButtonProps> = ({
 }) => {
   const getButtonClass = () => {
     const classes = [styles.button];
-    
+
     // Add type class
     classes.push(styles[type]);
-    
+
     // Add size class
     classes.push(styles[size]);
-    
+
     // Add disabled class
     if (disabled) {
       classes.push(styles.disabled);
     }
-    
+
     // Add custom class
     if (className) {
       classes.push(className);
     }
-    
+
     return classes.join(' ');
   };
 
@@ -54,7 +54,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      type={htmlType}
+      type={htmlType === 'submit' ? 'submit' : htmlType === 'reset' ? 'reset' : 'button'}
       className={getButtonClass()}
       style={style}
       disabled={disabled}

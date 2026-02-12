@@ -31,7 +31,7 @@ pnpm add brickd
 在你的 React 组件中，你可以按需导入 brickd 的组件：
 
 ```tsx
-import { Button } from 'brickd';
+import Button from 'brickd/Button';
 
 function App() {
   return (
@@ -53,7 +53,7 @@ brickd 组件的样式已经内置在组件中，无需单独导入。
 ### Button 组件
 
 ```tsx
-import { Button } from 'brickd';
+import Button from 'brickd/Button';
 
 function ButtonExample() {
   return (
@@ -66,6 +66,8 @@ function ButtonExample() {
     </div>
   );
 }
+
+export default ButtonExample;
 ```
 
 ### 其他组件
@@ -79,7 +81,7 @@ brickd 支持主题定制，你可以通过主题配置来调整组件的样式�
 ### 全局主题配置
 
 ```tsx
-import { ConfigProvider } from 'brickd';
+import ConfigProvider from 'brickd/ConfigProvider';
 
 function App() {
   return (
@@ -90,9 +92,12 @@ function App() {
       },
     }}>
       {/* 你的应用内容 */}
+      你的应用内容
     </ConfigProvider>
   );
 }
+
+export default App;
 ```
 
 ## 常见问题

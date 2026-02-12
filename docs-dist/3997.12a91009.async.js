@@ -1,0 +1,4 @@
+"use strict";(self.webpackChunkbrickd=self.webpackChunkbrickd||[]).push([[3997],{13997:function(I,e,n){n.r(e),n.d(e,{default:function(){return h}});var m=n(26068),r=n.n(m),v=n(48305),f=n.n(v),a=n(75271),l={masonry:"hEWeI0cCezk5P1lXg9YW",item:"d5yBDLgImccRqstkb715"},o=n(52676),y=function(s){var u=s.columns,g=u===void 0?3:u,d=s.gap,C=d===void 0?16:d,j=s.className,S=s.style,t=s.children,M=(0,a.useState)([]),i=f()(M,2),N=i[0],p=i[1],x=(0,a.useRef)(null);return(0,a.useEffect)(function(){if(a.Children.count(t)>0){var c=a.Children.toArray(t);p(c)}},[t]),(0,o.jsx)("div",{ref:x,className:`
+        `.concat(l.masonry,`
+        `).concat(j||"",`
+      `),style:r()(r()({},S),{},{columnCount:g,gap:"".concat(C,"px")}),children:N.map(function(c,A){return(0,o.jsx)("div",{className:l.item,children:c},A)})})},h=y}}]);

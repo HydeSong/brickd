@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbrickd=self.webpackChunkbrickd||[]).push([[5501],{25501:function(r,s,l){l.r(s),l.d(s,{App:function(){return e}});var d=l(52676),e=function(n){var t=n.children,c=n.className,u=c===void 0?"":c,a=n.style,i=a===void 0?{}:a;return(0,d.jsx)("div",{className:u,style:i,children:t})};s.default=e}}]);
