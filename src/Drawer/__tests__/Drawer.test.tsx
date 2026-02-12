@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { render, screen, fireEvent, act } from '@testing-library/react';
-import Drawer from '../index';
+import { render, screen } from '@testing-library/react';
 import Button from 'brickd';
+import React, { useState } from 'react';
+import Drawer from '../index';
 
 const TestDrawer = () => {
   const [visible, setVisible] = useState(false);
@@ -18,10 +18,17 @@ const TestDrawer = () => {
         data-testid="drawer"
         footer={
           <>
-            <Button data-testid="cancel-button" onClick={() => setVisible(false)}>
+            <Button
+              data-testid="cancel-button"
+              onClick={() => setVisible(false)}
+            >
               Cancel
             </Button>
-            <Button data-testid="ok-button" type="primary" onClick={() => setVisible(false)}>
+            <Button
+              data-testid="ok-button"
+              type="primary"
+              onClick={() => setVisible(false)}
+            >
               OK
             </Button>
           </>
@@ -82,10 +89,12 @@ describe('Drawer Component', () => {
           onVisibleChange={() => {}}
         >
           Drawer content
-        </Drawer>
+        </Drawer>,
       );
       const drawer = container.querySelector('.drawer');
-      expect(drawer).toHaveClass(`drawer${placement.charAt(0).toUpperCase() + placement.slice(1)}`);
+      expect(drawer).toHaveClass(
+        `drawer${placement.charAt(0).toUpperCase() + placement.slice(1)}`,
+      );
     });
   });
 
@@ -99,7 +108,7 @@ describe('Drawer Component', () => {
         height={500}
       >
         Drawer content
-      </Drawer>
+      </Drawer>,
     );
     const drawer = container.querySelector('.drawer');
     expect(drawer).toHaveStyle('width: 400px');
@@ -114,7 +123,7 @@ describe('Drawer Component', () => {
         mask={false}
       >
         Drawer content
-      </Drawer>
+      </Drawer>,
     );
     const mask = container.querySelector('.drawerMask');
     expect(mask).not.toBeInTheDocument();
@@ -129,9 +138,11 @@ describe('Drawer Component', () => {
         closable={false}
       >
         Drawer content
-      </Drawer>
+      </Drawer>,
     );
-    expect(screen.queryByRole('button', { name: 'Close' })).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: 'Close' }),
+    ).not.toBeInTheDocument();
   });
 
   test('renders with custom className and style', () => {
@@ -144,7 +155,7 @@ describe('Drawer Component', () => {
         style={{ backgroundColor: '#f0f0f0' }}
       >
         Drawer content
-      </Drawer>
+      </Drawer>,
     );
     const drawer = container.querySelector('.drawer');
     expect(drawer).toHaveClass('custom-drawer');
@@ -160,7 +171,7 @@ describe('Drawer Component', () => {
         bodyStyle={{ padding: '40px' }}
       >
         Drawer content
-      </Drawer>
+      </Drawer>,
     );
     const drawerBody = container.querySelector('.drawerBody');
     expect(drawerBody).toHaveStyle('padding: 40px');

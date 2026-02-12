@@ -1,4 +1,3 @@
-
 import { render, screen } from '@testing-library/react';
 import Result from '../index';
 
@@ -38,7 +37,7 @@ describe('Result Component', () => {
   });
 
   test('renders with actions', () => {
-    render(<Result actions={<button>Test button</button>} />);
+    render(<Result actions={<button type="button">Test button</button>} />);
     expect(screen.getByText('Test button')).toBeInTheDocument();
   });
 
@@ -49,7 +48,10 @@ describe('Result Component', () => {
 
   test('renders with custom className and style', () => {
     const { container } = render(
-      <Result className="custom-result" style={{ backgroundColor: '#f0f0f0' }} />
+      <Result
+        className="custom-result"
+        style={{ backgroundColor: '#f0f0f0' }}
+      />,
     );
     const resultElement = container.firstChild;
     expect(resultElement).toHaveClass('custom-result');
@@ -63,8 +65,8 @@ describe('Result Component', () => {
         title="Test title"
         description="Test description"
         extra="Test extra"
-        actions={<button>Test button</button>}
-      />
+        actions={<button type="button">Test button</button>}
+      />,
     );
     expect(screen.getByText('✅')).toBeInTheDocument();
     expect(screen.getByText('Test title')).toBeInTheDocument();

@@ -1,13 +1,12 @@
-
-import { render, screen, fireEvent } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import Popover from '../index';
 
 describe('Popover Component', () => {
   test('renders popover with content', () => {
     render(
       <Popover content="这是一个气泡卡片">
-        <button>点击触发</button>
-      </Popover>
+        <button type="button">点击触发</button>
+      </Popover>,
     );
 
     expect(screen.getByText('点击触发')).toBeInTheDocument();
@@ -16,8 +15,8 @@ describe('Popover Component', () => {
   test('shows popover when trigger is clicked', () => {
     render(
       <Popover content="这是一个气泡卡片">
-        <button>点击触发</button>
-      </Popover>
+        <button type="button">点击触发</button>
+      </Popover>,
     );
 
     const trigger = screen.getByText('点击触发');
@@ -29,8 +28,8 @@ describe('Popover Component', () => {
   test('shows popover when trigger is hovered', () => {
     render(
       <Popover content="这是一个气泡卡片" trigger="hover">
-        <button>悬停触发</button>
-      </Popover>
+        <button type="button">悬停触发</button>
+      </Popover>,
     );
 
     const trigger = screen.getByText('悬停触发');
@@ -44,8 +43,8 @@ describe('Popover Component', () => {
   test('shows popover when trigger is focused', () => {
     render(
       <Popover content="这是一个气泡卡片" trigger="focus">
-        <button>聚焦触发</button>
-      </Popover>
+        <button type="button">聚焦触发</button>
+      </Popover>,
     );
 
     const trigger = screen.getByText('聚焦触发');
@@ -59,15 +58,15 @@ describe('Popover Component', () => {
   test('supports controlled visibility', () => {
     const { rerender } = render(
       <Popover content="这是一个气泡卡片" visible={false}>
-        <button>点击触发</button>
-      </Popover>
+        <button type="button">点击触发</button>
+      </Popover>,
     );
 
     // Show popover
     rerender(
       <Popover content="这是一个气泡卡片" visible={true}>
-        <button>点击触发</button>
-      </Popover>
+        <button type="button">点击触发</button>
+      </Popover>,
     );
 
     expect(screen.getByText('这是一个气泡卡片')).toBeInTheDocument();
@@ -75,20 +74,17 @@ describe('Popover Component', () => {
     // Hide popover
     rerender(
       <Popover content="这是一个气泡卡片" visible={false}>
-        <button>点击触发</button>
-      </Popover>
+        <button type="button">点击触发</button>
+      </Popover>,
     );
   });
 
   test('calls onVisibleChange when visibility changes', () => {
     const onVisibleChange = jest.fn();
     render(
-      <Popover 
-        content="这是一个气泡卡片" 
-        onVisibleChange={onVisibleChange}
-      >
-        <button>点击触发</button>
-      </Popover>
+      <Popover content="这是一个气泡卡片" onVisibleChange={onVisibleChange}>
+        <button type="button">点击触发</button>
+      </Popover>,
     );
 
     const trigger = screen.getByText('点击触发');
@@ -99,13 +95,13 @@ describe('Popover Component', () => {
 
   test('applies custom className and style', () => {
     const { container } = render(
-      <Popover 
-        content="这是一个气泡卡片" 
+      <Popover
+        content="这是一个气泡卡片"
         className="custom-popover"
         style={{ zIndex: 1001 }}
       >
-        <button>点击触发</button>
-      </Popover>
+        <button type="button">点击触发</button>
+      </Popover>,
     );
 
     const popoverWrapper = container.firstChild;

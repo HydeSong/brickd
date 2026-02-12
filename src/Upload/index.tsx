@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './Upload.module.css';
 
 interface UploadFile {
@@ -34,12 +34,6 @@ interface UploadProps {
 }
 
 const Upload: React.FC<UploadProps> = ({
-  action = '',
-  method = 'post',
-  headers = {},
-  data = {},
-  name = 'file',
-  withCredentials = false,
   multiple = false,
   accept = '*',
   maxCount,
@@ -48,7 +42,6 @@ const Upload: React.FC<UploadProps> = ({
   onChange,
   onProgress,
   onSuccess,
-  onError,
   onRemove,
   fileList: controlledFileList,
   defaultFileList = [],
@@ -56,14 +49,52 @@ const Upload: React.FC<UploadProps> = ({
   style,
   children,
 }) => {
-  const [internalFileList, setInternalFileList] = useState<UploadFile[]>(defaultFileList);
+  const [internalFileList, setInternalFileList] =
+    useState<UploadFile[]>(defaultFileList);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const fileList = controlledFileList !== undefined ? controlledFileList : internalFileList;
+  const fileList =
+    controlledFileList !== undefined ? controlledFileList : internalFileList;
 
   const handleClick = () => {
     if (disabled) return;
     inputRef.current?.click();
+  };
+
+  const updateFileList = (updatedFile: UploadFile) => {
+    const newFileList = fileList.map((file) =>
+      file.uid === updatedFile.uid ? updatedFile : file,
+    );
+
+    if (controlledFileList === undefined) {
+      setInternalFileList(newFileList);
+    }
+
+    onChange?.(updatedFile, newFileList);
+  };
+
+  const upload = (file: File, uploadFile: UploadFile) => {
+    // 模拟上传过程
+    let percent = 0;
+    const interval = setInterval(() => {
+      percent += 10;
+      if (percent > 100) {
+        clearInterval(interval);
+        const updatedFile = {
+          ...uploadFile,
+          status: 'done' as const,
+          percent: 100,
+          url: URL.createObjectURL(file),
+        };
+        updateFileList(updatedFile);
+        onSuccess?.({}, updatedFile);
+        return;
+      }
+
+      const updatedFile = { ...uploadFile, percent };
+      updateFileList(updatedFile);
+      onProgress?.(percent, updatedFile);
+    }, 200);
   };
 
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -100,45 +131,14 @@ const Upload: React.FC<UploadProps> = ({
     }
   };
 
-  const upload = (file: File, uploadFile: UploadFile) => {
-    // 模拟上传过程
-    let percent = 0;
-    const interval = setInterval(() => {
-      percent += 10;
-      if (percent > 100) {
-        clearInterval(interval);
-        const updatedFile = { ...uploadFile, status: 'done' as const, percent: 100, url: URL.createObjectURL(file) };
-        updateFileList(updatedFile);
-        onSuccess?.({}, updatedFile);
-        return;
-      }
-
-      const updatedFile = { ...uploadFile, percent };
-      updateFileList(updatedFile);
-      onProgress?.(percent, updatedFile);
-    }, 200);
-  };
-
-  const updateFileList = (updatedFile: UploadFile) => {
-    const newFileList = fileList.map(file => 
-      file.uid === updatedFile.uid ? updatedFile : file
-    );
-    
-    if (controlledFileList === undefined) {
-      setInternalFileList(newFileList);
-    }
-    
-    onChange?.(updatedFile, newFileList);
-  };
-
   const handleRemove = (file: UploadFile) => {
     onRemove?.(file);
-    
-    const newFileList = fileList.filter(f => f.uid !== file.uid);
+
+    const newFileList = fileList.filter((f) => f.uid !== file.uid);
     if (controlledFileList === undefined) {
       setInternalFileList(newFileList);
     }
-    
+
     onChange?.(file, newFileList);
   };
 
@@ -160,7 +160,14 @@ const Upload: React.FC<UploadProps> = ({
       >
         {children || (
           <div className={styles.uploadIcon}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
@@ -170,23 +177,26 @@ const Upload: React.FC<UploadProps> = ({
         )}
       </div>
       <div className={styles.uploadList}>
-        {fileList.map(file => (
+        {fileList.map((file) => (
           <div key={file.uid} className={styles.uploadListItem}>
             <div className={styles.uploadListItemInfo}>
               <span className={styles.uploadListItemName}>{file.name}</span>
               {file.status === 'uploading' && (
                 <div className={styles.uploadListItemProgress}>
-                  <div 
+                  <div
                     className={styles.uploadListItemProgressBar}
                     style={{ width: `${file.percent || 0}%` }}
                   />
                 </div>
               )}
               {file.status === 'error' && (
-                <span className={styles.uploadListItemError}>Upload failed</span>
+                <span className={styles.uploadListItemError}>
+                  Upload failed
+                </span>
               )}
             </div>
             <button
+              type="button"
               className={styles.uploadListItemRemove}
               onClick={() => handleRemove(file)}
               disabled={disabled}

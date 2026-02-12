@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import styles from './Notification.module.css';
 
@@ -21,7 +21,9 @@ interface NotificationInstance {
   close: () => void;
 }
 
-const Notification: React.FC<NotificationConfig & { id: string; onClose: (id: string) => void }> = ({
+const Notification: React.FC<
+  NotificationConfig & { id: string; onClose: (id: string) => void }
+> = ({
   id,
   message,
   description,
@@ -35,6 +37,13 @@ const Notification: React.FC<NotificationConfig & { id: string; onClose: (id: st
 }) => {
   const [visible, setVisible] = useState(false);
   const timerRef = useRef<NodeJS.Timeout>();
+
+  const handleClose = () => {
+    setVisible(false);
+    setTimeout(() => {
+      onClose(id);
+    }, 300);
+  };
 
   useEffect(() => {
     setVisible(true);
@@ -51,13 +60,6 @@ const Notification: React.FC<NotificationConfig & { id: string; onClose: (id: st
       }
     };
   }, [duration]);
-
-  const handleClose = () => {
-    setVisible(false);
-    setTimeout(() => {
-      onClose(id);
-    }, 300);
-  };
 
   const handleMouseEnter = () => {
     if (timerRef.current) {
@@ -79,7 +81,9 @@ const Notification: React.FC<NotificationConfig & { id: string; onClose: (id: st
 
   return (
     <div
-      className={`${styles.notification} ${styles[`notification${type.charAt(0).toUpperCase() + type.slice(1)}`]} ${className || ''} ${visible ? styles.visible : ''}`}
+      className={`${styles.notification} ${
+        styles[`notification${type.charAt(0).toUpperCase() + type.slice(1)}`]
+      } ${className || ''} ${visible ? styles.visible : ''}`}
       style={style}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -87,6 +91,7 @@ const Notification: React.FC<NotificationConfig & { id: string; onClose: (id: st
     >
       {showClose && (
         <button
+          type="button"
           className={styles.notificationClose}
           onClick={(e) => {
             e.stopPropagation();
@@ -98,7 +103,9 @@ const Notification: React.FC<NotificationConfig & { id: string; onClose: (id: st
         </button>
       )}
       {message && <div className={styles.notificationMessage}>{message}</div>}
-      {description && <div className={styles.notificationDescription}>{description}</div>}
+      {description && (
+        <div className={styles.notificationDescription}>{description}</div>
+      )}
     </div>
   );
 };
@@ -128,7 +135,7 @@ class NotificationManager {
   private addNotification(config: NotificationConfig) {
     const id = this.generateId();
     const placement = config.placement || 'topRight';
-    const container = this.createContainer(placement);
+    this.createContainer(placement);
 
     const instance: NotificationInstance = {
       id,
@@ -142,7 +149,10 @@ class NotificationManager {
 
     const render = () => {
       const notifications = Array.from(this.instances.values())
-        .filter(({ config: { placement: instPlacement } }) => instPlacement === placement)
+        .filter(
+          ({ config: { placement: instPlacement } }) =>
+            instPlacement === placement,
+        )
         .map(({ id, config }) => (
           <Notification
             key={id}
@@ -181,10 +191,13 @@ class NotificationManager {
       this.instances.delete(id);
       const placement = instance.config.placement || 'topRight';
       const container = this.containers.get(placement);
-      
+
       if (container) {
         const notifications = Array.from(this.instances.values())
-          .filter(({ config: { placement: instPlacement } }) => instPlacement === placement)
+          .filter(
+            ({ config: { placement: instPlacement } }) =>
+              instPlacement === placement,
+          )
           .map(({ id, config }) => (
             <Notification
               key={id}
@@ -220,9 +233,10 @@ class NotificationManager {
   private cleanupEmptyContainers() {
     this.containers.forEach((container, placement) => {
       const hasNotifications = Array.from(this.instances.values()).some(
-        ({ config: { placement: instPlacement } }) => instPlacement === placement
+        ({ config: { placement: instPlacement } }) =>
+          instPlacement === placement,
       );
-      
+
       if (!hasNotifications) {
         document.body.removeChild(container);
         this.containers.delete(placement);
@@ -232,22 +246,34 @@ class NotificationManager {
   }
 
   success(config: React.ReactNode | NotificationConfig) {
-    const notificationConfig = typeof config === 'object' && !React.isValidElement(config) ? config : { message: config };
+    const notificationConfig =
+      typeof config === 'object' && !React.isValidElement(config)
+        ? config
+        : { message: config };
     return this.addNotification({ ...notificationConfig, type: 'success' });
   }
 
   error(config: React.ReactNode | NotificationConfig) {
-    const notificationConfig = typeof config === 'object' && !React.isValidElement(config) ? config : { message: config };
+    const notificationConfig =
+      typeof config === 'object' && !React.isValidElement(config)
+        ? config
+        : { message: config };
     return this.addNotification({ ...notificationConfig, type: 'error' });
   }
 
   info(config: React.ReactNode | NotificationConfig) {
-    const notificationConfig = typeof config === 'object' && !React.isValidElement(config) ? config : { message: config };
+    const notificationConfig =
+      typeof config === 'object' && !React.isValidElement(config)
+        ? config
+        : { message: config };
     return this.addNotification({ ...notificationConfig, type: 'info' });
   }
 
   warning(config: React.ReactNode | NotificationConfig) {
-    const notificationConfig = typeof config === 'object' && !React.isValidElement(config) ? config : { message: config };
+    const notificationConfig =
+      typeof config === 'object' && !React.isValidElement(config)
+        ? config
+        : { message: config };
     return this.addNotification({ ...notificationConfig, type: 'warning' });
   }
 

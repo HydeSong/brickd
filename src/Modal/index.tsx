@@ -1,4 +1,3 @@
-
 import styles from './Modal.module.css';
 
 const Modal = ({
@@ -15,7 +14,6 @@ const Modal = ({
   zIndex = 1000,
   className,
   style,
-  keyboard = true,
   wrapClassName,
 }) => {
   if (!visible) {
@@ -50,6 +48,7 @@ const Modal = ({
           <div className={styles.modalHeader}>
             <div className={styles.modalTitle}>{title}</div>
             <button
+              type="button"
               className={styles.modalClose}
               onClick={onCancel}
               aria-label="Close"
@@ -62,12 +61,14 @@ const Modal = ({
             {footer || (
               <>
                 <button
+                  type="button"
                   className={styles.modalButton}
                   onClick={onCancel}
                 >
                   取消
                 </button>
                 <button
+                  type="button"
                   className={`${styles.modalButton} ${styles.modalButtonPrimary}`}
                   onClick={onOk}
                   disabled={confirmLoading}

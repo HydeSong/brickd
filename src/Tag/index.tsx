@@ -1,4 +1,3 @@
-
 import styles from './Tag.module.css';
 
 export interface TagProps {
@@ -40,7 +39,9 @@ const Tag: React.FC<TagProps> = ({
     color ? styles[`tag-${color}`] : undefined,
     disabled ? styles['tag-disabled'] : undefined,
     className,
-  ].filter(Boolean).join(' ');
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <span className={tagClassName} style={style}>
@@ -48,6 +49,7 @@ const Tag: React.FC<TagProps> = ({
       <span className={styles.tagContent}>{children}</span>
       {closable && !disabled && (
         <button
+          type="button"
           className={styles.tagClose}
           onClick={handleClose}
           aria-label="Close"

@@ -1,4 +1,3 @@
-
 import styles from './Statistic.module.css';
 
 interface StatisticProps {
@@ -22,7 +21,6 @@ const Statistic: React.FC<StatisticProps> = ({
   prefix,
   suffix,
   precision,
-  decimalSeparator = '.',
   thousandSeparator = ',',
   formatter,
   className,
@@ -34,11 +32,14 @@ const Statistic: React.FC<StatisticProps> = ({
     }
 
     if (typeof val === 'number') {
+      let formattedVal = val;
       if (precision !== undefined) {
-        val = val.toFixed(precision);
+        formattedVal = Number(val.toFixed(precision));
       }
-      
-      return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, thousandSeparator);
+
+      return formattedVal
+        .toString()
+        .replace(/\B(?=(\d{3})+(?!\d))/g, thousandSeparator);
     }
 
     return val;

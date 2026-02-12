@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Tour.module.css';
 
 export interface TourStep {
@@ -50,14 +50,9 @@ const Tour: React.FC<TourProps> = ({
     }
   }, [controlledCurrent, isControlled]);
 
-  // Update target rect when step changes
-  useEffect(() => {
-    if (visible && step) {
-      updateTargetRect();
-    }
-  }, [visible, step]);
-
-  const getTargetElement = (target: string | HTMLElement): HTMLElement | null => {
+  const getTargetElement = (
+    target: string | HTMLElement,
+  ): HTMLElement | null => {
     if (typeof target === 'string') {
       return document.querySelector(target);
     }
@@ -71,6 +66,13 @@ const Tour: React.FC<TourProps> = ({
       setTargetRect(targetElement.getBoundingClientRect());
     }
   };
+
+  // Update target rect when step changes
+  useEffect(() => {
+    if (visible && step) {
+      updateTargetRect();
+    }
+  }, [visible, step]);
 
   useEffect(() => {
     if (visible && step) {
@@ -158,21 +160,18 @@ const Tour: React.FC<TourProps> = ({
     }
   }
 
-  const tourClassName = [
-    styles.tour,
-    className,
-  ].filter(Boolean).join(' ');
+  const tourClassName = [styles.tour, className].filter(Boolean).join(' ');
 
   return (
     <div className={tourClassName} style={style} ref={tourRef}>
       {mask && (
-        <div 
-          className={styles.tourMask} 
+        <div
+          className={styles.tourMask}
           ref={maskRef}
           onClick={handleMaskClick}
         >
           {targetRect && (
-            <div 
+            <div
               className={styles.tourMaskHole}
               style={{
                 top: targetRect.top,
@@ -187,15 +186,12 @@ const Tour: React.FC<TourProps> = ({
       <div className={styles.tourPopup} style={popupStyle}>
         <div className={styles.tourPopupContent}>
           {step.title && (
-            <div className={styles.tourPopupTitle}>
-              {step.title}
-            </div>
+            <div className={styles.tourPopupTitle}>{step.title}</div>
           )}
-          <div className={styles.tourPopupDescription}>
-            {step.content}
-          </div>
+          <div className={styles.tourPopupDescription}>{step.content}</div>
           <div className={styles.tourPopupFooter}>
             <button
+              type="button"
               className={styles.tourPopupButton}
               onClick={handleCancel}
             >
@@ -204,6 +200,7 @@ const Tour: React.FC<TourProps> = ({
             <div className={styles.tourPopupControls}>
               {currentStep > 0 && (
                 <button
+                  type="button"
                   className={styles.tourPopupButton}
                   onClick={handlePrev}
                 >
@@ -211,6 +208,7 @@ const Tour: React.FC<TourProps> = ({
                 </button>
               )}
               <button
+                type="button"
                 className={`${styles.tourPopupButton} ${styles.tourPopupButtonPrimary}`}
                 onClick={handleNext}
               >
@@ -219,7 +217,11 @@ const Tour: React.FC<TourProps> = ({
             </div>
           </div>
         </div>
-        <div className={`${styles.tourPopupArrow} ${styles[`tourPopupArrow-${placement}`]}`} />
+        <div
+          className={`${styles.tourPopupArrow} ${
+            styles[`tourPopupArrow-${placement}`]
+          }`}
+        />
       </div>
     </div>
   );

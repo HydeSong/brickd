@@ -1,5 +1,4 @@
-
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Form from '../index';
 
 describe('Form Component', () => {
@@ -10,7 +9,7 @@ describe('Form Component', () => {
           <label>Name</label>
           <input placeholder="Enter name" />
         </div>
-      </Form>
+      </Form>,
     );
     expect(screen.getByText('Name')).toBeInTheDocument();
     expect(screen.getByPlaceholderText('Enter name')).toBeInTheDocument();
@@ -24,9 +23,9 @@ describe('Form Component', () => {
           <input placeholder="Enter name" />
         </div>
         <button type="submit">Submit</button>
-      </Form>
+      </Form>,
     );
-    
+
     const submitButton = screen.getByText('Submit');
     fireEvent.click(submitButton);
   });
@@ -39,7 +38,7 @@ describe('Form Component', () => {
           <input placeholder="Enter name" />
           <span>Name is required</span>
         </div>
-      </Form>
+      </Form>,
     );
     expect(screen.getByText('Name is required')).toBeInTheDocument();
   });

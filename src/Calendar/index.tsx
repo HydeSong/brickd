@@ -16,8 +16,12 @@ const Calendar: React.FC<CalendarProps> = ({
   className = '',
   style = {},
 }) => {
-  const [currentDate, setCurrentDate] = useState<Date>(value || defaultValue || new Date());
-  const [currentMonth, setCurrentMonth] = useState<Date>(value || defaultValue || new Date());
+  const [currentDate, setCurrentDate] = useState<Date>(
+    value || defaultValue || new Date(),
+  );
+  const [currentMonth, setCurrentMonth] = useState<Date>(
+    value || defaultValue || new Date(),
+  );
 
   // 当外部 value 变化时，更新内部状态
   React.useEffect(() => {
@@ -68,14 +72,19 @@ const Calendar: React.FC<CalendarProps> = ({
       days.push(
         <div key={`prev-${i}`} className={styles.calendarDay}>
           <span className={styles.calendarDayText}></span>
-        </div>
+        </div>,
       );
     }
 
     // 添加当前月的天数
     for (let i = 1; i <= daysInMonth; i++) {
-      const date = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), i);
-      const isSelected = currentDate && date.toDateString() === currentDate.toDateString();
+      const date = new Date(
+        currentMonth.getFullYear(),
+        currentMonth.getMonth(),
+        i,
+      );
+      const isSelected =
+        currentDate && date.toDateString() === currentDate.toDateString();
       const isToday = date.toDateString() === new Date().toDateString();
 
       days.push(
@@ -89,7 +98,7 @@ const Calendar: React.FC<CalendarProps> = ({
           onClick={() => handleDateChange(date)}
         >
           <span className={styles.calendarDayText}>{i}</span>
-        </div>
+        </div>,
       );
     }
 
@@ -105,11 +114,19 @@ const Calendar: React.FC<CalendarProps> = ({
   return (
     <div className={`${styles.calendar} ${className}`} style={style}>
       <div className={styles.calendarHeader}>
-        <button className={styles.calendarNavButton} onClick={handlePrevMonth}>
+        <button
+          type="button"
+          className={styles.calendarNavButton}
+          onClick={handlePrevMonth}
+        >
           &lt;
         </button>
         <h3 className={styles.calendarMonth}>{getMonthName(currentMonth)}</h3>
-        <button className={styles.calendarNavButton} onClick={handleNextMonth}>
+        <button
+          type="button"
+          className={styles.calendarNavButton}
+          onClick={handleNextMonth}
+        >
           &gt;
         </button>
       </div>
@@ -120,9 +137,7 @@ const Calendar: React.FC<CalendarProps> = ({
           </div>
         ))}
       </div>
-      <div className={styles.calendarDays}>
-        {generateCalendarDays()}
-      </div>
+      <div className={styles.calendarDays}>{generateCalendarDays()}</div>
     </div>
   );
 };

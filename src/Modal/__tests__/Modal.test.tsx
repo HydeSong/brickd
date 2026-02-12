@@ -1,17 +1,12 @@
-
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import Modal from '../index';
 
 describe('Modal Component', () => {
   test('renders modal when visible is true', () => {
     render(
-      <Modal
-        visible={true}
-        onCancel={() => {}}
-        title="Test Modal"
-      >
+      <Modal visible={true} onCancel={() => {}} title="Test Modal">
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     expect(screen.getByText('Test Modal')).toBeInTheDocument();
@@ -22,13 +17,9 @@ describe('Modal Component', () => {
 
   test('does not render modal when visible is false', () => {
     render(
-      <Modal
-        visible={false}
-        onCancel={() => {}}
-        title="Test Modal"
-      >
+      <Modal visible={false} onCancel={() => {}} title="Test Modal">
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     expect(screen.queryByText('Test Modal')).not.toBeInTheDocument();
@@ -38,13 +29,9 @@ describe('Modal Component', () => {
   test('calls onCancel when cancel button is clicked', () => {
     const onCancel = jest.fn();
     render(
-      <Modal
-        visible={true}
-        onCancel={onCancel}
-        title="Test Modal"
-      >
+      <Modal visible={true} onCancel={onCancel} title="Test Modal">
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     fireEvent.click(screen.getByText('取消'));
@@ -55,14 +42,9 @@ describe('Modal Component', () => {
     const onOk = jest.fn();
     const onCancel = jest.fn();
     render(
-      <Modal
-        visible={true}
-        onCancel={onCancel}
-        onOk={onOk}
-        title="Test Modal"
-      >
+      <Modal visible={true} onCancel={onCancel} onOk={onOk} title="Test Modal">
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     fireEvent.click(screen.getByText('确定'));
@@ -72,13 +54,9 @@ describe('Modal Component', () => {
   test('calls onCancel when close button is clicked', () => {
     const onCancel = jest.fn();
     render(
-      <Modal
-        visible={true}
-        onCancel={onCancel}
-        title="Test Modal"
-      >
+      <Modal visible={true} onCancel={onCancel} title="Test Modal">
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     fireEvent.click(screen.getByLabelText('Close'));
@@ -95,7 +73,7 @@ describe('Modal Component', () => {
         title="Test Modal"
       >
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     const mask = screen.getByRole('presentation');
@@ -113,7 +91,7 @@ describe('Modal Component', () => {
         title="Test Modal"
       >
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     const mask = screen.getByRole('presentation');
@@ -127,10 +105,14 @@ describe('Modal Component', () => {
         visible={true}
         onCancel={() => {}}
         title="Test Modal"
-        footer={<button data-testid="custom-button">Custom Button</button>}
+        footer={
+          <button type="button" data-testid="custom-button">
+            Custom Button
+          </button>
+        }
       >
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     expect(screen.getByTestId('custom-button')).toBeInTheDocument();
@@ -147,7 +129,7 @@ describe('Modal Component', () => {
         title="Test Modal"
       >
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     expect(screen.getByText('加载中...')).toBeInTheDocument();
@@ -163,7 +145,7 @@ describe('Modal Component', () => {
         title="Test Modal"
       >
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     fireEvent.keyDown(document, { key: 'Escape' });
@@ -180,7 +162,7 @@ describe('Modal Component', () => {
         title="Test Modal"
       >
         Modal Content
-      </Modal>
+      </Modal>,
     );
 
     fireEvent.keyDown(document, { key: 'Escape' });

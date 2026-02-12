@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Carousel.module.css';
 
 interface CarouselProps {
@@ -42,10 +42,35 @@ const Carousel: React.FC<CarouselProps> & {
   style = {},
   children,
 }) => {
-  const [currentIndex, setCurrentIndex] = useState<number>(activeIndex !== undefined ? activeIndex : defaultActiveIndex);
+  const [currentIndex, setCurrentIndex] = useState<number>(
+    activeIndex !== undefined ? activeIndex : defaultActiveIndex,
+  );
   const [itemsCount, setItemsCount] = useState<number>(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const handleNext = () => {
+    const nextIndex = (currentIndex + 1) % itemsCount;
+    setCurrentIndex(nextIndex);
+    if (onChange) {
+      onChange(nextIndex);
+    }
+  };
+
+  const handlePrev = () => {
+    const prevIndex = (currentIndex - 1 + itemsCount) % itemsCount;
+    setCurrentIndex(prevIndex);
+    if (onChange) {
+      onChange(prevIndex);
+    }
+  };
+
+  const handleDotClick = (index: number) => {
+    setCurrentIndex(index);
+    if (onChange) {
+      onChange(index);
+    }
+  };
 
   // 当外部 activeIndex 变化时，更新内部状态
   useEffect(() => {
@@ -77,29 +102,6 @@ const Carousel: React.FC<CarouselProps> & {
     };
   }, [autoplay, autoplaySpeed, currentIndex, itemsCount]);
 
-  const handleNext = () => {
-    const nextIndex = (currentIndex + 1) % itemsCount;
-    setCurrentIndex(nextIndex);
-    if (onChange) {
-      onChange(nextIndex);
-    }
-  };
-
-  const handlePrev = () => {
-    const prevIndex = (currentIndex - 1 + itemsCount) % itemsCount;
-    setCurrentIndex(prevIndex);
-    if (onChange) {
-      onChange(prevIndex);
-    }
-  };
-
-  const handleDotClick = (index: number) => {
-    setCurrentIndex(index);
-    if (onChange) {
-      onChange(index);
-    }
-  };
-
   const getTransformStyle = () => {
     return {
       transform: `translateX(-${currentIndex * 100}%)`,
@@ -115,17 +117,28 @@ const Carousel: React.FC<CarouselProps> & {
       </div>
       {itemsCount > 1 && (
         <>
-          <button className={`${styles.carouselArrow} ${styles.carouselArrowPrev}`} onClick={handlePrev}>
+          <button
+            type="button"
+            className={`${styles.carouselArrow} ${styles.carouselArrowPrev}`}
+            onClick={handlePrev}
+          >
             &lt;
           </button>
-          <button className={`${styles.carouselArrow} ${styles.carouselArrowNext}`} onClick={handleNext}>
+          <button
+            type="button"
+            className={`${styles.carouselArrow} ${styles.carouselArrowNext}`}
+            onClick={handleNext}
+          >
             &gt;
           </button>
           <div className={styles.carouselDots}>
             {Array.from({ length: itemsCount }).map((_, index) => (
               <button
+                type="button"
                 key={index}
-                className={`${styles.carouselDot} ${currentIndex === index ? styles.carouselDotActive : ''}`}
+                className={`${styles.carouselDot} ${
+                  currentIndex === index ? styles.carouselDotActive : ''
+                }`}
                 onClick={() => handleDotClick(index)}
               />
             ))}

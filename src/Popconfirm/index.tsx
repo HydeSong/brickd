@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Popconfirm.module.css';
 
 interface PopconfirmProps {
@@ -41,31 +41,47 @@ const Popconfirm: React.FC<PopconfirmProps> = ({
         if (triggerRef.current && popoverRef.current) {
           const triggerRect = triggerRef.current.getBoundingClientRect();
           const popoverRect = popoverRef.current.getBoundingClientRect();
-          
+
           let newStyle: React.CSSProperties = {};
 
           switch (placement) {
             case 'top':
               newStyle = {
                 top: `${triggerRect.top - popoverRect.height - 8}px`,
-                left: `${triggerRect.left + triggerRect.width / 2 - popoverRect.width / 2}px`,
+                left: `${
+                  triggerRect.left +
+                  triggerRect.width / 2 -
+                  popoverRect.width / 2
+                }px`,
               };
               break;
             case 'bottom':
               newStyle = {
                 top: `${triggerRect.bottom + 8}px`,
-                left: `${triggerRect.left + triggerRect.width / 2 - popoverRect.width / 2}px`,
+                left: `${
+                  triggerRect.left +
+                  triggerRect.width / 2 -
+                  popoverRect.width / 2
+                }px`,
               };
               break;
             case 'left':
               newStyle = {
-                top: `${triggerRect.top + triggerRect.height / 2 - popoverRect.height / 2}px`,
+                top: `${
+                  triggerRect.top +
+                  triggerRect.height / 2 -
+                  popoverRect.height / 2
+                }px`,
                 left: `${triggerRect.left - popoverRect.width - 8}px`,
               };
               break;
             case 'right':
               newStyle = {
-                top: `${triggerRect.top + triggerRect.height / 2 - popoverRect.height / 2}px`,
+                top: `${
+                  triggerRect.top +
+                  triggerRect.height / 2 -
+                  popoverRect.height / 2
+                }px`,
                 left: `${triggerRect.right + 8}px`,
               };
               break;
@@ -96,7 +112,8 @@ const Popconfirm: React.FC<PopconfirmProps> = ({
 
     if (visible) {
       document.addEventListener('mousedown', handleClickOutside);
-      return () => document.removeEventListener('mousedown', handleClickOutside);
+      return () =>
+        document.removeEventListener('mousedown', handleClickOutside);
     }
   }, [visible]);
 
@@ -136,11 +153,7 @@ const Popconfirm: React.FC<PopconfirmProps> = ({
 
   return (
     <div className={`${styles.popconfirm} ${className || ''}`} style={style}>
-      <div
-        ref={triggerRef}
-        className={styles.trigger}
-        {...triggerProps}
-      >
+      <div ref={triggerRef} className={styles.trigger} {...triggerProps}>
         {children}
       </div>
       {visible && !disabled && (
@@ -151,16 +164,20 @@ const Popconfirm: React.FC<PopconfirmProps> = ({
         >
           <div className={styles.content}>
             {title && <div className={styles.title}>{title}</div>}
-            {description && <div className={styles.description}>{description}</div>}
+            {description && (
+              <div className={styles.description}>{description}</div>
+            )}
           </div>
           <div className={styles.buttons}>
             <button
+              type="button"
               className={`${styles.button} ${styles.cancelButton}`}
               onClick={handleCancel}
             >
               {cancelText}
             </button>
             <button
+              type="button"
               className={`${styles.button} ${styles.confirmButton}`}
               onClick={handleConfirm}
             >

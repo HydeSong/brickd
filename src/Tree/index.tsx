@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Tree.module.css';
 
 interface TreeNode {
@@ -15,7 +15,10 @@ interface TreeProps {
   defaultSelectedKeys?: string[];
   selectedKeys?: string[];
   onExpand?: (expandedKeys: string[]) => void;
-  onSelect?: (selectedKeys: string[], event: { node: TreeNode; selected: boolean }) => void;
+  onSelect?: (
+    selectedKeys: string[],
+    event: { node: TreeNode; selected: boolean },
+  ) => void;
   showLine?: boolean;
   checkable?: boolean;
   className?: string;
@@ -36,10 +39,10 @@ const Tree: React.FC<TreeProps> = ({
   style = {},
 }) => {
   const [internalExpandedKeys, setInternalExpandedKeys] = useState<string[]>(
-    expandedKeys !== undefined ? expandedKeys : defaultExpandedKeys
+    expandedKeys !== undefined ? expandedKeys : defaultExpandedKeys,
   );
   const [internalSelectedKeys, setInternalSelectedKeys] = useState<string[]>(
-    selectedKeys !== undefined ? selectedKeys : defaultSelectedKeys
+    selectedKeys !== undefined ? selectedKeys : defaultSelectedKeys,
   );
 
   // 当外部 expandedKeys 变化时，更新内部状态
@@ -59,7 +62,7 @@ const Tree: React.FC<TreeProps> = ({
   const handleExpand = (key: string) => {
     let newExpandedKeys: string[];
     if (internalExpandedKeys.includes(key)) {
-      newExpandedKeys = internalExpandedKeys.filter(k => k !== key);
+      newExpandedKeys = internalExpandedKeys.filter((k) => k !== key);
     } else {
       newExpandedKeys = [...internalExpandedKeys, key];
     }
@@ -72,13 +75,16 @@ const Tree: React.FC<TreeProps> = ({
   const handleSelect = (key: string, node: TreeNode) => {
     let newSelectedKeys: string[];
     if (internalSelectedKeys.includes(key)) {
-      newSelectedKeys = internalSelectedKeys.filter(k => k !== key);
+      newSelectedKeys = internalSelectedKeys.filter((k) => k !== key);
     } else {
       newSelectedKeys = [...internalSelectedKeys, key];
     }
     setInternalSelectedKeys(newSelectedKeys);
     if (onSelect) {
-      onSelect(newSelectedKeys, { node, selected: newSelectedKeys.includes(key) });
+      onSelect(newSelectedKeys, {
+        node,
+        selected: newSelectedKeys.includes(key),
+      });
     }
   };
 
@@ -101,40 +107,49 @@ const Tree: React.FC<TreeProps> = ({
 
     return (
       <div key={node.key} className={styles.treeNode}>
-        <div 
-          className={`${styles.treeNodeContent} ${selected ? styles.treeNodeSelected : ''} ${node.disabled ? styles.treeNodeDisabled : ''}`}
+        <div
+          className={`${styles.treeNodeContent} ${
+            selected ? styles.treeNodeSelected : ''
+          } ${node.disabled ? styles.treeNodeDisabled : ''}`}
           onClick={() => !node.disabled && handleSelect(node.key, node)}
         >
           {hasChild && (
-            <span 
-              className={`${styles.treeNodeSwitcher} ${expanded ? styles.treeNodeSwitcherExpanded : ''}`}
+            <span
+              className={`${styles.treeNodeSwitcher} ${
+                expanded ? styles.treeNodeSwitcherExpanded : ''
+              }`}
               onClick={(e) => {
                 e.stopPropagation();
-                !node.disabled && handleExpand(node.key);
+                if (!node.disabled) {
+                  handleExpand(node.key);
+                }
               }}
             >
               {expanded ? '▼' : '►'}
             </span>
           )}
-          {!hasChild && showLine && <span className={styles.treeNodeSwitcherPlaceholder} />}
+          {!hasChild && showLine && (
+            <span className={styles.treeNodeSwitcherPlaceholder} />
+          )}
           {checkable && (
             <span className={styles.treeNodeCheckbox}>
-              <input 
-                type="checkbox" 
-                checked={selected} 
+              <input
+                type="checkbox"
+                checked={selected}
                 onChange={() => {}}
                 onClick={(e) => e.stopPropagation()}
                 disabled={node.disabled}
               />
             </span>
           )}
-          <span className={styles.treeNodeTitle}>
-            {node.title}
-          </span>
+          <span className={styles.treeNodeTitle}>{node.title}</span>
         </div>
         {hasChild && expanded && (
-          <div className={styles.treeNodeChildren} style={{ paddingLeft: `${level * 20 + 20}px` }}>
-            {node.children?.map(child => renderTreeNode(child, level + 1))}
+          <div
+            className={styles.treeNodeChildren}
+            style={{ paddingLeft: `${level * 20 + 20}px` }}
+          >
+            {node.children?.map((child) => renderTreeNode(child, level + 1))}
           </div>
         )}
       </div>
@@ -142,8 +157,13 @@ const Tree: React.FC<TreeProps> = ({
   };
 
   return (
-    <div className={`${styles.tree} ${showLine ? styles.treeShowLine : ''} ${className}`} style={style}>
-      {data.map(node => renderTreeNode(node))}
+    <div
+      className={`${styles.tree} ${
+        showLine ? styles.treeShowLine : ''
+      } ${className}`}
+      style={style}
+    >
+      {data.map((node) => renderTreeNode(node))}
     </div>
   );
 };

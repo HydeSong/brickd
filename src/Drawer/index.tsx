@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Drawer.module.css';
 
 interface DrawerProps {
@@ -43,10 +43,23 @@ const Drawer: React.FC<DrawerProps> = ({
   ...rest
 }) => {
   const [internalVisible, setInternalVisible] = useState<boolean>(
-    visible !== undefined ? visible : defaultVisible
+    visible !== undefined ? visible : defaultVisible,
   );
   const drawerRef = useRef<HTMLDivElement>(null);
   const maskRef = useRef<HTMLDivElement>(null);
+
+  const handleClose = () => {
+    setInternalVisible(false);
+    if (onVisibleChange) {
+      onVisibleChange(false);
+    }
+  };
+
+  const handleMaskClick = () => {
+    if (maskClosable) {
+      handleClose();
+    }
+  };
 
   // 当外部 visible 变化时，更新内部状态
   useEffect(() => {
@@ -76,29 +89,12 @@ const Drawer: React.FC<DrawerProps> = ({
     };
   }, [internalVisible]);
 
-  const handleClose = () => {
-    setInternalVisible(false);
-    if (onVisibleChange) {
-      onVisibleChange(false);
-    }
-  };
-
-  const handleMaskClick = () => {
-    if (maskClosable) {
-      handleClose();
-    }
-  };
-
   if (!internalVisible && destroyOnClose) {
     return null;
   }
 
   if (!internalVisible && !destroyOnClose) {
-    return (
-      <div className={styles.drawerHidden}>
-        {children}
-      </div>
-    );
+    return <div className={styles.drawerHidden}>{children}</div>;
   }
 
   const drawerStyle = {
@@ -127,7 +123,11 @@ const Drawer: React.FC<DrawerProps> = ({
       )}
       <div
         ref={drawerRef}
-        className={`${styles.drawer} ${styles[`drawer${placement.charAt(0).toUpperCase() + placement.slice(1)}`]} ${className}`}
+        className={`${styles.drawer} ${
+          styles[
+            `drawer${placement.charAt(0).toUpperCase() + placement.slice(1)}`
+          ]
+        } ${className}`}
         style={{ ...drawerStyle, ...placementStyle, ...sizeStyle }}
         {...rest}
       >
@@ -135,6 +135,7 @@ const Drawer: React.FC<DrawerProps> = ({
           {title && <div className={styles.drawerTitle}>{title}</div>}
           {closable && (
             <button
+              type="button"
               className={styles.drawerClose}
               onClick={handleClose}
               aria-label="Close"

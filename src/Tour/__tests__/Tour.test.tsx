@@ -1,5 +1,4 @@
-
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import Tour from '../index';
 
 describe('Tour Component', () => {
@@ -17,12 +16,7 @@ describe('Tour Component', () => {
       },
     ];
 
-    render(
-      <Tour
-        steps={steps}
-        visible
-      />
-    );
+    render(<Tour steps={steps} visible />);
 
     expect(screen.getByText('Step 1')).toBeInTheDocument();
     expect(screen.getByText('Content 1')).toBeInTheDocument();
@@ -42,12 +36,7 @@ describe('Tour Component', () => {
       },
     ];
 
-    const { container } = render(
-      <Tour
-        steps={steps}
-        visible
-      />
-    );
+    render(<Tour steps={steps} visible />);
 
     // Check initial step
     expect(screen.getByText('Step 1')).toBeInTheDocument();
@@ -86,13 +75,7 @@ describe('Tour Component', () => {
       },
     ];
 
-    render(
-      <Tour
-        steps={steps}
-        visible
-        onFinish={onFinishMock}
-      />
-    );
+    render(<Tour steps={steps} visible onFinish={onFinishMock} />);
 
     fireEvent.click(screen.getByText('完成'));
     expect(onFinishMock).toHaveBeenCalledTimes(1);
@@ -108,13 +91,7 @@ describe('Tour Component', () => {
       },
     ];
 
-    render(
-      <Tour
-        steps={steps}
-        visible
-        onCancel={onCancelMock}
-      />
-    );
+    render(<Tour steps={steps} visible onCancel={onCancelMock} />);
 
     fireEvent.click(screen.getByText('取消'));
     expect(onCancelMock).toHaveBeenCalledTimes(1);
@@ -136,16 +113,12 @@ describe('Tour Component', () => {
     ];
 
     render(
-      <Tour
-        steps={steps}
-        visible
-        onCurrentChange={onCurrentChangeMock}
-      />
+      <Tour steps={steps} visible onCurrentChange={onCurrentChangeMock} />,
     );
 
     // Click next button
     fireEvent.click(screen.getByText('下一步'));
-    
+
     // Wait for callback and step change
     await waitFor(() => {
       expect(onCurrentChangeMock).toHaveBeenCalledWith(1);
@@ -158,7 +131,7 @@ describe('Tour Component', () => {
 
     // Click previous button
     fireEvent.click(screen.getByText('上一步'));
-    
+
     // Wait for callback and step change back
     await waitFor(() => {
       expect(onCurrentChangeMock).toHaveBeenCalledWith(0);
@@ -167,7 +140,7 @@ describe('Tour Component', () => {
 
   test('renders tour with different placements', () => {
     const placements = ['top', 'bottom', 'left', 'right'] as const;
-    placements.forEach(placement => {
+    placements.forEach((placement) => {
       const steps = [
         {
           title: `Step with ${placement} placement`,
@@ -177,14 +150,11 @@ describe('Tour Component', () => {
         },
       ];
 
-      render(
-        <Tour
-          steps={steps}
-          visible
-        />
-      );
+      render(<Tour steps={steps} visible />);
 
-      expect(screen.getByText(`Step with ${placement} placement`)).toBeInTheDocument();
+      expect(
+        screen.getByText(`Step with ${placement} placement`),
+      ).toBeInTheDocument();
     });
   });
 
@@ -197,13 +167,7 @@ describe('Tour Component', () => {
       },
     ];
 
-    const { container } = render(
-      <Tour
-        steps={steps}
-        visible
-        mask={false}
-      />
-    );
+    const { container } = render(<Tour steps={steps} visible mask={false} />);
 
     expect(container.querySelector('.tourMask')).not.toBeInTheDocument();
   });

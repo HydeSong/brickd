@@ -1,4 +1,3 @@
-
 import styles from './Table.module.css';
 
 interface TableColumn {
@@ -58,7 +57,11 @@ const Table: React.FC<TableProps> = ({
       }}
     >
       <table
-        className={`${styles.table} ${size === 'small' ? styles.small : size === 'large' ? styles.large : ''} ${bordered ? styles.bordered : ''} ${striped ? styles.striped : ''} ${hoverable ? styles.hoverable : ''}`}
+        className={`${styles.table} ${
+          size === 'small' ? styles.small : size === 'large' ? styles.large : ''
+        } ${bordered ? styles.bordered : ''} ${striped ? styles.striped : ''} ${
+          hoverable ? styles.hoverable : ''
+        }`}
         style={scroll}
       >
         <thead className={styles.tableHead}>
@@ -99,7 +102,9 @@ const Table: React.FC<TableProps> = ({
                     className={column.className}
                     style={column.style}
                   >
-                    {column.render ? column.render(record[column.dataIndex], record, index) : record[column.dataIndex]}
+                    {column.render
+                      ? column.render(record[column.dataIndex], record, index)
+                      : record[column.dataIndex]}
                   </td>
                 ))}
               </tr>
@@ -111,8 +116,8 @@ const Table: React.FC<TableProps> = ({
         <div className={styles.pagination}>
           {/* 简化版分页，实际项目中应该使用 Pagination 组件 */}
           <span>1-10 of 100</span>
-          <button>Prev</button>
-          <button>Next</button>
+          <button type="button">Prev</button>
+          <button type="button">Next</button>
         </div>
       )}
     </div>

@@ -1,5 +1,4 @@
-
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { fireEvent, render, waitFor } from '@testing-library/react';
 import Slider from '../index';
 
 describe('Slider Component', () => {
@@ -12,12 +11,12 @@ describe('Slider Component', () => {
   it('should handle value change', async () => {
     const onChange = jest.fn();
     const { container } = render(<Slider onChange={onChange} />);
-    
+
     const handle = container.querySelector('.sliderHandle');
     fireEvent.mouseDown(handle!);
     fireEvent.mouseMove(document, { clientX: 200 });
     fireEvent.mouseUp(document);
-    
+
     await waitFor(() => {
       expect(onChange).toHaveBeenCalled();
     });

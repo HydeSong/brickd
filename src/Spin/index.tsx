@@ -1,4 +1,3 @@
-
 import styles from './Spin.module.css';
 
 interface SpinProps {
@@ -19,7 +18,6 @@ const Spin: React.FC<SpinProps> = ({
   spinning = true,
   size = 'default',
   tip,
-  delay,
   className = '',
   style = {},
   children,
@@ -63,8 +61,16 @@ const Spin: React.FC<SpinProps> = ({
 
   if (children) {
     return (
-      <div className={`${styles.spinWrapper} ${wrapperClassName}`} style={wrapperStyle}>
-        <div className={`${styles.spin} ${className}`} style={style} role="status" aria-label="Loading">
+      <div
+        className={`${styles.spinWrapper} ${wrapperClassName}`}
+        style={wrapperStyle}
+      >
+        <div
+          className={`${styles.spin} ${className}`}
+          style={style}
+          role="status"
+          aria-label="Loading"
+        >
           {renderIndicator()}
           {tip && <div className={styles.spinTip}>{tip}</div>}
         </div>
@@ -74,7 +80,12 @@ const Spin: React.FC<SpinProps> = ({
   }
 
   return (
-    <div className={`${styles.spin} ${className}`} style={style} role="status" aria-label="Loading">
+    <div
+      className={`${styles.spin} ${className}`}
+      style={style}
+      role="status"
+      aria-label="Loading"
+    >
       {renderIndicator()}
       {tip && <div className={styles.spinTip}>{tip}</div>}
     </div>

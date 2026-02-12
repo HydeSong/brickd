@@ -1,16 +1,12 @@
-
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import Popconfirm from '../index';
 
 describe('Popconfirm Component', () => {
   test('renders popconfirm trigger', () => {
     render(
-      <Popconfirm
-        title="Are you sure?"
-        onConfirm={() => {}}
-      >
-        <button>Delete</button>
-      </Popconfirm>
+      <Popconfirm title="Are you sure?" onConfirm={() => {}}>
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     expect(screen.getByText('Delete')).toBeInTheDocument();
@@ -18,12 +14,9 @@ describe('Popconfirm Component', () => {
 
   test('shows popover when trigger is clicked', () => {
     render(
-      <Popconfirm
-        title="Are you sure?"
-        onConfirm={() => {}}
-      >
-        <button>Delete</button>
-      </Popconfirm>
+      <Popconfirm title="Are you sure?" onConfirm={() => {}}>
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     fireEvent.click(screen.getByText('Delete'));
@@ -35,12 +28,9 @@ describe('Popconfirm Component', () => {
   test('hides popover when confirm is clicked', () => {
     const onConfirm = jest.fn();
     render(
-      <Popconfirm
-        title="Are you sure?"
-        onConfirm={onConfirm}
-      >
-        <button>Delete</button>
-      </Popconfirm>
+      <Popconfirm title="Are you sure?" onConfirm={onConfirm}>
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     fireEvent.click(screen.getByText('Delete'));
@@ -57,8 +47,8 @@ describe('Popconfirm Component', () => {
         onConfirm={() => {}}
         onCancel={onCancel}
       >
-        <button>Delete</button>
-      </Popconfirm>
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     fireEvent.click(screen.getByText('Delete'));
@@ -69,12 +59,9 @@ describe('Popconfirm Component', () => {
 
   test('hides popover when clicked outside', () => {
     render(
-      <Popconfirm
-        title="Are you sure?"
-        onConfirm={() => {}}
-      >
-        <button>Delete</button>
-      </Popconfirm>
+      <Popconfirm title="Are you sure?" onConfirm={() => {}}>
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     fireEvent.click(screen.getByText('Delete'));
@@ -86,13 +73,9 @@ describe('Popconfirm Component', () => {
 
   test('shows popover on hover when trigger is hover', () => {
     render(
-      <Popconfirm
-        title="Are you sure?"
-        onConfirm={() => {}}
-        trigger="hover"
-      >
-        <button>Delete</button>
-      </Popconfirm>
+      <Popconfirm title="Are you sure?" onConfirm={() => {}} trigger="hover">
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     fireEvent.mouseEnter(screen.getByText('Delete'));
@@ -101,13 +84,9 @@ describe('Popconfirm Component', () => {
 
   test('hides popover on leave when trigger is hover', () => {
     render(
-      <Popconfirm
-        title="Are you sure?"
-        onConfirm={() => {}}
-        trigger="hover"
-      >
-        <button>Delete</button>
-      </Popconfirm>
+      <Popconfirm title="Are you sure?" onConfirm={() => {}} trigger="hover">
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     fireEvent.mouseEnter(screen.getByText('Delete'));
@@ -119,13 +98,9 @@ describe('Popconfirm Component', () => {
 
   test('does not show popover when disabled', () => {
     render(
-      <Popconfirm
-        title="Are you sure?"
-        onConfirm={() => {}}
-        disabled
-      >
-        <button>Delete</button>
-      </Popconfirm>
+      <Popconfirm title="Are you sure?" onConfirm={() => {}} disabled>
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     fireEvent.click(screen.getByText('Delete'));
@@ -140,8 +115,8 @@ describe('Popconfirm Component', () => {
         okText="Yes"
         cancelText="No"
       >
-        <button>Delete</button>
-      </Popconfirm>
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     fireEvent.click(screen.getByText('Delete'));
@@ -156,11 +131,13 @@ describe('Popconfirm Component', () => {
         description="This action cannot be undone"
         onConfirm={() => {}}
       >
-        <button>Delete</button>
-      </Popconfirm>
+        <button type="button">Delete</button>
+      </Popconfirm>,
     );
 
     fireEvent.click(screen.getByText('Delete'));
-    expect(screen.getByText('This action cannot be undone')).toBeInTheDocument();
+    expect(
+      screen.getByText('This action cannot be undone'),
+    ).toBeInTheDocument();
   });
 });

@@ -34,7 +34,12 @@ const Alert: React.FC<AlertProps> = ({
   }
 
   return (
-    <div className={`${styles.alert} ${styles[`alert${type.charAt(0).toUpperCase() + type.slice(1)}`]} ${className}`} style={style}>
+    <div
+      className={`${styles.alert} ${
+        styles[`alert${type.charAt(0).toUpperCase() + type.slice(1)}`]
+      } ${className}`}
+      style={style}
+    >
       <div className={styles.alertContent}>
         <div className={styles.alertIcon}>
           {type === 'info' && 'ℹ️'}
@@ -44,10 +49,13 @@ const Alert: React.FC<AlertProps> = ({
         </div>
         <div className={styles.alertMessage}>
           <div className={styles.alertTitle}>{message}</div>
-          {description && <div className={styles.alertDescription}>{description}</div>}
+          {description && (
+            <div className={styles.alertDescription}>{description}</div>
+          )}
         </div>
         {closable && (
           <button
+            type="button"
             className={styles.alertClose}
             onClick={handleClose}
             aria-label="Close"

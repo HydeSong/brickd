@@ -1,5 +1,4 @@
-
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import ColorPicker from '../index';
 
 describe('ColorPicker Component', () => {
@@ -11,7 +10,7 @@ describe('ColorPicker Component', () => {
   it('should handle color change', async () => {
     const onChange = jest.fn();
     const { container } = render(<ColorPicker onChange={onChange} />);
-    
+
     const trigger = container.querySelector('.colorPickerTrigger');
     expect(trigger).toBeInTheDocument();
   });

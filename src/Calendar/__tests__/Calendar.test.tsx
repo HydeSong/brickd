@@ -1,5 +1,4 @@
-
-import { render, fireEvent, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Calendar from '../index';
 
 describe('Calendar Component', () => {
@@ -27,10 +26,9 @@ describe('Calendar Component', () => {
     const onChange = jest.fn();
     render(<Calendar onChange={onChange} />);
     const calendarDay = document.querySelector('.calendarDay');
-    if (calendarDay) {
-      fireEvent.click(calendarDay);
-      expect(onChange).toHaveBeenCalledTimes(1);
-    }
+    expect(calendarDay).toBeInTheDocument();
+    fireEvent.click(calendarDay!);
+    expect(onChange).toHaveBeenCalledTimes(1);
   });
 
   test('renders correctly with custom className', () => {
@@ -50,12 +48,10 @@ describe('Calendar Component', () => {
     render(<Calendar />);
     const prevButton = document.querySelector('.calendarNavButton:first-child');
     const nextButton = document.querySelector('.calendarNavButton:last-child');
-    
-    if (prevButton && nextButton) {
-      fireEvent.click(prevButton);
-      fireEvent.click(nextButton);
-      expect(prevButton).toBeInTheDocument();
-      expect(nextButton).toBeInTheDocument();
-    }
+
+    expect(prevButton).toBeInTheDocument();
+    expect(nextButton).toBeInTheDocument();
+    fireEvent.click(prevButton!);
+    fireEvent.click(nextButton!);
   });
 });

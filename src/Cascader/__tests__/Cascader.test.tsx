@@ -1,5 +1,4 @@
-
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import Cascader from '../index';
 
 describe('Cascader Component', () => {
@@ -35,7 +34,7 @@ describe('Cascader Component', () => {
     render(<Cascader options={options} placeholder="Select an option" />);
     const input = screen.getByText('Select an option');
     fireEvent.click(input);
-    
+
     await waitFor(() => {
       expect(screen.getByText('Option 1')).toBeInTheDocument();
     });
@@ -43,41 +42,45 @@ describe('Cascader Component', () => {
 
   it('should handle selection change', async () => {
     const onChange = jest.fn();
-    render(<Cascader options={options} placeholder="Select an option" onChange={onChange} />);
-    
+    render(
+      <Cascader
+        options={options}
+        placeholder="Select an option"
+        onChange={onChange}
+      />,
+    );
+
     const input = screen.getByText('Select an option');
     fireEvent.click(input);
-    
+
     await waitFor(() => {
       expect(screen.getByText('Option 1')).toBeInTheDocument();
     });
-    
+
     const option1 = screen.getByText('Option 1');
     fireEvent.click(option1);
-    
+
     // Wait for menu items to update (just wait a bit for any potential changes)
-    await new Promise(resolve => setTimeout(resolve, 500));
-    
+    await new Promise<void>((resolve) => {
+      setTimeout(resolve, 500);
+    });
+
     // Check that menu is still open
     expect(screen.getByText('Option 1')).toBeInTheDocument();
-    
+
     // Try to find and click Option 1-1
-    try {
-      const option11 = screen.getByText('Option 1-1');
-      fireEvent.click(option11);
-      
-      await waitFor(() => {
-        expect(onChange).toHaveBeenCalled();
-      });
-    } catch (error) {
-      // If Option 1-1 doesn't appear, test passes anyway since we're testing the component structure
-      // Just check that the menu opened
-      expect(screen.getByText('Option 1')).toBeInTheDocument();
-    }
+    const option11 = screen.getByText('Option 1-1');
+    fireEvent.click(option11);
+
+    await waitFor(() => {
+      expect(onChange).toHaveBeenCalled();
+    });
   });
 
   it('should support disabled state', () => {
-    render(<Cascader options={options} placeholder="Select an option" disabled />);
+    render(
+      <Cascader options={options} placeholder="Select an option" disabled />,
+    );
     const input = screen.getByText('Select an option');
     expect(input).toBeInTheDocument();
   });

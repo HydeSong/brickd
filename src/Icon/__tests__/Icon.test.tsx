@@ -1,5 +1,4 @@
-
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Icon from '../index';
 
 describe('Icon Component', () => {
@@ -55,7 +54,16 @@ describe('Icon Component', () => {
   });
 
   test('renders correctly with all props combined', () => {
-    render(<Icon type="home" size="large" color="blue" rotate={45} spin className="custom-class" />);
+    render(
+      <Icon
+        type="home"
+        size="large"
+        color="blue"
+        rotate={45}
+        spin
+        className="custom-class"
+      />,
+    );
     const iconElement = document.querySelector('.icon');
     expect(iconElement).toBeInTheDocument();
   });

@@ -1,4 +1,3 @@
-
 import styles from './Card.module.css';
 
 interface CardProps {
@@ -57,19 +56,16 @@ const Card: React.FC<CardProps> & {
     return classes.join(' ');
   };
 
-  // 检查是否包含 Card.Header, Card.Body 或 Card.Footer
+  // 检查是否包含 Card.Header 或 Card.Body
   let hasHeader = false;
   let hasBody = false;
-  let hasFooter = false;
 
-  React.Children.forEach(children, child => {
+  React.Children.forEach(children, (child) => {
     if (React.isValidElement(child)) {
       if (child.type === Card.Header) {
         hasHeader = true;
       } else if (child.type === Card.Body) {
         hasBody = true;
-      } else if (child.type === Card.Footer) {
-        hasFooter = true;
       }
     }
   });
@@ -82,22 +78,13 @@ const Card: React.FC<CardProps> & {
           {extra && <div className={styles.cardExtra}>{extra}</div>}
         </div>
       )}
-      {!hasBody && (
-        <div className={styles.cardBody}>
-          {children}
-        </div>
-      )}
+      {!hasBody && <div className={styles.cardBody}>{children}</div>}
       {hasBody && children}
     </div>
   );
 };
 
-Card.Header = ({
-  title,
-  extra,
-  className = '',
-  style = {},
-}) => {
+Card.Header = ({ title, extra, className = '', style = {} }) => {
   return (
     <div className={`${styles.cardHeader} ${className}`} style={style}>
       {title && <div className={styles.cardTitle}>{title}</div>}
@@ -106,11 +93,7 @@ Card.Header = ({
   );
 };
 
-Card.Body = ({
-  className = '',
-  style = {},
-  children,
-}) => {
+Card.Body = ({ className = '', style = {}, children }) => {
   return (
     <div className={`${styles.cardBody} ${className}`} style={style}>
       {children}
@@ -118,11 +101,7 @@ Card.Body = ({
   );
 };
 
-Card.Footer = ({
-  className = '',
-  style = {},
-  children,
-}) => {
+Card.Footer = ({ className = '', style = {}, children }) => {
   return (
     <div className={`${styles.cardFooter} ${className}`} style={style}>
       {children}

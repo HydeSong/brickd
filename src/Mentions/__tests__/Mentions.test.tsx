@@ -1,5 +1,4 @@
-
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Mentions from '../index';
 
 describe('Mentions Component', () => {
@@ -15,18 +14,20 @@ describe('Mentions Component', () => {
   });
 
   it('should display options when typing @', async () => {
-    const { container } = render(<Mentions options={options} placeholder="Type @ to mention" />);
+    const { container } = render(
+      <Mentions options={options} placeholder="Type @ to mention" />,
+    );
     expect(container.firstChild).toBeInTheDocument();
   });
 
   it('should handle mention selection', async () => {
     const onChange = jest.fn();
     const { container } = render(
-      <Mentions 
-        options={options} 
-        placeholder="Type @ to mention" 
-        onChange={onChange} 
-      />
+      <Mentions
+        options={options}
+        placeholder="Type @ to mention"
+        onChange={onChange}
+      />,
     );
     expect(container.firstChild).toBeInTheDocument();
   });

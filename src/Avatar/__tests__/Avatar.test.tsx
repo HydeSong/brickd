@@ -1,5 +1,4 @@
-
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Avatar from '../index';
 
 describe('Avatar Component', () => {
@@ -52,7 +51,9 @@ describe('Avatar Component', () => {
   });
 
   test('renders correctly with custom className', () => {
-    render(<Avatar className="custom-class" src="https://example.com/avatar.jpg" />);
+    render(
+      <Avatar className="custom-class" src="https://example.com/avatar.jpg" />,
+    );
     const avatarElement = document.querySelector('.avatar');
     expect(avatarElement).toHaveClass('custom-class');
   });

@@ -1,14 +1,13 @@
-
-import { render, screen } from '@testing-library/react';
-import Badge from '../index';
+import { render } from '@testing-library/react';
 import Button from '../../Button';
+import Badge from '../index';
 
 describe('Badge Component', () => {
   test('renders correctly with count', () => {
     render(
       <Badge count={5}>
         <Button>Button</Button>
-      </Badge>
+      </Badge>,
     );
     const badgeElement = document.querySelector('.badge');
     expect(badgeElement).toBeInTheDocument();
@@ -19,7 +18,7 @@ describe('Badge Component', () => {
     render(
       <Badge count={0} showZero>
         <Button>Button</Button>
-      </Badge>
+      </Badge>,
     );
     const badgeElement = document.querySelector('.badge');
     expect(badgeElement).toBeInTheDocument();
@@ -30,7 +29,7 @@ describe('Badge Component', () => {
     render(
       <Badge count={0}>
         <Button>Button</Button>
-      </Badge>
+      </Badge>,
     );
     const badgeElement = document.querySelector('.badge');
     expect(badgeElement).toHaveClass('badgeHidden');
@@ -40,7 +39,7 @@ describe('Badge Component', () => {
     render(
       <Badge dot>
         <Button>Button</Button>
-      </Badge>
+      </Badge>,
     );
     const badgeElement = document.querySelector('.badge');
     expect(badgeElement).toBeInTheDocument();
@@ -51,7 +50,7 @@ describe('Badge Component', () => {
     render(
       <Badge count={100} maxCount={99}>
         <Button>Button</Button>
-      </Badge>
+      </Badge>,
     );
     const badgeElement = document.querySelector('.badge');
     expect(badgeElement).toBeInTheDocument();
@@ -62,7 +61,7 @@ describe('Badge Component', () => {
     render(
       <Badge count={5} color="#52c41a">
         <Button>Button</Button>
-      </Badge>
+      </Badge>,
     );
     const badgeElement = document.querySelector('.badge');
     expect(badgeElement).toBeInTheDocument();
@@ -79,7 +78,7 @@ describe('Badge Component', () => {
     render(
       <Badge count={5} className="custom-class">
         <Button>Button</Button>
-      </Badge>
+      </Badge>,
     );
     const badgeElement = document.querySelector('.badge');
     expect(badgeElement).toHaveClass('custom-class');
@@ -90,7 +89,7 @@ describe('Badge Component', () => {
     render(
       <Badge count={5} style={customStyle}>
         <Button>Button</Button>
-      </Badge>
+      </Badge>,
     );
     const badgeElement = document.querySelector('.badge');
     expect(badgeElement).toBeInTheDocument();
