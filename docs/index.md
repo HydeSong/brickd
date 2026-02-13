@@ -6,7 +6,7 @@ hero:
     - text: 快速开始
       link: /guide
     - text: GitHub
-      link: https://github.com/brickd/brickd
+      link: https://github.com/HydeSong/brickd.git
 features:
   - title: 组件丰富
     emoji: 🎨
@@ -47,8 +47,8 @@ brickd 是一个基于 React 的现代化 UI 组件库，旨在为开发者提�
 
 ### 贡献指南
 
-我们欢迎社区贡献，如果你有任何建议或问题，请在 [GitHub](https://github.com/brickd/brickd) 上提交 issue 或 pull request。
+我们欢迎社区贡献，如果你有任何建议或问题，请在 [GitHub](https://github.com/HydeSong/brickd.git) 上提交 issue 或 pull request。
 
 ### 许可证
 
-brickd 采用 MIT 许可证，详见 [LICENSE](https://github.com/brickd/brickd/blob/main/LICENSE) 文件。
+brickd 采用 MIT 许可证，详见 [LICENSE](https://github.com/HydeSong/brickd.git/blob/main/LICENSE) 文件。
