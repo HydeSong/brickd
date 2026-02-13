@@ -1,0 +1,571 @@
+'use strict';
+(self.webpackChunkbrickd = self.webpackChunkbrickd || []).push([
+  [2485],
+  {
+    75382: function (n, _, a) {
+      a.r(_);
+      var t = a(36121),
+        u = a(73648),
+        x = a(27519),
+        o = a(12098),
+        h = a(60983),
+        p = a(72697),
+        l = a(97491),
+        v = a(70164),
+        s = a(43097),
+        r = a(87931),
+        c = a(75271),
+        d = a(10668),
+        e = a(52676);
+      function i() {
+        return (0, e.jsx)(s.dY, {
+          children: (0, e.jsx)(c.Suspense, {
+            fallback: (0, e.jsx)(r.Z, {}),
+            children: (0, e.jsxs)(e.Fragment, {
+              children: [
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h1', {
+                      id: 'timepicker',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#timepicker',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'TimePicker',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[0].value }),
+                    (0, e.jsxs)('h2', {
+                      id: '\u57FA\u672C\u7528\u6CD5',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u57FA\u672C\u7528\u6CD5',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u57FA\u672C\u7528\u6CD5',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[1].value }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/timepicker-demo-0' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u4E0D\u540C\u5C3A\u5BF8',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u4E0D\u540C\u5C3A\u5BF8',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u4E0D\u540C\u5C3A\u5BF8',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[2].value }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/timepicker-demo-1' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u7981\u7528\u72B6\u6001',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u7981\u7528\u72B6\u6001',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u7981\u7528\u72B6\u6001',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[3].value }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/timepicker-demo-2' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '12-\u5C0F\u65F6\u5236',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#12-\u5C0F\u65F6\u5236',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '12 \u5C0F\u65F6\u5236',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[4].value }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/timepicker-demo-3' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u53D7\u63A7\u6A21\u5F0F',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u53D7\u63A7\u6A21\u5F0F',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u53D7\u63A7\u6A21\u5F0F',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[5].value }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/timepicker-demo-4' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u5E26\u9ED8\u8BA4\u503C',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u5E26\u9ED8\u8BA4\u503C',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u5E26\u9ED8\u8BA4\u503C',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[6].value }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/timepicker-demo-5' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u81EA\u5B9A\u4E49\u5360\u4F4D\u7B26',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u5360\u4F4D\u7B26',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u5360\u4F4D\u7B26',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[7].value }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/timepicker-demo-6' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[8].value }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/timepicker-demo-7' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: 'api',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#api',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'API',
+                      ],
+                    }),
+                    (0, e.jsxs)(l.Z, {
+                      children: [
+                        (0, e.jsx)('thead', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('th', { children: d.texts[9].value }),
+                              (0, e.jsx)('th', { children: d.texts[10].value }),
+                              (0, e.jsx)('th', { children: d.texts[11].value }),
+                              (0, e.jsx)('th', { children: d.texts[12].value }),
+                            ],
+                          }),
+                        }),
+                        (0, e.jsxs)('tbody', {
+                          children: [
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[13].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[14].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[15].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[16].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[17].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[18].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[19].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[20].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[21].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[22].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[23].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[24].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[25].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[26].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[27].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[28].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[29].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[30].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[31].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[32].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[33].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[34].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[35].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[36].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[37].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[38].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[39].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[40].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[41].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[42].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[43].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[44].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[45].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[46].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[47].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[48].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[49].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[50].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[51].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[52].value,
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+        });
+      }
+      _.default = i;
+    },
+    10668: function (n, _, a) {
+      a.r(_),
+        a.d(_, {
+          texts: function () {
+            return t;
+          },
+        });
+      const t = [
+        {
+          value:
+            '\u65F6\u95F4\u9009\u62E9\u5668\u7EC4\u4EF6\uFF0C\u7528\u4E8E\u9009\u62E9\u5177\u4F53\u7684\u65F6\u95F4\u3002',
+          paraId: 0,
+          tocIndex: 0,
+        },
+        {
+          value:
+            '\u6700\u7B80\u5355\u7684\u65F6\u95F4\u9009\u62E9\u5668\u4F7F\u7528\u65B9\u5F0F\u3002',
+          paraId: 1,
+          tocIndex: 1,
+        },
+        {
+          value:
+            '\u65F6\u95F4\u9009\u62E9\u5668\u652F\u6301\u4E09\u79CD\u5C3A\u5BF8\uFF1Asmall\u3001default \u548C large\u3002',
+          paraId: 2,
+          tocIndex: 2,
+        },
+        {
+          value: '\u7981\u7528\u7684\u65F6\u95F4\u9009\u62E9\u5668\u3002',
+          paraId: 3,
+          tocIndex: 3,
+        },
+        {
+          value:
+            '\u4F7F\u7528 12 \u5C0F\u65F6\u5236\u7684\u65F6\u95F4\u9009\u62E9\u5668\u3002',
+          paraId: 4,
+          tocIndex: 4,
+        },
+        {
+          value:
+            '\u901A\u8FC7\u72B6\u6001\u63A7\u5236\u65F6\u95F4\u9009\u62E9\u5668\u7684\u503C\u3002',
+          paraId: 5,
+          tocIndex: 5,
+        },
+        {
+          value:
+            '\u8BBE\u7F6E\u9ED8\u8BA4\u503C\u7684\u65F6\u95F4\u9009\u62E9\u5668\u3002',
+          paraId: 6,
+          tocIndex: 6,
+        },
+        {
+          value:
+            '\u8BBE\u7F6E\u81EA\u5B9A\u4E49\u5360\u4F4D\u7B26\u6587\u672C\u7684\u65F6\u95F4\u9009\u62E9\u5668\u3002',
+          paraId: 7,
+          tocIndex: 7,
+        },
+        {
+          value:
+            '\u901A\u8FC7 className \u548C style \u5C5E\u6027\u81EA\u5B9A\u4E49\u65F6\u95F4\u9009\u62E9\u5668\u6837\u5F0F\u3002',
+          paraId: 8,
+          tocIndex: 8,
+        },
+        { value: '\u5C5E\u6027', paraId: 9, tocIndex: 9 },
+        { value: '\u7C7B\u578B', paraId: 9, tocIndex: 9 },
+        { value: '\u9ED8\u8BA4\u503C', paraId: 9, tocIndex: 9 },
+        { value: '\u8BF4\u660E', paraId: 9, tocIndex: 9 },
+        { value: 'size', paraId: 9, tocIndex: 9 },
+        { value: "'small' | 'default' | 'large'", paraId: 9, tocIndex: 9 },
+        { value: "'default'", paraId: 9, tocIndex: 9 },
+        {
+          value: '\u65F6\u95F4\u9009\u62E9\u5668\u5C3A\u5BF8',
+          paraId: 9,
+          tocIndex: 9,
+        },
+        { value: 'disabled', paraId: 9, tocIndex: 9 },
+        { value: 'boolean', paraId: 9, tocIndex: 9 },
+        { value: 'false', paraId: 9, tocIndex: 9 },
+        { value: '\u662F\u5426\u7981\u7528', paraId: 9, tocIndex: 9 },
+        { value: 'value', paraId: 9, tocIndex: 9 },
+        { value: 'string', paraId: 9, tocIndex: 9 },
+        { value: '-', paraId: 9, tocIndex: 9 },
+        {
+          value: '\u53D7\u63A7\u6A21\u5F0F\u4E0B\u7684\u65F6\u95F4\u503C',
+          paraId: 9,
+          tocIndex: 9,
+        },
+        { value: 'defaultValue', paraId: 9, tocIndex: 9 },
+        { value: 'string', paraId: 9, tocIndex: 9 },
+        { value: "''", paraId: 9, tocIndex: 9 },
+        {
+          value:
+            '\u975E\u53D7\u63A7\u6A21\u5F0F\u4E0B\u7684\u9ED8\u8BA4\u65F6\u95F4\u503C',
+          paraId: 9,
+          tocIndex: 9,
+        },
+        { value: 'onChange', paraId: 9, tocIndex: 9 },
+        { value: '(time: string) => void', paraId: 9, tocIndex: 9 },
+        { value: '-', paraId: 9, tocIndex: 9 },
+        {
+          value: '\u65F6\u95F4\u53D8\u5316\u65F6\u7684\u56DE\u8C03\u51FD\u6570',
+          paraId: 9,
+          tocIndex: 9,
+        },
+        { value: 'onOpenChange', paraId: 9, tocIndex: 9 },
+        { value: '(open: boolean) => void', paraId: 9, tocIndex: 9 },
+        { value: '-', paraId: 9, tocIndex: 9 },
+        {
+          value:
+            '\u9762\u677F\u5F00\u5173\u72B6\u6001\u53D8\u5316\u65F6\u7684\u56DE\u8C03\u51FD\u6570',
+          paraId: 9,
+          tocIndex: 9,
+        },
+        { value: 'placeholder', paraId: 9, tocIndex: 9 },
+        { value: 'string', paraId: 9, tocIndex: 9 },
+        { value: "'\u8BF7\u9009\u62E9\u65F6\u95F4'", paraId: 9, tocIndex: 9 },
+        { value: '\u5360\u4F4D\u6587\u672C', paraId: 9, tocIndex: 9 },
+        { value: 'use12Hours', paraId: 9, tocIndex: 9 },
+        { value: 'boolean', paraId: 9, tocIndex: 9 },
+        { value: 'false', paraId: 9, tocIndex: 9 },
+        {
+          value: '\u662F\u5426\u4F7F\u7528 12 \u5C0F\u65F6\u5236',
+          paraId: 9,
+          tocIndex: 9,
+        },
+        { value: 'className', paraId: 9, tocIndex: 9 },
+        { value: 'string', paraId: 9, tocIndex: 9 },
+        { value: "''", paraId: 9, tocIndex: 9 },
+        { value: '\u81EA\u5B9A\u4E49\u7C7B\u540D', paraId: 9, tocIndex: 9 },
+        { value: 'style', paraId: 9, tocIndex: 9 },
+        { value: 'React.CSSProperties', paraId: 9, tocIndex: 9 },
+        { value: '{}', paraId: 9, tocIndex: 9 },
+        { value: '\u81EA\u5B9A\u4E49\u6837\u5F0F', paraId: 9, tocIndex: 9 },
+      ];
+    },
+  },
+]);

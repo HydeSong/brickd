@@ -1,0 +1,924 @@
+'use strict';
+(self.webpackChunkbrickd = self.webpackChunkbrickd || []).push([
+  [6021],
+  {
+    16901: function (r, t, a) {
+      a.r(t);
+      var n = a(36121),
+        u = a(73648),
+        _ = a(27519),
+        o = a(12098),
+        h = a(60983),
+        v = a(72697),
+        l = a(97491),
+        I = a(70164),
+        s = a(43097),
+        c = a(87931),
+        x = a(75271),
+        d = a(62194),
+        e = a(52676);
+      function i() {
+        return (0, e.jsx)(s.dY, {
+          children: (0, e.jsx)(x.Suspense, {
+            fallback: (0, e.jsx)(c.Z, {}),
+            children: (0, e.jsxs)(e.Fragment, {
+              children: [
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h1', {
+                      id: 'mentions-\u63D0\u53CA',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#mentions-\u63D0\u53CA',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Mentions \u63D0\u53CA',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[0].value }),
+                    (0, e.jsxs)('h2', {
+                      id: '\u4EE3\u7801\u6F14\u793A',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u4EE3\u7801\u6F14\u793A',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u4EE3\u7801\u6F14\u793A',
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: '\u57FA\u672C\u7528\u6CD5',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u57FA\u672C\u7528\u6CD5',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u57FA\u672C\u7528\u6CD5',
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/mentions-demo-0' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u63D0\u53CA\u7EC4\u4EF6\u5C3A\u5BF8',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u63D0\u53CA\u7EC4\u4EF6\u5C3A\u5BF8',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u63D0\u53CA\u7EC4\u4EF6\u5C3A\u5BF8',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[1].value,
+                        (0, e.jsx)('code', { children: d.texts[2].value }),
+                        d.texts[3].value,
+                        (0, e.jsx)('code', { children: d.texts[4].value }),
+                        d.texts[5].value,
+                        (0, e.jsx)('code', { children: d.texts[6].value }),
+                        d.texts[7].value,
+                        (0, e.jsx)('code', { children: d.texts[8].value }),
+                        d.texts[9].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/mentions-demo-1' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u7981\u7528\u72B6\u6001',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u7981\u7528\u72B6\u6001',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u7981\u7528\u72B6\u6001',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[10].value,
+                        (0, e.jsx)('code', { children: d.texts[11].value }),
+                        d.texts[12].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/mentions-demo-2' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u53D7\u63A7\u6A21\u5F0F',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u53D7\u63A7\u6A21\u5F0F',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u53D7\u63A7\u6A21\u5F0F',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[13].value,
+                        (0, e.jsx)('code', { children: d.texts[14].value }),
+                        d.texts[15].value,
+                        (0, e.jsx)('code', { children: d.texts[16].value }),
+                        d.texts[17].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/mentions-demo-3' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u81EA\u5B9A\u4E49\u524D\u7F00',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u524D\u7F00',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u524D\u7F00',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[18].value,
+                        (0, e.jsx)('code', { children: d.texts[19].value }),
+                        d.texts[20].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/mentions-demo-4' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u81EA\u5B9A\u4E49\u5206\u9694\u7B26',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u5206\u9694\u7B26',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u5206\u9694\u7B26',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[21].value,
+                        (0, e.jsx)('code', { children: d.texts[22].value }),
+                        d.texts[23].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/mentions-demo-5' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u7981\u7528\u9009\u9879',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u7981\u7528\u9009\u9879',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u7981\u7528\u9009\u9879',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[24].value,
+                        (0, e.jsx)('code', { children: d.texts[25].value }),
+                        d.texts[26].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/mentions-demo-6' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u9009\u62E9\u56DE\u8C03',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u9009\u62E9\u56DE\u8C03',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u9009\u62E9\u56DE\u8C03',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[27].value,
+                        (0, e.jsx)('code', { children: d.texts[28].value }),
+                        d.texts[29].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/mentions-demo-7' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[30].value,
+                        (0, e.jsx)('code', { children: d.texts[31].value }),
+                        d.texts[32].value,
+                        (0, e.jsx)('code', { children: d.texts[33].value }),
+                        d.texts[34].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(s.Dl, {
+                  demo: { id: 'components/mentions-demo-8' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: 'api',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#api',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'API',
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: 'mentionsprops',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#mentionsprops',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'MentionsProps',
+                      ],
+                    }),
+                    (0, e.jsxs)(l.Z, {
+                      children: [
+                        (0, e.jsx)('thead', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('th', { children: d.texts[35].value }),
+                              (0, e.jsx)('th', { children: d.texts[36].value }),
+                              (0, e.jsx)('th', { children: d.texts[37].value }),
+                              (0, e.jsx)('th', { children: d.texts[38].value }),
+                            ],
+                          }),
+                        }),
+                        (0, e.jsxs)('tbody', {
+                          children: [
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[39].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[40].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[41].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[42].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[43].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[44].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[45].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[46].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[47].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[48].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[49].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[50].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[51].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[52].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[53].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[54].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[55].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[56].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[57].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[58].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[59].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[60].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[61].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[62].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[63].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[64].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[65].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[66].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[67].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[68].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[69].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[70].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[71].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[72].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[73].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[74].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[75].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[76].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[77].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[78].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[79].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[80].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[81].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[82].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[83].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[84].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[85].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[86].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: 'mentionsoption',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#mentionsoption',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'MentionsOption',
+                      ],
+                    }),
+                    (0, e.jsxs)(l.Z, {
+                      children: [
+                        (0, e.jsx)('thead', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('th', { children: d.texts[87].value }),
+                              (0, e.jsx)('th', { children: d.texts[88].value }),
+                              (0, e.jsx)('th', { children: d.texts[89].value }),
+                              (0, e.jsx)('th', { children: d.texts[90].value }),
+                            ],
+                          }),
+                        }),
+                        (0, e.jsxs)('tbody', {
+                          children: [
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[91].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[92].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[93].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[94].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[95].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[96].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[97].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[98].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[99].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[100].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[101].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[102].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[103].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[104].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[105].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[106].value,
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+        });
+      }
+      t.default = i;
+    },
+    62194: function (r, t, a) {
+      a.r(t),
+        a.d(t, {
+          texts: function () {
+            return n;
+          },
+        });
+      const n = [
+        {
+          value:
+            '\u63D0\u53CA\u7EC4\u4EF6\u7528\u4E8E\u5728\u8F93\u5165\u6846\u4E2D\u63D0\u53CA\u7528\u6237\u6216\u5176\u4ED6\u5B9E\u4F53\uFF0C\u652F\u6301\u81EA\u5B9A\u4E49\u524D\u7F00\u3001\u9009\u9879\u3001\u5927\u5C0F\u7B49\u5C5E\u6027\u3002',
+          paraId: 0,
+          tocIndex: 0,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 1, tocIndex: 3 },
+        { value: 'size', paraId: 1, tocIndex: 3 },
+        {
+          value:
+            ' \u5C5E\u6027\u8BBE\u7F6E\u63D0\u53CA\u7EC4\u4EF6\u5C3A\u5BF8\uFF0C\u652F\u6301 ',
+          paraId: 1,
+          tocIndex: 3,
+        },
+        { value: 'small', paraId: 1, tocIndex: 3 },
+        { value: '\u3001', paraId: 1, tocIndex: 3 },
+        { value: 'default', paraId: 1, tocIndex: 3 },
+        { value: ' \u548C ', paraId: 1, tocIndex: 3 },
+        { value: 'large', paraId: 1, tocIndex: 3 },
+        { value: '\u3002', paraId: 1, tocIndex: 3 },
+        { value: '\u901A\u8FC7 ', paraId: 2, tocIndex: 4 },
+        { value: 'disabled', paraId: 2, tocIndex: 4 },
+        {
+          value:
+            ' \u5C5E\u6027\u8BBE\u7F6E\u63D0\u53CA\u7EC4\u4EF6\u4E3A\u7981\u7528\u72B6\u6001\u3002',
+          paraId: 2,
+          tocIndex: 4,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 3, tocIndex: 5 },
+        { value: 'value', paraId: 3, tocIndex: 5 },
+        { value: ' \u548C ', paraId: 3, tocIndex: 5 },
+        { value: 'onChange', paraId: 3, tocIndex: 5 },
+        {
+          value: ' \u5C5E\u6027\u5B9E\u73B0\u53D7\u63A7\u6A21\u5F0F\u3002',
+          paraId: 3,
+          tocIndex: 5,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 4, tocIndex: 6 },
+        { value: 'prefix', paraId: 4, tocIndex: 6 },
+        {
+          value:
+            ' \u5C5E\u6027\u8BBE\u7F6E\u63D0\u53CA\u7684\u524D\u7F00\uFF0C\u53EF\u4EE5\u662F\u5B57\u7B26\u4E32\u6216\u5B57\u7B26\u4E32\u6570\u7EC4\u3002',
+          paraId: 4,
+          tocIndex: 6,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 5, tocIndex: 7 },
+        { value: 'split', paraId: 5, tocIndex: 7 },
+        {
+          value:
+            ' \u5C5E\u6027\u8BBE\u7F6E\u63D0\u53CA\u540E\u7684\u5206\u9694\u7B26\u3002',
+          paraId: 5,
+          tocIndex: 7,
+        },
+        {
+          value: '\u5728\u9009\u9879\u4E2D\u8BBE\u7F6E ',
+          paraId: 6,
+          tocIndex: 8,
+        },
+        { value: 'disabled', paraId: 6, tocIndex: 8 },
+        {
+          value:
+            ' \u5C5E\u6027\u53EF\u4EE5\u7981\u7528\u7279\u5B9A\u9009\u9879\u3002',
+          paraId: 6,
+          tocIndex: 8,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 7, tocIndex: 9 },
+        { value: 'onSelect', paraId: 7, tocIndex: 9 },
+        {
+          value:
+            ' \u5C5E\u6027\u8BBE\u7F6E\u9009\u62E9\u9009\u9879\u65F6\u7684\u56DE\u8C03\u51FD\u6570\u3002',
+          paraId: 7,
+          tocIndex: 9,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 8, tocIndex: 10 },
+        { value: 'className', paraId: 8, tocIndex: 10 },
+        { value: ' \u548C ', paraId: 8, tocIndex: 10 },
+        { value: 'style', paraId: 8, tocIndex: 10 },
+        {
+          value:
+            ' \u5C5E\u6027\u81EA\u5B9A\u4E49\u63D0\u53CA\u7EC4\u4EF6\u7684\u6837\u5F0F\u3002',
+          paraId: 8,
+          tocIndex: 10,
+        },
+        { value: '\u5C5E\u6027', paraId: 9, tocIndex: 12 },
+        { value: '\u8BF4\u660E', paraId: 9, tocIndex: 12 },
+        { value: '\u7C7B\u578B', paraId: 9, tocIndex: 12 },
+        { value: '\u9ED8\u8BA4\u503C', paraId: 9, tocIndex: 12 },
+        { value: 'size', paraId: 9, tocIndex: 12 },
+        {
+          value: '\u63D0\u53CA\u7EC4\u4EF6\u5C3A\u5BF8',
+          paraId: 9,
+          tocIndex: 12,
+        },
+        { value: "'small' | 'default' | 'large'", paraId: 9, tocIndex: 12 },
+        { value: "'default'", paraId: 9, tocIndex: 12 },
+        { value: 'disabled', paraId: 9, tocIndex: 12 },
+        { value: '\u662F\u5426\u7981\u7528', paraId: 9, tocIndex: 12 },
+        { value: 'boolean', paraId: 9, tocIndex: 12 },
+        { value: 'false', paraId: 9, tocIndex: 12 },
+        { value: 'value', paraId: 9, tocIndex: 12 },
+        {
+          value: '\u5F53\u524D\u503C\uFF08\u53D7\u63A7\u6A21\u5F0F\uFF09',
+          paraId: 9,
+          tocIndex: 12,
+        },
+        { value: 'string', paraId: 9, tocIndex: 12 },
+        { value: '-', paraId: 9, tocIndex: 12 },
+        { value: 'defaultValue', paraId: 9, tocIndex: 12 },
+        {
+          value: '\u9ED8\u8BA4\u503C\uFF08\u975E\u53D7\u63A7\u6A21\u5F0F\uFF09',
+          paraId: 9,
+          tocIndex: 12,
+        },
+        { value: 'string', paraId: 9, tocIndex: 12 },
+        { value: "''", paraId: 9, tocIndex: 12 },
+        { value: 'options', paraId: 9, tocIndex: 12 },
+        { value: '\u9009\u9879\u5217\u8868', paraId: 9, tocIndex: 12 },
+        { value: 'MentionsOption[]', paraId: 9, tocIndex: 12 },
+        { value: '[]', paraId: 9, tocIndex: 12 },
+        { value: 'onChange', paraId: 9, tocIndex: 12 },
+        {
+          value: '\u503C\u53D8\u5316\u65F6\u7684\u56DE\u8C03',
+          paraId: 9,
+          tocIndex: 12,
+        },
+        { value: '(value: string) => void', paraId: 9, tocIndex: 12 },
+        { value: '-', paraId: 9, tocIndex: 12 },
+        { value: 'onSelect', paraId: 9, tocIndex: 12 },
+        {
+          value: '\u9009\u62E9\u9009\u9879\u65F6\u7684\u56DE\u8C03',
+          paraId: 9,
+          tocIndex: 12,
+        },
+        {
+          value: '(option: MentionsOption, prefix: string) => void',
+          paraId: 9,
+          tocIndex: 12,
+        },
+        { value: '-', paraId: 9, tocIndex: 12 },
+        { value: 'placeholder', paraId: 9, tocIndex: 12 },
+        { value: '\u5360\u4F4D\u7B26\u6587\u672C', paraId: 9, tocIndex: 12 },
+        { value: 'string', paraId: 9, tocIndex: 12 },
+        { value: "'\u8BF7\u8F93\u5165\u5185\u5BB9'", paraId: 9, tocIndex: 12 },
+        { value: 'prefix', paraId: 9, tocIndex: 12 },
+        { value: '\u63D0\u53CA\u524D\u7F00', paraId: 9, tocIndex: 12 },
+        { value: 'string | string[]', paraId: 9, tocIndex: 12 },
+        { value: "'@'", paraId: 9, tocIndex: 12 },
+        { value: 'split', paraId: 9, tocIndex: 12 },
+        {
+          value: '\u63D0\u53CA\u540E\u7684\u5206\u9694\u7B26',
+          paraId: 9,
+          tocIndex: 12,
+        },
+        { value: 'string', paraId: 9, tocIndex: 12 },
+        { value: "' '", paraId: 9, tocIndex: 12 },
+        { value: 'className', paraId: 9, tocIndex: 12 },
+        { value: '\u81EA\u5B9A\u4E49\u7C7B\u540D', paraId: 9, tocIndex: 12 },
+        { value: 'string', paraId: 9, tocIndex: 12 },
+        { value: "''", paraId: 9, tocIndex: 12 },
+        { value: 'style', paraId: 9, tocIndex: 12 },
+        { value: '\u81EA\u5B9A\u4E49\u6837\u5F0F', paraId: 9, tocIndex: 12 },
+        { value: 'React.CSSProperties', paraId: 9, tocIndex: 12 },
+        { value: '{}', paraId: 9, tocIndex: 12 },
+        { value: '\u5C5E\u6027', paraId: 10, tocIndex: 13 },
+        { value: '\u8BF4\u660E', paraId: 10, tocIndex: 13 },
+        { value: '\u7C7B\u578B', paraId: 10, tocIndex: 13 },
+        { value: '\u9ED8\u8BA4\u503C', paraId: 10, tocIndex: 13 },
+        { value: 'value', paraId: 10, tocIndex: 13 },
+        { value: '\u9009\u9879\u503C', paraId: 10, tocIndex: 13 },
+        { value: 'string', paraId: 10, tocIndex: 13 },
+        { value: '-', paraId: 10, tocIndex: 13 },
+        { value: 'label', paraId: 10, tocIndex: 13 },
+        { value: '\u9009\u9879\u6807\u7B7E', paraId: 10, tocIndex: 13 },
+        { value: 'React.ReactNode', paraId: 10, tocIndex: 13 },
+        { value: '-', paraId: 10, tocIndex: 13 },
+        { value: 'disabled', paraId: 10, tocIndex: 13 },
+        { value: '\u662F\u5426\u7981\u7528', paraId: 10, tocIndex: 13 },
+        { value: 'boolean', paraId: 10, tocIndex: 13 },
+        { value: 'false', paraId: 10, tocIndex: 13 },
+        { value: '[key: string]', paraId: 10, tocIndex: 13 },
+        {
+          value: '\u5176\u4ED6\u81EA\u5B9A\u4E49\u5C5E\u6027',
+          paraId: 10,
+          tocIndex: 13,
+        },
+        { value: 'any', paraId: 10, tocIndex: 13 },
+        { value: '-', paraId: 10, tocIndex: 13 },
+      ];
+    },
+  },
+]);

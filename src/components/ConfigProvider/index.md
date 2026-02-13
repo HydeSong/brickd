@@ -148,4 +148,6 @@ const MyComponent: React.FC = () => {
     </div>
   );
 };
+
+export default MyComponent;
 ```

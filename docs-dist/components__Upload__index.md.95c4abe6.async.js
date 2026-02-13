@@ -1,0 +1,1077 @@
+'use strict';
+(self.webpackChunkbrickd = self.webpackChunkbrickd || []).push([
+  [6118],
+  {
+    36826: function (r, s, a) {
+      a.r(s);
+      var l = a(36121),
+        i = a(73648),
+        o = a(27519),
+        _ = a(12098),
+        v = a(60983),
+        h = a(72697),
+        n = a(97491),
+        I = a(70164),
+        t = a(43097),
+        x = a(87931),
+        c = a(75271),
+        d = a(2598),
+        e = a(52676);
+      function u() {
+        return (0, e.jsx)(t.dY, {
+          children: (0, e.jsx)(c.Suspense, {
+            fallback: (0, e.jsx)(x.Z, {}),
+            children: (0, e.jsxs)(e.Fragment, {
+              children: [
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h1', {
+                      id: 'upload',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#upload',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Upload',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[0].value }),
+                    (0, e.jsxs)('h2', {
+                      id: '\u57FA\u672C\u7528\u6CD5',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u57FA\u672C\u7528\u6CD5',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u57FA\u672C\u7528\u6CD5',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[1].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-0' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u591A\u6587\u4EF6\u4E0A\u4F20',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u591A\u6587\u4EF6\u4E0A\u4F20',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u591A\u6587\u4EF6\u4E0A\u4F20',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[2].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-1' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u81EA\u5B9A\u4E49\u4E0A\u4F20\u6309\u94AE',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u4E0A\u4F20\u6309\u94AE',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u4E0A\u4F20\u6309\u94AE',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[3].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-2' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u6587\u4EF6\u7C7B\u578B\u9650\u5236',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u6587\u4EF6\u7C7B\u578B\u9650\u5236',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u6587\u4EF6\u7C7B\u578B\u9650\u5236',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[4].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-3' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u6587\u4EF6\u6570\u91CF\u9650\u5236',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u6587\u4EF6\u6570\u91CF\u9650\u5236',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u6587\u4EF6\u6570\u91CF\u9650\u5236',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[5].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-4' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u7981\u7528\u72B6\u6001',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u7981\u7528\u72B6\u6001',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u7981\u7528\u72B6\u6001',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[6].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-5' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u53D7\u63A7\u6A21\u5F0F',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u53D7\u63A7\u6A21\u5F0F',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u53D7\u63A7\u6A21\u5F0F',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[7].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-6' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u5E26\u9ED8\u8BA4\u6587\u4EF6',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u5E26\u9ED8\u8BA4\u6587\u4EF6',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u5E26\u9ED8\u8BA4\u6587\u4EF6',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[8].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-7' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u4E0A\u4F20\u524D\u6821\u9A8C',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u4E0A\u4F20\u524D\u6821\u9A8C',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u4E0A\u4F20\u524D\u6821\u9A8C',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[9].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-8' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: '\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[10].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/upload-demo-9' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: 'api',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#api',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'API',
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: 'uploadprops',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#uploadprops',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'UploadProps',
+                      ],
+                    }),
+                    (0, e.jsxs)(n.Z, {
+                      children: [
+                        (0, e.jsx)('thead', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('th', { children: d.texts[11].value }),
+                              (0, e.jsx)('th', { children: d.texts[12].value }),
+                              (0, e.jsx)('th', { children: d.texts[13].value }),
+                              (0, e.jsx)('th', { children: d.texts[14].value }),
+                            ],
+                          }),
+                        }),
+                        (0, e.jsxs)('tbody', {
+                          children: [
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[15].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[16].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[17].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[18].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[19].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[20].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[21].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[22].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[23].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[24].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[25].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[26].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[27].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[28].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[29].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[30].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[31].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[32].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[33].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[34].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[35].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[36].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[37].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[38].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[39].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[40].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[41].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[42].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[43].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[44].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[45].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[46].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[47].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[48].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[49].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[50].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[51].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[52].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[53].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[54].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[55].value,
+                                }),
+                                (0, e.jsxs)('td', {
+                                  children: [
+                                    d.texts[56].value,
+                                    (0, e.jsx)('boolean', {}),
+                                  ],
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[57].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[58].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[59].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[60].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[61].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[62].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[63].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[64].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[65].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[66].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[67].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[68].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[69].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[70].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[71].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[72].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[73].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[74].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[75].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[76].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[77].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[78].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[79].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[80].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[81].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[82].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[83].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[84].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[85].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[86].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[87].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[88].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[89].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[90].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[91].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[92].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[93].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[94].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[95].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[96].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[97].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[98].value,
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: 'uploadfile',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#uploadfile',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'UploadFile',
+                      ],
+                    }),
+                    (0, e.jsxs)(n.Z, {
+                      children: [
+                        (0, e.jsx)('thead', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('th', { children: d.texts[99].value }),
+                              (0, e.jsx)('th', {
+                                children: d.texts[100].value,
+                              }),
+                              (0, e.jsx)('th', {
+                                children: d.texts[101].value,
+                              }),
+                              (0, e.jsx)('th', {
+                                children: d.texts[102].value,
+                              }),
+                            ],
+                          }),
+                        }),
+                        (0, e.jsxs)('tbody', {
+                          children: [
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[103].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[104].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[105].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[106].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[107].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[108].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[109].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[110].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[111].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[112].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[113].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[114].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[115].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[116].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[117].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[118].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[119].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[120].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[121].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[122].value,
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+        });
+      }
+      s.default = u;
+    },
+    2598: function (r, s, a) {
+      a.r(s),
+        a.d(s, {
+          texts: function () {
+            return l;
+          },
+        });
+      const l = [
+        {
+          value:
+            '\u6587\u4EF6\u4E0A\u4F20\u7EC4\u4EF6\uFF0C\u7528\u4E8E\u4E0A\u4F20\u6587\u4EF6\u5230\u670D\u52A1\u5668\u3002',
+          paraId: 0,
+          tocIndex: 0,
+        },
+        {
+          value:
+            '\u6700\u7B80\u5355\u7684\u6587\u4EF6\u4E0A\u4F20\u4F7F\u7528\u65B9\u5F0F\u3002',
+          paraId: 1,
+          tocIndex: 1,
+        },
+        {
+          value: '\u652F\u6301\u4E0A\u4F20\u591A\u4E2A\u6587\u4EF6\u3002',
+          paraId: 2,
+          tocIndex: 2,
+        },
+        {
+          value:
+            '\u81EA\u5B9A\u4E49\u4E0A\u4F20\u6309\u94AE\u7684\u5185\u5BB9\u3002',
+          paraId: 3,
+          tocIndex: 3,
+        },
+        {
+          value: '\u9650\u5236\u4E0A\u4F20\u6587\u4EF6\u7684\u7C7B\u578B\u3002',
+          paraId: 4,
+          tocIndex: 4,
+        },
+        {
+          value: '\u9650\u5236\u4E0A\u4F20\u6587\u4EF6\u7684\u6570\u91CF\u3002',
+          paraId: 5,
+          tocIndex: 5,
+        },
+        {
+          value: '\u7981\u7528\u7684\u4E0A\u4F20\u7EC4\u4EF6\u3002',
+          paraId: 6,
+          tocIndex: 6,
+        },
+        {
+          value:
+            '\u901A\u8FC7\u72B6\u6001\u63A7\u5236\u4E0A\u4F20\u6587\u4EF6\u5217\u8868\u3002',
+          paraId: 7,
+          tocIndex: 7,
+        },
+        {
+          value:
+            '\u8BBE\u7F6E\u9ED8\u8BA4\u5DF2\u4E0A\u4F20\u7684\u6587\u4EF6\u3002',
+          paraId: 8,
+          tocIndex: 8,
+        },
+        {
+          value:
+            '\u4E0A\u4F20\u524D\u5BF9\u6587\u4EF6\u8FDB\u884C\u6821\u9A8C\u3002',
+          paraId: 9,
+          tocIndex: 9,
+        },
+        {
+          value:
+            '\u901A\u8FC7 className \u548C style \u5C5E\u6027\u81EA\u5B9A\u4E49\u4E0A\u4F20\u7EC4\u4EF6\u6837\u5F0F\u3002',
+          paraId: 10,
+          tocIndex: 10,
+        },
+        { value: '\u5C5E\u6027', paraId: 11, tocIndex: 12 },
+        { value: '\u7C7B\u578B', paraId: 11, tocIndex: 12 },
+        { value: '\u9ED8\u8BA4\u503C', paraId: 11, tocIndex: 12 },
+        { value: '\u8BF4\u660E', paraId: 11, tocIndex: 12 },
+        { value: 'action', paraId: 11, tocIndex: 12 },
+        { value: 'string', paraId: 11, tocIndex: 12 },
+        { value: "''", paraId: 11, tocIndex: 12 },
+        {
+          value: '\u4E0A\u4F20\u63A5\u53E3\u5730\u5740',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'method', paraId: 11, tocIndex: 12 },
+        { value: 'string', paraId: 11, tocIndex: 12 },
+        { value: "'post'", paraId: 11, tocIndex: 12 },
+        { value: '\u4E0A\u4F20\u65B9\u6CD5', paraId: 11, tocIndex: 12 },
+        { value: 'headers', paraId: 11, tocIndex: 12 },
+        { value: 'Record<string, string>', paraId: 11, tocIndex: 12 },
+        { value: '{}', paraId: 11, tocIndex: 12 },
+        { value: '\u4E0A\u4F20\u8BF7\u6C42\u5934', paraId: 11, tocIndex: 12 },
+        { value: 'data', paraId: 11, tocIndex: 12 },
+        { value: 'Record<string, any>', paraId: 11, tocIndex: 12 },
+        { value: '{}', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u4E0A\u4F20\u989D\u5916\u6570\u636E',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'name', paraId: 11, tocIndex: 12 },
+        { value: 'string', paraId: 11, tocIndex: 12 },
+        { value: "'file'", paraId: 11, tocIndex: 12 },
+        {
+          value: '\u4E0A\u4F20\u6587\u4EF6\u5B57\u6BB5\u540D',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'withCredentials', paraId: 11, tocIndex: 12 },
+        { value: 'boolean', paraId: 11, tocIndex: 12 },
+        { value: 'false', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u662F\u5426\u643A\u5E26\u51ED\u8BC1',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'multiple', paraId: 11, tocIndex: 12 },
+        { value: 'boolean', paraId: 11, tocIndex: 12 },
+        { value: 'false', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u662F\u5426\u652F\u6301\u591A\u6587\u4EF6\u4E0A\u4F20',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'accept', paraId: 11, tocIndex: 12 },
+        { value: 'string', paraId: 11, tocIndex: 12 },
+        { value: "'*'", paraId: 11, tocIndex: 12 },
+        {
+          value: '\u63A5\u53D7\u7684\u6587\u4EF6\u7C7B\u578B',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'maxCount', paraId: 11, tocIndex: 12 },
+        { value: 'number', paraId: 11, tocIndex: 12 },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u6700\u5927\u4E0A\u4F20\u6587\u4EF6\u6570\u91CF',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'disabled', paraId: 11, tocIndex: 12 },
+        { value: 'boolean', paraId: 11, tocIndex: 12 },
+        { value: 'false', paraId: 11, tocIndex: 12 },
+        { value: '\u662F\u5426\u7981\u7528', paraId: 11, tocIndex: 12 },
+        { value: 'beforeUpload', paraId: 11, tocIndex: 12 },
+        {
+          value: '(file: File) => boolean | Promise',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        { value: '\u4E0A\u4F20\u524D\u6821\u9A8C', paraId: 11, tocIndex: 12 },
+        { value: 'onChange', paraId: 11, tocIndex: 12 },
+        {
+          value: '(file: UploadFile, fileList: UploadFile[]) => void',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u6587\u4EF6\u72B6\u6001\u53D8\u5316\u65F6\u7684\u56DE\u8C03',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'onProgress', paraId: 11, tocIndex: 12 },
+        {
+          value: '(percent: number, file: UploadFile) => void',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u4E0A\u4F20\u8FDB\u5EA6\u56DE\u8C03',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'onSuccess', paraId: 11, tocIndex: 12 },
+        {
+          value: '(response: any, file: UploadFile) => void',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u4E0A\u4F20\u6210\u529F\u56DE\u8C03',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'onError', paraId: 11, tocIndex: 12 },
+        {
+          value: '(error: any, file: UploadFile) => void',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u4E0A\u4F20\u5931\u8D25\u56DE\u8C03',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'onRemove', paraId: 11, tocIndex: 12 },
+        { value: '(file: UploadFile) => void', paraId: 11, tocIndex: 12 },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u6587\u4EF6\u79FB\u9664\u56DE\u8C03',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'fileList', paraId: 11, tocIndex: 12 },
+        { value: 'UploadFile[]', paraId: 11, tocIndex: 12 },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u53D7\u63A7\u6A21\u5F0F\u4E0B\u7684\u6587\u4EF6\u5217\u8868',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'defaultFileList', paraId: 11, tocIndex: 12 },
+        { value: 'UploadFile[]', paraId: 11, tocIndex: 12 },
+        { value: '[]', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u9ED8\u8BA4\u6587\u4EF6\u5217\u8868',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: 'className', paraId: 11, tocIndex: 12 },
+        { value: 'string', paraId: 11, tocIndex: 12 },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        { value: '\u81EA\u5B9A\u4E49\u7C7B\u540D', paraId: 11, tocIndex: 12 },
+        { value: 'style', paraId: 11, tocIndex: 12 },
+        { value: 'React.CSSProperties', paraId: 11, tocIndex: 12 },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        { value: '\u81EA\u5B9A\u4E49\u6837\u5F0F', paraId: 11, tocIndex: 12 },
+        { value: 'children', paraId: 11, tocIndex: 12 },
+        { value: 'React.ReactNode', paraId: 11, tocIndex: 12 },
+        { value: '-', paraId: 11, tocIndex: 12 },
+        {
+          value: '\u81EA\u5B9A\u4E49\u4E0A\u4F20\u6309\u94AE',
+          paraId: 11,
+          tocIndex: 12,
+        },
+        { value: '\u5C5E\u6027', paraId: 12, tocIndex: 13 },
+        { value: '\u7C7B\u578B', paraId: 12, tocIndex: 13 },
+        { value: '\u9ED8\u8BA4\u503C', paraId: 12, tocIndex: 13 },
+        { value: '\u8BF4\u660E', paraId: 12, tocIndex: 13 },
+        { value: 'uid', paraId: 12, tocIndex: 13 },
+        { value: 'string', paraId: 12, tocIndex: 13 },
+        { value: '-', paraId: 12, tocIndex: 13 },
+        {
+          value: '\u6587\u4EF6\u552F\u4E00\u6807\u8BC6',
+          paraId: 12,
+          tocIndex: 13,
+        },
+        { value: 'name', paraId: 12, tocIndex: 13 },
+        { value: 'string', paraId: 12, tocIndex: 13 },
+        { value: '-', paraId: 12, tocIndex: 13 },
+        { value: '\u6587\u4EF6\u540D', paraId: 12, tocIndex: 13 },
+        { value: 'status', paraId: 12, tocIndex: 13 },
+        {
+          value: "'uploading' | 'done' | 'error' | 'removed'",
+          paraId: 12,
+          tocIndex: 13,
+        },
+        { value: '-', paraId: 12, tocIndex: 13 },
+        { value: '\u6587\u4EF6\u72B6\u6001', paraId: 12, tocIndex: 13 },
+        { value: 'url', paraId: 12, tocIndex: 13 },
+        { value: 'string', paraId: 12, tocIndex: 13 },
+        { value: '-', paraId: 12, tocIndex: 13 },
+        {
+          value: '\u6587\u4EF6\u4E0A\u4F20\u540E\u7684 URL',
+          paraId: 12,
+          tocIndex: 13,
+        },
+        { value: 'percent', paraId: 12, tocIndex: 13 },
+        { value: 'number', paraId: 12, tocIndex: 13 },
+        { value: '-', paraId: 12, tocIndex: 13 },
+        {
+          value: '\u4E0A\u4F20\u8FDB\u5EA6\u767E\u5206\u6BD4',
+          paraId: 12,
+          tocIndex: 13,
+        },
+      ];
+    },
+  },
+]);

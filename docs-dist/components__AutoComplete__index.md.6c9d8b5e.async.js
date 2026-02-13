@@ -1,0 +1,870 @@
+'use strict';
+(self.webpackChunkbrickd = self.webpackChunkbrickd || []).push([
+  [3597],
+  {
+    94501: function (n, s, a) {
+      a.r(s);
+      var l = a(36121),
+        i = a(73648),
+        _ = a(27519),
+        o = a(12098),
+        h = a(60983),
+        v = a(72697),
+        r = a(97491),
+        I = a(70164),
+        t = a(43097),
+        c = a(87931),
+        x = a(75271),
+        d = a(4143),
+        e = a(52676);
+      function u() {
+        return (0, e.jsx)(t.dY, {
+          children: (0, e.jsx)(x.Suspense, {
+            fallback: (0, e.jsx)(c.Z, {}),
+            children: (0, e.jsxs)(e.Fragment, {
+              children: [
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h1', {
+                      id: 'autocomplete-\u81EA\u52A8\u5B8C\u6210',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#autocomplete-\u81EA\u52A8\u5B8C\u6210',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'AutoComplete \u81EA\u52A8\u5B8C\u6210',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[0].value }),
+                    (0, e.jsxs)('h2', {
+                      id: '\u4EE3\u7801\u6F14\u793A',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u4EE3\u7801\u6F14\u793A',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u4EE3\u7801\u6F14\u793A',
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: '\u57FA\u7840\u7528\u6CD5',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u57FA\u7840\u7528\u6CD5',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u57FA\u7840\u7528\u6CD5',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[1].value }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/autocomplete-demo-0' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u4F7F\u7528\u5BF9\u8C61\u6570\u7EC4',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u4F7F\u7528\u5BF9\u8C61\u6570\u7EC4',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u4F7F\u7528\u5BF9\u8C61\u6570\u7EC4',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[2].value,
+                        (0, e.jsx)('code', { children: d.texts[3].value }),
+                        d.texts[4].value,
+                        (0, e.jsx)('code', { children: d.texts[5].value }),
+                        d.texts[6].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/autocomplete-demo-1' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u81EA\u5B9A\u4E49\u5927\u5C0F',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u5927\u5C0F',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u5927\u5C0F',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[7].value,
+                        (0, e.jsx)('code', { children: d.texts[8].value }),
+                        d.texts[9].value,
+                        (0, e.jsx)('code', { children: d.texts[10].value }),
+                        d.texts[11].value,
+                        (0, e.jsx)('code', { children: d.texts[12].value }),
+                        d.texts[13].value,
+                        (0, e.jsx)('code', { children: d.texts[14].value }),
+                        d.texts[15].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/autocomplete-demo-2' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u52A0\u8F7D\u72B6\u6001',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u52A0\u8F7D\u72B6\u6001',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u52A0\u8F7D\u72B6\u6001',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[16].value,
+                        (0, e.jsx)('code', { children: d.texts[17].value }),
+                        d.texts[18].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/autocomplete-demo-3' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u7981\u7528\u72B6\u6001',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u7981\u7528\u72B6\u6001',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u7981\u7528\u72B6\u6001',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[19].value,
+                        (0, e.jsx)('code', { children: d.texts[20].value }),
+                        d.texts[21].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/autocomplete-demo-4' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u9519\u8BEF\u72B6\u6001',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u9519\u8BEF\u72B6\u6001',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u9519\u8BEF\u72B6\u6001',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[22].value,
+                        (0, e.jsx)('code', { children: d.texts[23].value }),
+                        d.texts[24].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/autocomplete-demo-5' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u81EA\u5B9A\u4E49\u8FC7\u6EE4',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u8FC7\u6EE4',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u8FC7\u6EE4',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[25].value,
+                        (0, e.jsx)('code', { children: d.texts[26].value }),
+                        d.texts[27].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/autocomplete-demo-6' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h3', {
+                      id: '\u81EA\u5B9A\u4E49\u9009\u9879\u6E32\u67D3',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u81EA\u5B9A\u4E49\u9009\u9879\u6E32\u67D3',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u81EA\u5B9A\u4E49\u9009\u9879\u6E32\u67D3',
+                      ],
+                    }),
+                    (0, e.jsxs)('p', {
+                      children: [
+                        d.texts[28].value,
+                        (0, e.jsx)('code', { children: d.texts[29].value }),
+                        d.texts[30].value,
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(t.Dl, {
+                  demo: { id: 'components/autocomplete-demo-7' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: 'api',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#api',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'API',
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: 'autocomplete',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#autocomplete',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'AutoComplete',
+                      ],
+                    }),
+                    (0, e.jsxs)(r.Z, {
+                      children: [
+                        (0, e.jsx)('thead', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('th', { children: d.texts[31].value }),
+                              (0, e.jsx)('th', { children: d.texts[32].value }),
+                              (0, e.jsx)('th', { children: d.texts[33].value }),
+                              (0, e.jsx)('th', { children: d.texts[34].value }),
+                            ],
+                          }),
+                        }),
+                        (0, e.jsxs)('tbody', {
+                          children: [
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[35].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[36].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[37].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[38].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[39].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[40].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[41].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[42].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[43].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[44].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[45].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[46].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[47].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[48].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[49].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[50].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[51].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[52].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[53].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[54].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[55].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[56].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[57].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[58].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[59].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[60].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[61].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[62].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[63].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[64].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[65].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[66].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[67].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[68].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[69].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[70].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[71].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[72].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[73].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[74].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[75].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[76].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[77].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[78].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[79].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[80].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[81].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[82].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[83].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[84].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[85].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[86].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[87].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[88].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[89].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[90].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[91].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[92].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[93].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[94].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[95].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[96].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[97].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[98].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+        });
+      }
+      s.default = u;
+    },
+    4143: function (n, s, a) {
+      a.r(s),
+        a.d(s, {
+          texts: function () {
+            return l;
+          },
+        });
+      const l = [
+        {
+          value:
+            '\u81EA\u52A8\u5B8C\u6210\u7EC4\u4EF6\uFF0C\u7528\u4E8E\u8F93\u5165\u6846\u7684\u81EA\u52A8\u8865\u5168\u529F\u80FD\uFF0C\u652F\u6301\u81EA\u5B9A\u4E49\u9009\u9879\u3001\u8FC7\u6EE4\u903B\u8F91\u548C\u6E32\u67D3\u65B9\u5F0F\u3002',
+          paraId: 0,
+          tocIndex: 0,
+        },
+        {
+          value:
+            '\u6700\u7B80\u5355\u7684\u7528\u6CD5\uFF0C\u4F7F\u7528\u5B57\u7B26\u4E32\u6570\u7EC4\u4F5C\u4E3A\u9009\u9879\u3002',
+          paraId: 1,
+          tocIndex: 2,
+        },
+        {
+          value:
+            '\u4F7F\u7528\u5BF9\u8C61\u6570\u7EC4\u4F5C\u4E3A\u9009\u9879\uFF0C\u6BCF\u4E2A\u5BF9\u8C61\u5305\u542B ',
+          paraId: 2,
+          tocIndex: 3,
+        },
+        { value: 'value', paraId: 2, tocIndex: 3 },
+        { value: ' \u548C ', paraId: 2, tocIndex: 3 },
+        { value: 'label', paraId: 2, tocIndex: 3 },
+        { value: ' \u5C5E\u6027\u3002', paraId: 2, tocIndex: 3 },
+        { value: '\u901A\u8FC7 ', paraId: 3, tocIndex: 4 },
+        { value: 'size', paraId: 3, tocIndex: 4 },
+        {
+          value:
+            ' \u5C5E\u6027\u8BBE\u7F6E\u8F93\u5165\u6846\u7684\u5927\u5C0F\uFF0C\u652F\u6301 ',
+          paraId: 3,
+          tocIndex: 4,
+        },
+        { value: 'small', paraId: 3, tocIndex: 4 },
+        { value: '\u3001', paraId: 3, tocIndex: 4 },
+        { value: 'default', paraId: 3, tocIndex: 4 },
+        { value: ' \u548C ', paraId: 3, tocIndex: 4 },
+        { value: 'large', paraId: 3, tocIndex: 4 },
+        { value: ' \u4E09\u79CD\u5C3A\u5BF8\u3002', paraId: 3, tocIndex: 4 },
+        { value: '\u901A\u8FC7 ', paraId: 4, tocIndex: 5 },
+        { value: 'loading', paraId: 4, tocIndex: 5 },
+        {
+          value:
+            ' \u5C5E\u6027\u8BBE\u7F6E\u52A0\u8F7D\u72B6\u6001\uFF0C\u7528\u4E8E\u5F02\u6B65\u83B7\u53D6\u9009\u9879\u7684\u573A\u666F\u3002',
+          paraId: 4,
+          tocIndex: 5,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 5, tocIndex: 6 },
+        { value: 'disabled', paraId: 5, tocIndex: 6 },
+        {
+          value: ' \u5C5E\u6027\u8BBE\u7F6E\u7981\u7528\u72B6\u6001\u3002',
+          paraId: 5,
+          tocIndex: 6,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 6, tocIndex: 7 },
+        { value: 'error', paraId: 6, tocIndex: 7 },
+        {
+          value: ' \u5C5E\u6027\u8BBE\u7F6E\u9519\u8BEF\u72B6\u6001\u3002',
+          paraId: 6,
+          tocIndex: 7,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 7, tocIndex: 8 },
+        { value: 'filterOption', paraId: 7, tocIndex: 8 },
+        {
+          value:
+            ' \u5C5E\u6027\u81EA\u5B9A\u4E49\u8FC7\u6EE4\u903B\u8F91\u3002',
+          paraId: 7,
+          tocIndex: 8,
+        },
+        { value: '\u901A\u8FC7 ', paraId: 8, tocIndex: 9 },
+        { value: 'renderOption', paraId: 8, tocIndex: 9 },
+        {
+          value:
+            ' \u5C5E\u6027\u81EA\u5B9A\u4E49\u9009\u9879\u7684\u6E32\u67D3\u65B9\u5F0F\u3002',
+          paraId: 8,
+          tocIndex: 9,
+        },
+        { value: '\u5C5E\u6027', paraId: 9, tocIndex: 11 },
+        { value: '\u8BF4\u660E', paraId: 9, tocIndex: 11 },
+        { value: '\u7C7B\u578B', paraId: 9, tocIndex: 11 },
+        { value: '\u9ED8\u8BA4\u503C', paraId: 9, tocIndex: 11 },
+        { value: 'size', paraId: 9, tocIndex: 11 },
+        { value: '\u8F93\u5165\u6846\u5C3A\u5BF8', paraId: 9, tocIndex: 11 },
+        { value: "'small' | 'default' | 'large'", paraId: 9, tocIndex: 11 },
+        { value: "'default'", paraId: 9, tocIndex: 11 },
+        { value: 'disabled', paraId: 9, tocIndex: 11 },
+        { value: '\u662F\u5426\u7981\u7528', paraId: 9, tocIndex: 11 },
+        { value: 'boolean', paraId: 9, tocIndex: 11 },
+        { value: 'false', paraId: 9, tocIndex: 11 },
+        { value: 'readOnly', paraId: 9, tocIndex: 11 },
+        { value: '\u662F\u5426\u53EA\u8BFB', paraId: 9, tocIndex: 11 },
+        { value: 'boolean', paraId: 9, tocIndex: 11 },
+        { value: 'false', paraId: 9, tocIndex: 11 },
+        { value: 'error', paraId: 9, tocIndex: 11 },
+        {
+          value: '\u662F\u5426\u9519\u8BEF\u72B6\u6001',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: 'boolean', paraId: 9, tocIndex: 11 },
+        { value: 'false', paraId: 9, tocIndex: 11 },
+        { value: 'options', paraId: 9, tocIndex: 11 },
+        { value: '\u9009\u9879\u5217\u8868', paraId: 9, tocIndex: 11 },
+        {
+          value:
+            'Array<{ value: string; label?: string; disabled?: boolean }> | string[]',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: '[]', paraId: 9, tocIndex: 11 },
+        { value: 'value', paraId: 9, tocIndex: 11 },
+        {
+          value: '\u8F93\u5165\u503C\uFF08\u53D7\u63A7\uFF09',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: 'string', paraId: 9, tocIndex: 11 },
+        { value: '-', paraId: 9, tocIndex: 11 },
+        { value: 'defaultValue', paraId: 9, tocIndex: 11 },
+        {
+          value: '\u9ED8\u8BA4\u8F93\u5165\u503C\uFF08\u975E\u53D7\u63A7\uFF09',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: 'string', paraId: 9, tocIndex: 11 },
+        { value: "''", paraId: 9, tocIndex: 11 },
+        { value: 'placeholder', paraId: 9, tocIndex: 11 },
+        { value: '\u5360\u4F4D\u7B26', paraId: 9, tocIndex: 11 },
+        { value: 'string', paraId: 9, tocIndex: 11 },
+        { value: '-', paraId: 9, tocIndex: 11 },
+        { value: 'onChange', paraId: 9, tocIndex: 11 },
+        {
+          value: '\u8F93\u5165\u503C\u53D8\u5316\u65F6\u7684\u56DE\u8C03',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: '(value: string) => void', paraId: 9, tocIndex: 11 },
+        { value: '-', paraId: 9, tocIndex: 11 },
+        { value: 'onSelect', paraId: 9, tocIndex: 11 },
+        {
+          value: '\u9009\u9879\u9009\u4E2D\u65F6\u7684\u56DE\u8C03',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        {
+          value:
+            '(option: { value: string; label?: string; disabled?: boolean } | string) => void',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: '-', paraId: 9, tocIndex: 11 },
+        { value: 'onSearch', paraId: 9, tocIndex: 11 },
+        {
+          value: '\u641C\u7D22\u65F6\u7684\u56DE\u8C03',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: '(value: string) => void', paraId: 9, tocIndex: 11 },
+        { value: '-', paraId: 9, tocIndex: 11 },
+        { value: 'loading', paraId: 9, tocIndex: 11 },
+        {
+          value: '\u662F\u5426\u52A0\u8F7D\u72B6\u6001',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: 'boolean', paraId: 9, tocIndex: 11 },
+        { value: 'false', paraId: 9, tocIndex: 11 },
+        { value: 'filterOption', paraId: 9, tocIndex: 11 },
+        {
+          value: '\u81EA\u5B9A\u4E49\u8FC7\u6EE4\u903B\u8F91',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        {
+          value:
+            '(inputValue: string, option: { value: string; label?: string; disabled?: boolean } | string) => boolean',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: '-', paraId: 9, tocIndex: 11 },
+        { value: 'renderOption', paraId: 9, tocIndex: 11 },
+        {
+          value: '\u81EA\u5B9A\u4E49\u9009\u9879\u6E32\u67D3',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        {
+          value:
+            '(option: { value: string; label?: string; disabled?: boolean } | string, inputValue: string) => React.ReactNode',
+          paraId: 9,
+          tocIndex: 11,
+        },
+        { value: '-', paraId: 9, tocIndex: 11 },
+        { value: 'className', paraId: 9, tocIndex: 11 },
+        { value: '\u81EA\u5B9A\u4E49\u7C7B\u540D', paraId: 9, tocIndex: 11 },
+        { value: 'string', paraId: 9, tocIndex: 11 },
+        { value: "''", paraId: 9, tocIndex: 11 },
+        { value: 'style', paraId: 9, tocIndex: 11 },
+        { value: '\u81EA\u5B9A\u4E49\u6837\u5F0F', paraId: 9, tocIndex: 11 },
+        { value: 'React.CSSProperties', paraId: 9, tocIndex: 11 },
+        { value: '{}', paraId: 9, tocIndex: 11 },
+      ];
+    },
+  },
+]);

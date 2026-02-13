@@ -1,0 +1,668 @@
+'use strict';
+(self.webpackChunkbrickd = self.webpackChunkbrickd || []).push([
+  [1384],
+  {
+    41865: function (c, s, a) {
+      a.r(s);
+      var t = a(36121),
+        x = a(73648),
+        u = a(27519),
+        h = a(12098),
+        j = a(60983),
+        l = a(72697),
+        i = a(97491),
+        I = a(70164),
+        n = a(43097),
+        _ = a(87931),
+        r = a(75271),
+        d = a(55465),
+        e = a(52676);
+      function o() {
+        return (0, e.jsx)(n.dY, {
+          children: (0, e.jsx)(r.Suspense, {
+            fallback: (0, e.jsx)(_.Z, {}),
+            children: (0, e.jsxs)(e.Fragment, {
+              children: [
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h1', {
+                      id: 'notification-\u901A\u77E5\u63D0\u9192\u6846',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#notification-\u901A\u77E5\u63D0\u9192\u6846',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Notification \u901A\u77E5\u63D0\u9192\u6846',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[0].value }),
+                    (0, e.jsxs)('h2', {
+                      id: '\u5B89\u88C5',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u5B89\u88C5',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u5B89\u88C5',
+                      ],
+                    }),
+                    (0, e.jsx)(l.Z, {
+                      lang: 'bash',
+                      children: d.texts[1].value,
+                    }),
+                    (0, e.jsxs)('h2', {
+                      id: '\u7528\u6CD5',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u7528\u6CD5',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u7528\u6CD5',
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: '\u57FA\u7840\u7528\u6CD5',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u57FA\u7840\u7528\u6CD5',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u57FA\u7840\u7528\u6CD5',
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(n.Dl, {
+                  demo: { id: 'components/notification-demo-0' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h3', {
+                    id: '\u5E26\u6807\u9898\u548C\u63CF\u8FF0',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u5E26\u6807\u9898\u548C\u63CF\u8FF0',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u5E26\u6807\u9898\u548C\u63CF\u8FF0',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(n.Dl, {
+                  demo: { id: 'components/notification-demo-1' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h3', {
+                    id: '\u81EA\u5B9A\u4E49\u914D\u7F6E',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u81EA\u5B9A\u4E49\u914D\u7F6E',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u81EA\u5B9A\u4E49\u914D\u7F6E',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(n.Dl, {
+                  demo: { id: 'components/notification-demo-2' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h3', {
+                    id: '\u4E0D\u540C\u4F4D\u7F6E',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u4E0D\u540C\u4F4D\u7F6E',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u4E0D\u540C\u4F4D\u7F6E',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(n.Dl, {
+                  demo: { id: 'components/notification-demo-3' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h3', {
+                    id: '\u624B\u52A8\u5173\u95ED',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u624B\u52A8\u5173\u95ED',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u624B\u52A8\u5173\u95ED',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(n.Dl, {
+                  demo: { id: 'components/notification-demo-4' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: 'api',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#api',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'API',
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: 'notificationsuccessconfig',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#notificationsuccessconfig',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Notification.success(config)',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[2].value }),
+                    (0, e.jsxs)('h3', {
+                      id: 'notificationerrorconfig',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#notificationerrorconfig',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Notification.error(config)',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[3].value }),
+                    (0, e.jsxs)('h3', {
+                      id: 'notificationinfoconfig',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#notificationinfoconfig',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Notification.info(config)',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[4].value }),
+                    (0, e.jsxs)('h3', {
+                      id: 'notificationwarningconfig',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#notificationwarningconfig',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Notification.warning(config)',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[5].value }),
+                    (0, e.jsxs)('h3', {
+                      id: 'notificationcloseall',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#notificationcloseall',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Notification.closeAll()',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[6].value }),
+                    (0, e.jsxs)('h3', {
+                      id: 'config',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#config',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Config',
+                      ],
+                    }),
+                    (0, e.jsxs)(i.Z, {
+                      children: [
+                        (0, e.jsx)('thead', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('th', { children: d.texts[7].value }),
+                              (0, e.jsx)('th', { children: d.texts[8].value }),
+                              (0, e.jsx)('th', { children: d.texts[9].value }),
+                              (0, e.jsx)('th', { children: d.texts[10].value }),
+                            ],
+                          }),
+                        }),
+                        (0, e.jsxs)('tbody', {
+                          children: [
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[11].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[12].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[13].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[14].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[15].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[16].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[17].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[18].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[19].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[20].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[21].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[22].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[23].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[24].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[25].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[26].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[27].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[28].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[29].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[30].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[31].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[32].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[33].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[34].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[35].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[36].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[37].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[38].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[39].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[40].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[41].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[42].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[43].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[44].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[45].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[46].value,
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[47].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[48].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[49].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[50].value,
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                    (0, e.jsxs)('h3', {
+                      id: '\u8FD4\u56DE\u503C',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u8FD4\u56DE\u503C',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u8FD4\u56DE\u503C',
+                      ],
+                    }),
+                    (0, e.jsxs)(i.Z, {
+                      children: [
+                        (0, e.jsx)('thead', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('th', { children: d.texts[51].value }),
+                              (0, e.jsx)('th', { children: d.texts[52].value }),
+                              (0, e.jsx)('th', { children: d.texts[53].value }),
+                            ],
+                          }),
+                        }),
+                        (0, e.jsx)('tbody', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('td', { children: d.texts[54].value }),
+                              (0, e.jsx)('td', {
+                                children: (0, e.jsx)('code', {
+                                  children: d.texts[55].value,
+                                }),
+                              }),
+                              (0, e.jsx)('td', { children: d.texts[56].value }),
+                            ],
+                          }),
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+        });
+      }
+      s.default = o;
+    },
+    55465: function (c, s, a) {
+      a.r(s),
+        a.d(s, {
+          texts: function () {
+            return t;
+          },
+        });
+      const t = [
+        {
+          value:
+            '\u901A\u77E5\u63D0\u9192\u6846\uFF0C\u7528\u4E8E\u663E\u793A\u5168\u5C40\u7684\u901A\u77E5\u63D0\u9192\u4FE1\u606F\u3002',
+          paraId: 0,
+          tocIndex: 0,
+        },
+        {
+          value: `npm install brickd
+`,
+          paraId: 1,
+          tocIndex: 1,
+        },
+        {
+          value: '\u663E\u793A\u6210\u529F\u901A\u77E5',
+          paraId: 2,
+          tocIndex: 9,
+        },
+        {
+          value: '\u663E\u793A\u9519\u8BEF\u901A\u77E5',
+          paraId: 3,
+          tocIndex: 10,
+        },
+        {
+          value: '\u663E\u793A\u4FE1\u606F\u901A\u77E5',
+          paraId: 4,
+          tocIndex: 11,
+        },
+        {
+          value: '\u663E\u793A\u8B66\u544A\u901A\u77E5',
+          paraId: 5,
+          tocIndex: 12,
+        },
+        {
+          value: '\u5173\u95ED\u6240\u6709\u901A\u77E5',
+          paraId: 6,
+          tocIndex: 13,
+        },
+        { value: '\u53C2\u6570', paraId: 7, tocIndex: 14 },
+        { value: '\u7C7B\u578B', paraId: 7, tocIndex: 14 },
+        { value: '\u9ED8\u8BA4\u503C', paraId: 7, tocIndex: 14 },
+        { value: '\u8BF4\u660E', paraId: 7, tocIndex: 14 },
+        { value: 'message', paraId: 7, tocIndex: 14 },
+        { value: 'React.ReactNode', paraId: 7, tocIndex: 14 },
+        { value: '-', paraId: 7, tocIndex: 14 },
+        { value: '\u901A\u77E5\u6807\u9898', paraId: 7, tocIndex: 14 },
+        { value: 'description', paraId: 7, tocIndex: 14 },
+        { value: 'React.ReactNode', paraId: 7, tocIndex: 14 },
+        { value: '-', paraId: 7, tocIndex: 14 },
+        { value: '\u901A\u77E5\u63CF\u8FF0', paraId: 7, tocIndex: 14 },
+        { value: 'duration', paraId: 7, tocIndex: 14 },
+        { value: 'number', paraId: 7, tocIndex: 14 },
+        { value: '4500', paraId: 7, tocIndex: 14 },
+        {
+          value:
+            '\u81EA\u52A8\u5173\u95ED\u65F6\u95F4\uFF08\u6BEB\u79D2\uFF09\uFF0C\u8BBE\u7F6E\u4E3A 0 \u65F6\u4E0D\u81EA\u52A8\u5173\u95ED',
+          paraId: 7,
+          tocIndex: 14,
+        },
+        { value: 'type', paraId: 7, tocIndex: 14 },
+        {
+          value: "'success' | 'error' | 'info' | 'warning'",
+          paraId: 7,
+          tocIndex: 14,
+        },
+        { value: "'info'", paraId: 7, tocIndex: 14 },
+        { value: '\u901A\u77E5\u7C7B\u578B', paraId: 7, tocIndex: 14 },
+        { value: 'showClose', paraId: 7, tocIndex: 14 },
+        { value: 'boolean', paraId: 7, tocIndex: 14 },
+        { value: 'true', paraId: 7, tocIndex: 14 },
+        {
+          value: '\u662F\u5426\u663E\u793A\u5173\u95ED\u6309\u94AE',
+          paraId: 7,
+          tocIndex: 14,
+        },
+        { value: 'onClose', paraId: 7, tocIndex: 14 },
+        { value: '() => void', paraId: 7, tocIndex: 14 },
+        { value: '-', paraId: 7, tocIndex: 14 },
+        {
+          value: '\u5173\u95ED\u65F6\u7684\u56DE\u8C03\u51FD\u6570',
+          paraId: 7,
+          tocIndex: 14,
+        },
+        { value: 'onClick', paraId: 7, tocIndex: 14 },
+        { value: '() => void', paraId: 7, tocIndex: 14 },
+        { value: '-', paraId: 7, tocIndex: 14 },
+        {
+          value: '\u70B9\u51FB\u901A\u77E5\u65F6\u7684\u56DE\u8C03\u51FD\u6570',
+          paraId: 7,
+          tocIndex: 14,
+        },
+        { value: 'className', paraId: 7, tocIndex: 14 },
+        { value: 'string', paraId: 7, tocIndex: 14 },
+        { value: '-', paraId: 7, tocIndex: 14 },
+        { value: '\u81EA\u5B9A\u4E49\u7C7B\u540D', paraId: 7, tocIndex: 14 },
+        { value: 'style', paraId: 7, tocIndex: 14 },
+        { value: 'React.CSSProperties', paraId: 7, tocIndex: 14 },
+        { value: '-', paraId: 7, tocIndex: 14 },
+        { value: '\u81EA\u5B9A\u4E49\u6837\u5F0F', paraId: 7, tocIndex: 14 },
+        { value: 'placement', paraId: 7, tocIndex: 14 },
+        {
+          value: "'topRight' | 'topLeft' | 'bottomRight' | 'bottomLeft'",
+          paraId: 7,
+          tocIndex: 14,
+        },
+        { value: "'topRight'", paraId: 7, tocIndex: 14 },
+        { value: '\u901A\u77E5\u4F4D\u7F6E', paraId: 7, tocIndex: 14 },
+        { value: '\u5C5E\u6027', paraId: 8, tocIndex: 15 },
+        { value: '\u7C7B\u578B', paraId: 8, tocIndex: 15 },
+        { value: '\u8BF4\u660E', paraId: 8, tocIndex: 15 },
+        { value: 'close', paraId: 8, tocIndex: 15 },
+        { value: '() => void', paraId: 8, tocIndex: 15 },
+        {
+          value: '\u5173\u95ED\u5F53\u524D\u901A\u77E5\u7684\u65B9\u6CD5',
+          paraId: 8,
+          tocIndex: 15,
+        },
+      ];
+    },
+  },
+]);

@@ -1,0 +1,552 @@
+'use strict';
+(self.webpackChunkbrickd = self.webpackChunkbrickd || []).push([
+  [8569],
+  {
+    54388: function (n, t, s) {
+      s.r(t);
+      var _ = s(36121),
+        u = s(73648),
+        x = s(27519),
+        o = s(12098),
+        h = s(60983),
+        j = s(72697),
+        c = s(97491),
+        p = s(70164),
+        a = s(43097),
+        l = s(87931),
+        r = s(75271),
+        d = s(62482),
+        e = s(52676);
+      function i() {
+        return (0, e.jsx)(a.dY, {
+          children: (0, e.jsx)(r.Suspense, {
+            fallback: (0, e.jsx)(l.Z, {}),
+            children: (0, e.jsxs)(e.Fragment, {
+              children: [
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h1', {
+                      id: 'statistic-\u7EDF\u8BA1\u6570\u503C',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#statistic-\u7EDF\u8BA1\u6570\u503C',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'Statistic \u7EDF\u8BA1\u6570\u503C',
+                      ],
+                    }),
+                    (0, e.jsx)('p', { children: d.texts[0].value }),
+                    (0, e.jsxs)('h2', {
+                      id: '\u57FA\u672C\u7528\u6CD5',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#\u57FA\u672C\u7528\u6CD5',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        '\u57FA\u672C\u7528\u6CD5',
+                      ],
+                    }),
+                  ],
+                }),
+                (0, e.jsx)(a.Dl, {
+                  demo: { id: 'components/statistic-demo-0' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h2', {
+                    id: '\u5E26\u524D\u7F00\u548C\u540E\u7F00',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u5E26\u524D\u7F00\u548C\u540E\u7F00',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u5E26\u524D\u7F00\u548C\u540E\u7F00',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(a.Dl, {
+                  demo: { id: 'components/statistic-demo-1' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h2', {
+                    id: '\u81EA\u5B9A\u4E49\u7CBE\u5EA6',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u81EA\u5B9A\u4E49\u7CBE\u5EA6',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u81EA\u5B9A\u4E49\u7CBE\u5EA6',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(a.Dl, {
+                  demo: { id: 'components/statistic-demo-2' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h2', {
+                    id: '\u5E26\u5343\u5206\u4F4D\u5206\u9694\u7B26',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u5E26\u5343\u5206\u4F4D\u5206\u9694\u7B26',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u5E26\u5343\u5206\u4F4D\u5206\u9694\u7B26',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(a.Dl, {
+                  demo: { id: 'components/statistic-demo-3' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h2', {
+                    id: '\u81EA\u5B9A\u4E49\u5206\u9694\u7B26',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u81EA\u5B9A\u4E49\u5206\u9694\u7B26',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u81EA\u5B9A\u4E49\u5206\u9694\u7B26',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(a.Dl, {
+                  demo: { id: 'components/statistic-demo-4' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h2', {
+                    id: '\u81EA\u5B9A\u4E49\u683C\u5F0F\u5316\u5668',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u81EA\u5B9A\u4E49\u683C\u5F0F\u5316\u5668',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u81EA\u5B9A\u4E49\u683C\u5F0F\u5316\u5668',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(a.Dl, {
+                  demo: { id: 'components/statistic-demo-5' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h2', {
+                    id: '\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u81EA\u5B9A\u4E49\u6837\u5F0F',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(a.Dl, {
+                  demo: { id: 'components/statistic-demo-6' },
+                  previewerProps: {},
+                }),
+                (0, e.jsx)('div', {
+                  className: 'markdown',
+                  children: (0, e.jsxs)('h2', {
+                    id: '\u5E26\u56FE\u6807',
+                    children: [
+                      (0, e.jsx)('a', {
+                        'aria-hidden': 'true',
+                        tabIndex: '-1',
+                        href: '#\u5E26\u56FE\u6807',
+                        children: (0, e.jsx)('span', {
+                          className: 'icon icon-link',
+                        }),
+                      }),
+                      '\u5E26\u56FE\u6807',
+                    ],
+                  }),
+                }),
+                (0, e.jsx)(a.Dl, {
+                  demo: { id: 'components/statistic-demo-7' },
+                  previewerProps: {},
+                }),
+                (0, e.jsxs)('div', {
+                  className: 'markdown',
+                  children: [
+                    (0, e.jsxs)('h2', {
+                      id: 'api',
+                      children: [
+                        (0, e.jsx)('a', {
+                          'aria-hidden': 'true',
+                          tabIndex: '-1',
+                          href: '#api',
+                          children: (0, e.jsx)('span', {
+                            className: 'icon icon-link',
+                          }),
+                        }),
+                        'API',
+                      ],
+                    }),
+                    (0, e.jsxs)(c.Z, {
+                      children: [
+                        (0, e.jsx)('thead', {
+                          children: (0, e.jsxs)('tr', {
+                            children: [
+                              (0, e.jsx)('th', { children: d.texts[1].value }),
+                              (0, e.jsx)('th', { children: d.texts[2].value }),
+                              (0, e.jsx)('th', { children: d.texts[3].value }),
+                              (0, e.jsx)('th', { children: d.texts[4].value }),
+                            ],
+                          }),
+                        }),
+                        (0, e.jsxs)('tbody', {
+                          children: [
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[5].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[6].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[7].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[8].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[9].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[10].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[11].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[12].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[13].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[14].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[15].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[16].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[17].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[18].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[19].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[20].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[21].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[22].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[23].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[24].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[25].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[26].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[27].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[28].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[29].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[30].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[31].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[32].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[33].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[34].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[35].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[36].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[37].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[38].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[39].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[40].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[41].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[42].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[43].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[44].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                            (0, e.jsxs)('tr', {
+                              children: [
+                                (0, e.jsx)('td', {
+                                  children: d.texts[45].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: d.texts[46].value,
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[47].value,
+                                  }),
+                                }),
+                                (0, e.jsx)('td', {
+                                  children: (0, e.jsx)('code', {
+                                    children: d.texts[48].value,
+                                  }),
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+        });
+      }
+      t.default = i;
+    },
+    62482: function (n, t, s) {
+      s.r(t),
+        s.d(t, {
+          texts: function () {
+            return _;
+          },
+        });
+      const _ = [
+        {
+          value:
+            '\u7EDF\u8BA1\u6570\u503C\u7EC4\u4EF6\uFF0C\u7528\u4E8E\u663E\u793A\u7EDF\u8BA1\u6570\u636E\u3002',
+          paraId: 0,
+          tocIndex: 0,
+        },
+        { value: '\u5C5E\u6027', paraId: 1, tocIndex: 9 },
+        { value: '\u8BF4\u660E', paraId: 1, tocIndex: 9 },
+        { value: '\u7C7B\u578B', paraId: 1, tocIndex: 9 },
+        { value: '\u9ED8\u8BA4\u503C', paraId: 1, tocIndex: 9 },
+        { value: 'title', paraId: 1, tocIndex: 9 },
+        { value: '\u6807\u9898', paraId: 1, tocIndex: 9 },
+        { value: 'React.ReactNode', paraId: 1, tocIndex: 9 },
+        { value: 'undefined', paraId: 1, tocIndex: 9 },
+        { value: 'value', paraId: 1, tocIndex: 9 },
+        { value: '\u6570\u503C', paraId: 1, tocIndex: 9 },
+        { value: 'React.ReactNode', paraId: 1, tocIndex: 9 },
+        { value: 'undefined', paraId: 1, tocIndex: 9 },
+        { value: 'valueStyle', paraId: 1, tocIndex: 9 },
+        { value: '\u6570\u503C\u6837\u5F0F', paraId: 1, tocIndex: 9 },
+        { value: 'React.CSSProperties', paraId: 1, tocIndex: 9 },
+        { value: 'undefined', paraId: 1, tocIndex: 9 },
+        { value: 'prefix', paraId: 1, tocIndex: 9 },
+        { value: '\u524D\u7F00', paraId: 1, tocIndex: 9 },
+        { value: 'React.ReactNode', paraId: 1, tocIndex: 9 },
+        { value: 'undefined', paraId: 1, tocIndex: 9 },
+        { value: 'suffix', paraId: 1, tocIndex: 9 },
+        { value: '\u540E\u7F00', paraId: 1, tocIndex: 9 },
+        { value: 'React.ReactNode', paraId: 1, tocIndex: 9 },
+        { value: 'undefined', paraId: 1, tocIndex: 9 },
+        { value: 'precision', paraId: 1, tocIndex: 9 },
+        { value: '\u7CBE\u5EA6', paraId: 1, tocIndex: 9 },
+        { value: 'number', paraId: 1, tocIndex: 9 },
+        { value: 'undefined', paraId: 1, tocIndex: 9 },
+        { value: 'decimalSeparator', paraId: 1, tocIndex: 9 },
+        {
+          value: '\u5C0F\u6570\u70B9\u5206\u9694\u7B26',
+          paraId: 1,
+          tocIndex: 9,
+        },
+        { value: 'string', paraId: 1, tocIndex: 9 },
+        { value: "'.'", paraId: 1, tocIndex: 9 },
+        { value: 'thousandSeparator', paraId: 1, tocIndex: 9 },
+        {
+          value: '\u5343\u5206\u4F4D\u5206\u9694\u7B26',
+          paraId: 1,
+          tocIndex: 9,
+        },
+        { value: 'string', paraId: 1, tocIndex: 9 },
+        { value: "','", paraId: 1, tocIndex: 9 },
+        { value: 'formatter', paraId: 1, tocIndex: 9 },
+        {
+          value: '\u81EA\u5B9A\u4E49\u683C\u5F0F\u5316\u5668',
+          paraId: 1,
+          tocIndex: 9,
+        },
+        { value: '(value: any) => React.ReactNode', paraId: 1, tocIndex: 9 },
+        { value: 'undefined', paraId: 1, tocIndex: 9 },
+        { value: 'className', paraId: 1, tocIndex: 9 },
+        { value: '\u81EA\u5B9A\u4E49\u7C7B\u540D', paraId: 1, tocIndex: 9 },
+        { value: 'string', paraId: 1, tocIndex: 9 },
+        { value: 'undefined', paraId: 1, tocIndex: 9 },
+        { value: 'style', paraId: 1, tocIndex: 9 },
+        { value: '\u81EA\u5B9A\u4E49\u6837\u5F0F', paraId: 1, tocIndex: 9 },
+        { value: 'React.CSSProperties', paraId: 1, tocIndex: 9 },
+        { value: 'undefined', paraId: 1, tocIndex: 9 },
+      ];
+    },
+  },
+]);
